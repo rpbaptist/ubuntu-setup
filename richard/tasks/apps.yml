@@ -1,0 +1,12 @@
+---
+- name: Apps | Install with apt-get
+  apt: pkg={{ item }} state=installed
+  with_items:
+    - redshift
+    - zsh
+
+# Example of add ppa
+  # tasks:
+  #  - name: Add Nginx Repository
+  #    apt_repository: repo='ppa:nginx/stable' state=present
+  #    register: ppastable

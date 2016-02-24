@@ -1,0 +1,4 @@
+---
+- name: Dotfiles | Copy dotfiles
+  command: git clone https://github.com/rpbaptist/dotfiles ~/.dotfiles
+

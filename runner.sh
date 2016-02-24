@@ -21,3 +21,9 @@
 
 SCRIPT
 }
+
+# Get the rest of the script
+git clone https://github.com/rpbaptist/ubuntu-setup.git ~/.ansible
+
+# Run ansible
+cd ~/.ansible && ansible-playbook main.yml -i hosts

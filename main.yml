@@ -1,0 +1,8 @@
+---
+- hosts: localhost
+  user: richard
+  connection: local
+
+  roles:
+    - system
+    - richard
