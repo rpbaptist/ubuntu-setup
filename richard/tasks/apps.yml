@@ -1,9 +1,23 @@
----
-- name: Apps | Install with apt-get
-  apt: pkg={{ item }} state=installed
-  with_items:
-    - redshift
-    - zsh
+# Use this for local install only. No sudo
+
+# ---
+# - name: Apps | Install with apt-get
+#   apt: pkg={{ item }} state=installed
+#   with_items:
+#     - ansible
+#     - cinnamon-desktop-environment
+#     - folder-color
+#     - git
+#     - gnome-icon-theme-full
+#     - google-chrome-stable
+#     - gpaste
+#     - leafpad
+#     - numix-folders
+#     - numix-icon-theme
+#     - redshift
+#     - stylishdark-theme
+#     - xclip
+#     - zsh
 
 # Example of add ppa
   # tasks:

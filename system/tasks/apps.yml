@@ -1,12 +1,38 @@
 ---
-- name: Apps | Install with apt-get
-  apt: pkg={{ item }} state=installed
-  with_items:
-    - redshift
-    - zsh
+- name: Updates apt cache
+  become: yes
+  become_method: sudo
+  apt: update_cache=true
 
-# Example of add ppa
-  # tasks:
-  #  - name: Add Nginx Repository
-  #    apt_repository: repo='ppa:nginx/stable' state=present
-  #    register: ppastable
+- name: Apps | Install with apt-get
+  become: yes
+  become_method: sudo
+  apt: pkg={{ item }} state=latest
+  with_items:
+    - ansible
+    - cinnamon-desktop-environment
+    - folder-color
+    - git
+    - gnome-icon-theme-full
+    - google-chrome-stable
+    - gpaste
+    - leafpad
+    - numix-folders
+    - numix-icon-theme
+    - redshift
+    - stylishdark-theme
+    - xclip
+    - zsh
+    - dropbox
+    - python-gpgme
+
+- name: Apps | Remove packages which are installed by default
+  become: yes
+  become_method: sudo
+  apt: pkg={{ item }} state=absent
+  with_items:
+    - four-in-a-row
+    - five-or-more
+    - aisleriot
+    - unity-webapps-common
+    - webbrowser-app

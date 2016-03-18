@@ -1,0 +1,14 @@
+---
+- name: Dotfiles - Copy dotfiles
+  git: repo=https://github.com/rpbaptist/dotfiles
+       dest=~/.dotfiles
+       update=no
+
+# Fix this script
+# - name: Dotfiles - makesymlinks
+#   command: ~/.dotfiles/bin/makesymlinks.sh
+
+- name: Oh My Zsh
+  git: repo=https://github.com/rpbaptist/oh-my-zsh
+       dest=~/.oh-my-zsh
+       update=no
