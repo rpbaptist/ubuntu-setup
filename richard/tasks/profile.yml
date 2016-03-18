@@ -1,9 +1,10 @@
 ---
 - name: Dotfiles - Copy dotfiles
   git:
-    repo=https://github.com/rpbaptist/dotfiles
+    repo=git@github.com:rpbaptist/dotfiles.git
     dest="{{ home_path }}/.dotfiles"
     update=no
+    accept_hostkey=yes
 
 # Replace this script with ansible
 # - name: Dotfiles - makesymlinks
@@ -11,6 +12,7 @@
 
 - name: Oh My Zsh
   git:
-    repo=https://github.com/rpbaptist/oh-my-zsh
+    repo=git@github.com:rpbaptist/oh-my-zsh.git
     dest="{{ home_path }}/.oh-my-zsh"
     update=no
+    accept_hostkey=yes
