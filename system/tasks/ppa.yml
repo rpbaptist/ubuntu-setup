@@ -16,6 +16,7 @@
 
 - stat: path=/etc/apt/sources.list.d/dropbox.list
   register: dropbox
+
 - name: Dropbox - Add to source list
   command: sudo sh -c 'echo "deb http://linux.dropbox.com/ubuntu/ wily main" >> /etc/apt/sources.list.d/dropbox.list'
   when: not dropbox.stat.exists

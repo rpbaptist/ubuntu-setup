@@ -9,3 +9,4 @@
 
   vars:
     home_path: /home/richard
+    download_path: "{{ home_path }}/Downloads"

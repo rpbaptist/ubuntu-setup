@@ -6,11 +6,11 @@
 - name: Sublime - Download
   get_url:
     url=https://download.sublimetext.com/sublime-text_build-3103_amd64.deb
-    dest="{{ home_path }}/Downloads/sublime_text.deb"
+    dest="{{ download_path }}/sublime_text.deb"
   when: not sublime.stat.exists
 
 - name: Sublime - Install package
-  apt: deb="{{ home_path }}/Downloads/sublime_text.deb"
+  apt: deb="{{ download_path }}/sublime_text.deb"
   when: not sublime.stat.exists
 
 - name: Sublime - Symlinks

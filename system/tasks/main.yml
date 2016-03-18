@@ -1,7 +1,6 @@
 ---
 - include: ppa.yml
 - include: packages.yml
-# - include: dropbox.yml
 - include: keepassx.yml
 - include: sublime.yml
 # - include: shell.yml
