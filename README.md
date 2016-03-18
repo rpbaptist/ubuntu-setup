@@ -17,5 +17,4 @@ Steps required:
 
 3. Run ansible:
 
-  `cd ~/.ansible && ansible-playbook main.yml -i hosts`
-
+  `cd ~/.ansible && ansible-playbook main.yml -i hosts -K`
