@@ -4,8 +4,9 @@
   register: keepassx
 
 - name: KeepassX - make directory
-  command: mkdir ~/code/apps/keepassx/build
-  when: not keepassx.stat.exists
+  file: path=~/code/apps/keepassx/build
+        state=directory
+        mode=0775
 
 - name: KeepassX - Clone repo
   git: repo=https://github.com/keepassx/keepassx.git
