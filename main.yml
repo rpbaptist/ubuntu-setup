@@ -6,3 +6,6 @@
   roles:
     - system
     - richard
+
+  vars:
+    home_path: /home/richard

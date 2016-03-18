@@ -2,15 +2,15 @@
 - name: Dotfiles - Copy dotfiles
   git:
     repo=https://github.com/rpbaptist/dotfiles
-    dest=/home/richard/.dotfiles
+    dest="{{ home_path }}/.dotfiles"
     update=no
 
 # Replace this script with ansible
 # - name: Dotfiles - makesymlinks
-#   command: /home/richard/.dotfiles/bin/makesymlinks.sh
+#   command: "{{ home_path }}/.dotfiles/bin/makesymlinks.sh"
 
 - name: Oh My Zsh
   git:
     repo=https://github.com/rpbaptist/oh-my-zsh
-    dest=/home/richard/.oh-my-zsh
+    dest="{{ home_path }}/.oh-my-zsh"
     update=no
