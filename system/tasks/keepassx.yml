@@ -4,14 +4,16 @@
   register: keepassx
 
 - name: KeepassX - make directory
-  file: path=~/code/apps/keepassx/build
-        state=directory
-        mode=0775
+  file:
+    path=~/code/apps/keepassx/build
+    state=directory
+    mode=0775
 
 - name: KeepassX - Clone repo
-  git: repo=https://github.com/keepassx/keepassx.git
-       dest=~/code/apps/keepassx
-       version=2.0.2
+  git:
+    repo=https://github.com/keepassx/keepassx.git
+    dest=~/code/apps/keepassx
+    version=2.0.2
   when: not keepassx.stat.exists
 
 - name: KeepassX - build and install

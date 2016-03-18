@@ -10,9 +10,10 @@
   register: hub
 
 - name: Hub - unarchive
-  unarchive: src=https://github.com/github/hub/releases/download/v2.2.3/hub-linux-amd64-2.2.3.tgz
-             dest=/home/richard/code/apps/hub-linux
-             copy=no
+  unarchive:
+    src=https://github.com/github/hub/releases/download/v2.2.3/hub-linux-amd64-2.2.3.tgz
+    dest=/home/richard/code/apps/hub-linux
+    copy=no
   when: not hub.stat.exists
 
 - name: Hub - copy files

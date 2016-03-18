@@ -1,14 +1,16 @@
 ---
 - name: Dotfiles - Copy dotfiles
-  git: repo=https://github.com/rpbaptist/dotfiles
-       dest=~/.dotfiles
-       update=no
+  git:
+    repo=https://github.com/rpbaptist/dotfiles
+    dest=~/.dotfiles
+    update=no
 
 # Replace this script with ansible
 # - name: Dotfiles - makesymlinks
 #   command: ~/.dotfiles/bin/makesymlinks.sh
 
 - name: Oh My Zsh
-  git: repo=https://github.com/rpbaptist/oh-my-zsh
-       dest=~/.oh-my-zsh
-       update=no
+  git:
+    repo=https://github.com/rpbaptist/oh-my-zsh
+    dest=~/.oh-my-zsh
+    update=no
