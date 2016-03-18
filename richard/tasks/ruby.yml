@@ -2,19 +2,19 @@
 - name: rbenv
   git:
     repo=https://github.com/rbenv/rbenv.git
-    dest="{{ home_path }}/.rbenv"
+    dest="{{ home_dir }}/.rbenv"
     update=no
 
 - name: ruby-build
   git:
     repo=https://github.com/rbenv/ruby-build.git
-    dest="{{ home_path }}/.rbenv/plugins/ruby-build"
+    dest="{{ home_dir }}/.rbenv/plugins/ruby-build"
     update=no
 
 - name: rbenv
   git:
     repo=https://github.com/rbenv/rbenv-gem-rehash.git
-    dest="{{ home_path }}/.rbenv/plugins/rbenv-gem-rehash"
+    dest="{{ home_dir }}/.rbenv/plugins/rbenv-gem-rehash"
     update=no
 
 - name: Ruby setup

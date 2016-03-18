@@ -15,8 +15,8 @@
 
 - name: Sublime - Symlinks
   file:
-    src="{{ home_path }}/Dropbox/Sublime/{{ item }}"
-    dest="{{ home_path }}/.config/sublime-text-3/{{ item }}"
+    src="{{ home_dir }}/Dropbox/Sublime/{{ item }}"
+    dest="{{ home_dir }}/.config/sublime-text-3/{{ item }}"
     state=link
   with_items:
     - Packages

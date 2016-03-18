@@ -2,27 +2,27 @@
 - name: Hub - Create required directories
   file: 'path="{{ item }}" state=directory mode=0775'
   with_items:
-  - "{{ home_path }}/.local/bin"
-  - "{{ home_path }}/.zsh/completions"
+  - "{{ home_dir }}/.local/bin"
+  - "{{ home_dir }}/.zsh/completions"
 
 - name: Hub - check existence
-  stat: path="{{ home_path }}/.local/bin/hub"
+  stat: path="{{ home_dir }}/.local/bin/hub"
   register: hub
 
 - name: Hub - unarchive
   unarchive:
     src=https://github.com/github/hub/releases/download/v2.2.3/hub-linux-amd64-2.2.3.tgz
-    dest="{{ home_path }}/code/apps/hub-linux"
+    dest="{{ home_dir }}/code/apps/hub-linux"
     copy=no
   when: not hub.stat.exists
 
 - name: Hub - copy files
   copy: "{{ item }}"
   with_items:
-    - src="{{ home_path }}/code/apps/hub-linux/bin/hub"
-      dest="{{ home_path }}/local/bin/hub"
+    - src="{{ home_dir }}/code/apps/hub-linux/bin/hub"
+      dest="{{ home_dir }}/local/bin/hub"
       mode=0755
-    - src="{{ home_path }}/code/apps/hub-linux/etc/hub.zsh_completion"
-      dest="{{ home_path }}/.zsh/completions/_hub"
+    - src="{{ home_dir }}/code/apps/hub-linux/etc/hub.zsh_completion"
+      dest="{{ home_dir }}/.zsh/completions/_hub"
       mode=0775
   when: not hub.stat.exists
