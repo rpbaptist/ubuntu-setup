@@ -1,0 +1,29 @@
+---
+- name: rbenv
+  git:
+    repo=https://github.com/rbenv/rbenv.git
+    dest="{{ home_path }}/.rbenv"
+    update=no
+
+- name: ruby-build
+  git:
+    repo=https://github.com/rbenv/ruby-build.git
+    dest="{{ home_path }}/.rbenv/plugins/ruby-build"
+    update=no
+
+- name: rbenv
+  git:
+    repo=https://github.com/rbenv/rbenv-gem-rehash.git
+    dest="{{ home_path }}/.rbenv/plugins/rbenv-gem-rehash"
+    update=no
+
+- name: Ruby setup
+  command: "{{ item }}"
+  with_items:
+    - rbenv install 2.1.8
+    - rbenv install 2.2.4
+    - rbenv install 2.3.0
+    - rbenv global 2.3.0
+    - gem install bundler
+    - gem install rails
+    - rbenv rehash
