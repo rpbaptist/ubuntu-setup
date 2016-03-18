@@ -16,6 +16,7 @@
     - gnome-icon-theme-full
     - google-chrome-stable
     - gpaste
+    - httpie
     - leafpad
     - libgcrypt11-dev
     - libqt4-dev

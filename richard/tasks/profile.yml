@@ -4,7 +4,7 @@
        dest=~/.dotfiles
        update=no
 
-# Fix this script
+# Replace this script with ansible
 # - name: Dotfiles - makesymlinks
 #   command: ~/.dotfiles/bin/makesymlinks.sh
 
