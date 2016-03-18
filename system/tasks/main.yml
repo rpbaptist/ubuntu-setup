@@ -1,6 +1,7 @@
 ---
 - include: ppa.yml
-- include: apps.yml
+- include: packages.yml
+# - include: apps.yml
 # - include: defaults.yml
 # - include: shell.yml
 # - include: databases.yml
