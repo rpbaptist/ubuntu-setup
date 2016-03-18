@@ -1,0 +1,22 @@
+---
+- name: KeepassX - check existence
+  stat: path=/usr/local/bin/keepassx
+  register: keepassx
+
+- name: KeepassX - make directory
+  command: mkdir ~/code/apps/keepassx/build
+  when: not keepassx.stat.exists
+
+- name: KeepassX - Clone repo
+  git: repo=https://github.com/keepassx/keepassx.git
+       dest=~/code/apps/keepassx
+       version=2.0.2
+  when: not keepassx.stat.exists
+
+- name: KeepassX - build and install
+  command: '"{{ item }}" chdir=~/code/apps/keepassx/build'
+  with_items:
+    - cmake ..
+    - make
+    - make install
+  when: not keepassx.stat.exists
