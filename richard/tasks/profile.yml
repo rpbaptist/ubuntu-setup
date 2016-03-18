@@ -16,3 +16,6 @@
     dest="{{ home_path }}/.oh-my-zsh"
     update=no
     accept_hostkey=yes
+
+- name: Update font cache
+  command: fc-cache -f -v
