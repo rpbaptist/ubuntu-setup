@@ -12,13 +12,13 @@
   with_items:
    - apt-key adv --keyserver pgp.mit.edu --recv-keys 5044912E
    - sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
-  when: chrome.stat.exists == False
+  when: not chrome.stat.exists
 
 - stat: path=/etc/apt/sources.list.d/dropbox.list
   register: dropbox
 - name: Dropbox - Add to source list
   command: sudo sh -c 'echo "deb http://linux.dropbox.com/ubuntu/ wily main" >> /etc/apt/sources.list.d/dropbox.list'
-  when: dropbox.stat.exists == False
+  when: not dropbox.stat.exists
 
 - name: PPA - Additional PPA's
   apt_repository: repo={{ item }} state=present
