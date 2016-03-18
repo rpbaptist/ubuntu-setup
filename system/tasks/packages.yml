@@ -1,6 +1,6 @@
 ---
-# - name: Updates apt cache
-#   apt: update_cache=true
+- name: Updates apt cache
+  apt: update_cache=true
 
 - name: Apps | Install with apt-get
   apt: pkg={{ item }} state=latest
@@ -16,6 +16,7 @@
     - gnome-icon-theme-full
     - google-chrome-stable
     - gpaste
+    - guvcview
     - httpie
     - leafpad
     - libgcrypt11-dev
@@ -24,8 +25,10 @@
     - numix-icon-theme
     - python-gpgme
     - redshift
+    - skype
     - stylishdark-theme
     - touchegg
+    - uvcdynctrl
     - xclip
     - zlib1g-dev
     - zsh
@@ -33,9 +36,10 @@
 - name: Apps | Remove packages which are installed by default
   apt: pkg={{ item }} state=absent
   with_items:
-    - brasero
-    - four-in-a-row
-    - five-or-more
     - aisleriot
+    - brasero
+    - cheese
+    - five-or-more
+    - four-in-a-row
     - unity-webapps-common
     - webbrowser-app

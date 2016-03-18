@@ -30,4 +30,4 @@
     - ppa:git-core/ppa
     - ppa:ansible/ansible
     - ppa:numix/ppa
-
+    - deb http://archive.canonical.com/ wily partner
