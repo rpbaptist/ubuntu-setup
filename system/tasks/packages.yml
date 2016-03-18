@@ -10,7 +10,7 @@
     - cinnamon-desktop-environment
     - cmake
     - dropbox
-    - folder-color
+    - folder-color-nemo
     - gconf-editor
     - git
     - gnome-icon-theme-full
@@ -21,16 +21,21 @@
     - leafpad
     - libgcrypt11-dev
     - libqt4-dev
-    - numix-folders
-    - numix-icon-theme
+    - nemo
+    - nemo-dropbox
+    - nemo-fileroller
+    - nemo-seahorse
+    - nemo-share
     - python-gpgme
+    - python-nemo
     - redshift
     - shutter
     - skype
-    - stylishdark-theme
     - touchegg
     - uvcdynctrl
     - vlc
+    - vivacious-colors
+    - vivacious-folder-colors-addon
     - xclip
     - zlib1g-dev
     - zsh

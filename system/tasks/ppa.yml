@@ -25,9 +25,12 @@
   apt_repository: repo={{ item }} state=present
   register: ppastable
   with_items:
-    - ppa:noobslab/themes
-    - ppa:noobslab/icons
-    - ppa:git-core/ppa
-    - ppa:ansible/ansible
-    - ppa:numix/ppa
     - deb http://archive.canonical.com/ wily partner
+    - ppa:ansible/ansible
+    - ppa:costales/folder-color
+    - ppa:git-core/ppa
+    - ppa:noobslab/icons
+    - ppa:noobslab/themes
+    - ppa:numix/ppa
+    - ppa:ravefinity-project/ppa
+    - ppa:webupd8team/nemo
