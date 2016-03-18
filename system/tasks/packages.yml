@@ -17,10 +17,19 @@
     - google-chrome-stable
     - gpaste
     - guvcview
+    - heroku-toolbelt
     - httpie
     - leafpad
+    - libcurl4-openssl-dev
+    - libffi-dev
     - libgcrypt11-dev
     - libqt4-dev
+    - libreadline-dev
+    - libsqlite3-dev
+    - libssl-dev
+    - libxml2-dev
+    - libxslt1-dev
+    - libyaml-dev
     - nemo
     - nemo-dropbox
     - nemo-fileroller
@@ -28,14 +37,17 @@
     - nemo-share
     - python-gpgme
     - python-nemo
+    - python-software-properties
     - redshift
+    - redshift-gtk
     - shutter
     - skype
+    - sqlite3
     - touchegg
     - uvcdynctrl
-    - vlc
     - vivacious-colors
     - vivacious-folder-colors-addon
+    - vlc
     - xclip
     - zlib1g-dev
     - zsh

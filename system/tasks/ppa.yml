@@ -3,6 +3,7 @@
   apt_key: url={{ item }} state=present
   with_items:
     - https://dl-ssl.google.com/linux/linux_signing_key.pub
+    - https://toolbelt.heroku.com/apt/release.key
 
 - stat: path=/etc/apt/sources.list.d/google-chrome.list
   register: chrome
@@ -26,6 +27,7 @@
   register: ppastable
   with_items:
     - deb http://archive.canonical.com/ wily partner
+    - deb http://toolbelt.heroku.com/ubuntu ./
     - ppa:ansible/ansible
     - ppa:costales/folder-color
     - ppa:git-core/ppa
