@@ -8,5 +8,6 @@
     - richard
 
   vars:
-    home_dir: /home/richard
+    user: richard
+    home_dir: "/home/{{ user }}"
     download_path: "{{ home_dir }}/Downloads"

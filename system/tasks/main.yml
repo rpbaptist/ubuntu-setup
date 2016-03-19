@@ -3,6 +3,5 @@
 - include: packages.yml
 - include: keepassx.yml
 - include: sublime.yml
-- include: heroku.yml
 # - include: shell.yml
 # - include: databases.yml

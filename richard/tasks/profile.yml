@@ -1,5 +1,6 @@
 ---
 - name: Dotfiles - Copy dotfiles
+  become_user: "{{ user }}"
   git:
     repo=git@github.com:rpbaptist/dotfiles.git
     dest="{{ home_dir }}/.dotfiles"
@@ -11,6 +12,7 @@
 #   command: "{{ home_dir }}/.dotfiles/bin/makesymlinks.sh"
 
 - name: Oh My Zsh
+  become_user: "{{ user }}"
   git:
     repo=git@github.com:rpbaptist/oh-my-zsh.git
     dest="{{ home_dir }}/.oh-my-zsh"
