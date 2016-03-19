@@ -1,0 +1,40 @@
+---
+- name: Apps | Remove packages which are installed by default
+  apt: pkg={{ item }} state=absent purge=yes
+  with_items:
+    - ace-of-penguins
+    - aisleriot
+    - brasero
+    - cheese
+    - empathy
+    - five-or-more
+    - four-in-a-row
+    - gbrainy
+    - gedit
+    - gnome-chess
+    - gnome-games-common
+    - gnome-klotski
+    - gnome-mahjongg
+    - gnome-mines
+    - gnome-nibbles
+    - gnome-robots
+    - gnome-screenshot
+    - gnome-sudoku
+    - gnome-tetravex
+    - gnomine
+    - hamster-applet
+    - hamster-indicator
+    - iagno
+    - lightsoff
+    - mahjongg
+    - quadrapassel
+    - sound-juicer
+    - swell-foop
+    - tali
+    - thunderbird
+    - totem
+    - totem-plugins
+    - unity-webapps-common
+    - webbrowser-app
+    - xboard
+    - xterm

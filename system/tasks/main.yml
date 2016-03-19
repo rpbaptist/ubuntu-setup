@@ -1,6 +1,7 @@
 ---
 - include: ppa.yml
-- include: packages.yml
+- include: packages-remove.yml
+- include: packages-install.yml
 - include: keepassx.yml
 - include: sublime.yml
 # - include: shell.yml
