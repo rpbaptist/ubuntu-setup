@@ -7,27 +7,36 @@
   with_items:
     - ansible
     - build-essential
+    - cabal-install-1.22
     - cinnamon
     - cinnamon-translations
     - cmake
+    - cpphs
     - dropbox
     - folder-color-nemo
     - gconf-editor
+    - ghc
+    - ghc-doc
+    - ghc-prof
     - git
     - gnome-icon-theme-full
     - google-chrome-stable
     - gpaste
     - guvcview
+    - haskell-doc
     - heroku-toolbelt
     - httpie
+    - hugs
     - leafpad
     - libcurl4-openssl-dev
     - libffi-dev
+    - llvm-3.4
+    - ncurses-doc
     - libgcrypt11-dev
-    - libqt4-dev
-    - libreadline-dev
     - libmysqlclient-dev
     - libpq-dev
+    - libqt4-dev
+    - libreadline-dev
     - libsqlite3-dev
     - libssl-dev
     - libxml2-dev
@@ -53,6 +62,7 @@
     - skype
     - spotify-client
     - sqlite3
+    - stack
     - tlp
     - touchegg
     - uvcdynctrl
