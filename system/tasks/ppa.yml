@@ -42,6 +42,7 @@
     - ppa:ansible/ansible
     - ppa:costales/folder-color
     - ppa:git-core/ppa
+    - ppa:linrunner/tlp
     - ppa:noobslab/icons
     - ppa:noobslab/themes
     - ppa:moorkai/cinnamon
