@@ -3,4 +3,5 @@
 - include: apps.yml
 - include: hub.yml
 - include: ruby.yml
+- include: node.yml
 - include: lein.yml
