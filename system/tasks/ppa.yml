@@ -5,6 +5,7 @@
     - https://dl-ssl.google.com/linux/linux_signing_key.pub
     - https://toolbelt.heroku.com/apt/release.key
     - https://www.postgresql.org/media/keys/ACCC4CF8.asc
+    - https://deb.nodesource.com/gpgkey/nodesource.gpg.key
 
 - name: Spotify - check if exists
   stat: path=/usr/bin/spotify
@@ -28,17 +29,18 @@
   register: dropbox
 
 - name: Dropbox - Add to source list
-  command: sudo sh -c 'echo "deb http://linux.dropbox.com/ubuntu/ wily main" >> /etc/apt/sources.list.d/dropbox.list'
+  command: sudo sh -c 'echo "deb http://linux.dropbox.com/ubuntu/ {{ distro }} main" >> /etc/apt/sources.list.d/dropbox.list'
   when: not dropbox.stat.exists
 
 - name: PPA - Additional PPA's
   apt_repository: repo={{ item }} state=present
   register: ppastable
   with_items:
-    - deb http://apt.postgresql.org/pub/repos/apt/ wily-pgdg main 9.5
-    - deb http://archive.canonical.com/ wily partner
+    - deb http://apt.postgresql.org/pub/repos/apt/ {{ distro }}-pgdg main 9.5
+    - deb http://archive.canonical.com/ {{ distro }} partner
     - deb http://toolbelt.heroku.com/ubuntu ./
     - deb http://repository.spotify.com stable non-free
+    - deb https://deb.nodesource.com/node_5.x {{ distro }} main
     - ppa:ansible/ansible
     - ppa:costales/folder-color
     - ppa:git-core/ppa

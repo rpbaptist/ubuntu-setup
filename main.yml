@@ -8,6 +8,7 @@
     - richard
 
   vars:
+    distro: wily
     user: richard
     home_dir: "/home/{{ user }}"
     download_path: "{{ home_dir }}/Downloads"

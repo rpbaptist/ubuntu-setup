@@ -39,6 +39,7 @@
     - nemo-fileroller
     - nemo-seahorse
     - nemo-share
+    - nodejs
     - oracle-java8-installer
     - postgresql-9.5
     - python-gpgme
