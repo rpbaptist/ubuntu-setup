@@ -1,19 +1,19 @@
 ---
-- name: Sublime - Check existence
+- name: Sublime - exists
   stat: path=/usr/bin/subl
   register: sublime
 
-- name: Sublime - Download
+- name: Sublime - download
   get_url:
     url=https://download.sublimetext.com/sublime-text_build-3103_amd64.deb
     dest="{{ download_path }}/sublime_text.deb"
   when: not sublime.stat.exists
 
-- name: Sublime - Install package
+- name: Sublime - install
   apt: deb="{{ download_path }}/sublime_text.deb"
   when: not sublime.stat.exists
 
-- name: Sublime - Symlinks
+- name: Sublime - symlinks to dropbox
   file:
     src="{{ home_dir }}/Dropbox/Sublime/{{ item }}"
     dest="{{ home_dir }}/.config/sublime-text-3/{{ item }}"
