@@ -7,7 +7,8 @@
   with_items:
     - ansible
     - build-essential
-    - cinnamon-desktop-environment
+    - cinnamon
+    - cinnamon-translations
     - cmake
     - dropbox
     - folder-color-nemo
@@ -25,16 +26,20 @@
     - libgcrypt11-dev
     - libqt4-dev
     - libreadline-dev
+    - libmysqlclient-dev
     - libsqlite3-dev
     - libssl-dev
     - libxml2-dev
     - libxslt1-dev
     - libyaml-dev
+    - mysql-client
+    - mysql-server
     - nemo
     - nemo-dropbox
     - nemo-fileroller
     - nemo-seahorse
     - nemo-share
+    - postgresql-9.5
     - python-gpgme
     - python-nemo
     - python-software-properties
@@ -51,43 +56,3 @@
     - xclip
     - zlib1g-dev
     - zsh
-
-- name: Apps | Remove packages which are installed by default
-  apt: pkg={{ item }} state=absent purge=yes
-  with_items:
-    - ace-of-penguins
-    - aisleriot
-    - brasero
-    - cheese
-    - empathy
-    - five-or-more
-    - four-in-a-row
-    - gbrainy
-    - gedit
-    - gnome-chess
-    - gnome-games-common
-    - gnome-klotski
-    - gnome-mahjongg
-    - gnome-mines
-    - gnome-nibbles
-    - gnome-robots
-    - gnome-screenshot
-    - gnome-sudoku
-    - gnome-tetravex
-    - gnomine
-    - hamster-applet
-    - hamster-indicator
-    - iagno
-    - lightsoff
-    - mahjongg
-    - quadrapassel
-    - sound-juicer
-    - swell-foop
-    - tali
-    - thunderbird
-    - totem
-    - totem-plugins
-    - unity-webapps-common
-    - webbrowser-app
-    - xboard
-    - xterm

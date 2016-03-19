@@ -20,6 +20,10 @@
     dest="{{ home_dir }}/.rbenv/plugins/rbenv-gem-rehash"
     update=no
 
+- name: Ruby - check if installed
+  stat: path=/home/richard/.rbenv/shims/ruby
+  register: ruby
+
 - name: Ruby setup
   become_user: "{{ user }}"
   command: "{{ item }}"
@@ -31,3 +35,4 @@
     - gem install bundler
     - gem install rails
     - rbenv rehash
+  when: not ruby.stat.exists
