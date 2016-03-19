@@ -1,4 +1,5 @@
 ---
 - include: profile.yml
+- include: apps.yml
 - include: hub.yml
 - include: ruby.yml
