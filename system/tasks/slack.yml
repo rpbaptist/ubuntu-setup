@@ -1,0 +1,15 @@
+---
+- name: slack - exists
+  stat: path=/usr/bin/slack
+  register: slack
+
+- name: Slack - download
+  get_url:
+    url=https://slack-ssb-updates.global.ssl.fastly.net/linux_releases/slack-desktop-2.0.1-amd64.deb
+    dest="{{ download_path }}/slack.deb"
+  when: not slack.stat.exists
+
+- name: Slack - install
+  apt: deb="{{ download_path }}/slack.deb"
+  when: not slack.stat.exists
+

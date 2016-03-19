@@ -19,8 +19,9 @@
     update=no
     accept_hostkey=yes
 
-- name: Update font cache
-  command: fc-cache -f -v
+# Find a better way to install fonts
+# - name: Update font cache
+#   command: fc-cache -f -v
 
 - name: Touchegg - configuration
   file:
