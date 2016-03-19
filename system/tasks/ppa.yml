@@ -6,6 +6,14 @@
     - https://toolbelt.heroku.com/apt/release.key
     - https://www.postgresql.org/media/keys/ACCC4CF8.asc
 
+- name: Spotify - check if exists
+  stat: path=/usr/bin/spotify
+  register: spotify
+
+- name: Spotify - add key
+  command: apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys BBEBDCB318AD50EC6865090613B00F1FD2C19886
+  when: not spotify.stat.exists
+
 - stat: path=/etc/apt/sources.list.d/google-chrome.list
   register: chrome
 
@@ -30,6 +38,7 @@
     - deb http://apt.postgresql.org/pub/repos/apt/ wily-pgdg main 9.5
     - deb http://archive.canonical.com/ wily partner
     - deb http://toolbelt.heroku.com/ubuntu ./
+    - deb http://repository.spotify.com stable non-free
     - ppa:ansible/ansible
     - ppa:costales/folder-color
     - ppa:git-core/ppa
