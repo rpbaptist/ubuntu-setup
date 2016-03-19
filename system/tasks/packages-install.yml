@@ -27,6 +27,7 @@
     - libqt4-dev
     - libreadline-dev
     - libmysqlclient-dev
+    - libpq-dev
     - libsqlite3-dev
     - libssl-dev
     - libxml2-dev
@@ -42,6 +43,7 @@
     - nodejs
     - oracle-java8-installer
     - postgresql-9.5
+    - postgresql-contrib
     - python-gpgme
     - python-nemo
     - python-software-properties
