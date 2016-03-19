@@ -21,3 +21,9 @@
 
 - name: Update font cache
   command: fc-cache -f -v
+
+- name: Touchegg - configuration
+  file:
+    src="{{ home_dir}}/.ansible/richard/files/touchegg.conf"
+    dest="{{ home_dir}}/.config/touchegg/touchegg.conf"
+    state=file
