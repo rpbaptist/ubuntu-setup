@@ -12,6 +12,7 @@
     - cinnamon-translations
     - cmake
     - cpphs
+    - dconf-tools
     - dropbox
     - folder-color-nemo
     - gconf-editor
@@ -21,7 +22,6 @@
     - git
     - gnome-icon-theme-full
     - google-chrome-stable
-    - gpaste
     - guvcview
     - haskell-doc
     - heroku-toolbelt
@@ -51,6 +51,7 @@
     - nemo-share
     - nodejs
     - oracle-java8-installer
+    - parcellite
     - postgresql-9.5
     - postgresql-contrib
     - python-gpgme
@@ -64,8 +65,10 @@
     - sqlite3
     - stack
     - tlp
+    - tlp-rdw
     - touchegg
     - uvcdynctrl
+    - ufw
     - vivacious-colors
     - vivacious-folder-colors-addon
     - vlc

@@ -2,10 +2,10 @@
 - name: PPA keys - Add keys for repositories
   apt_key: url={{ item }} state=present
   with_items:
+    - https://deb.nodesource.com/gpgkey/nodesource.gpg.key
     - https://dl-ssl.google.com/linux/linux_signing_key.pub
     - https://toolbelt.heroku.com/apt/release.key
     - https://www.postgresql.org/media/keys/ACCC4CF8.asc
-    - https://deb.nodesource.com/gpgkey/nodesource.gpg.key
 
 - name: PPA keys - add with id
   apt_key: keyserver={{ item.keyserver }} id={{ item.id }} state=present
