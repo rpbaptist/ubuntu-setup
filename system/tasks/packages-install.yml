@@ -5,6 +5,8 @@
 - name: Apps | Install with apt-get
   apt: pkg={{ item }} state=latest
   with_items:
+    - acpi
+    - acpi-support
     - ansible
     - build-essential
     - cabal-install-1.22

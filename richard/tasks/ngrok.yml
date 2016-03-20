@@ -1,0 +1,13 @@
+---
+- name: ngrok - exists
+  stat: path="{{ home_dir }}/.local/bin/ngrok"
+  register: ngrok
+
+- name: ngrok - download
+  become_user: "{{ user }}"g
+  unarchive:
+    src=https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
+    dest="{{ home_dir }}/.local/bin/"
+    copy=no
+    mode=0755
+  when: not ngrok.stat.exists
