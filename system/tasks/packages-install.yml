@@ -5,79 +5,102 @@
 - name: Apps | Install with apt-get
   apt: pkg={{ item }} state=latest
   with_items:
+    # power management
     - acpi
     - acpi-support
+    - tlp
+    - tlp-rdw
+
+    # android
     - android-tools-adb
     - android-tools-fastboot
-    - ansible
-    - build-essential
-    - cabal-install-1.22
+
+    # input
+    - redshift
+    - redshift-gtk
+    - touchegg
+    - zsh
+
+    # cinnamon / gnome
     - cinnamon
     - cinnamon-translations
-    - cmake
-    - copyq
-    - cpphs
     - dconf-tools
-    - dropbox
     - folder-color-nemo
     - gconf-editor
-    - ghc
-    - ghc-doc
-    - ghc-prof
-    - git
     - gnome-icon-theme-full
     - gnome-tweak-tool
-    - google-chrome-stable
-    - guvcview
-    - haskell-doc
-    - heroku-toolbelt
-    - httpie
-    - hugs
-    - leafpad
-    - libcurl4-openssl-dev
-    - libffi-dev
-    - llvm-3.4
-    - ncurses-doc
-    - libgcrypt11-dev
-    - libmysqlclient-dev
-    - libpq-dev
-    - libqt4-dev
-    - libreadline-dev
-    - libsqlite3-dev
-    - libssl-dev
-    - libxml2-dev
-    - libxslt1-dev
-    - libyaml-dev
-    - mysql-client
-    - mysql-server
     - nemo
     - nemo-dropbox
     - nemo-fileroller
     - nemo-seahorse
     - nemo-share
-    - nodejs
-    - oracle-java8-installer
-    - parcellite
-    - postgresql-9.5
-    - postgresql-contrib
-    - python-gpgme
     - python-nemo
-    - python-software-properties
-    - redshift
-    - redshift-gtk
-    - shutter
-    - skype
-    - spotify-client
-    - sqlite3
-    - stack
-    - tlp
-    - tlp-rdw
-    - touchegg
-    - uvcdynctrl
-    - ufw
     - vivacious-colors
     - vivacious-folder-colors-addon
-    - vlc
+
+    # internet
+    - dropbox
+    - google-chrome-stable
+    - skype
+
+    # haskell
+    - ghc
+    - ghc-doc
+    - ghc-prof
+    - haskell-doc
+    - heroku-toolbelt
+    - hugs
+    - stack
+
+    # dev environment
+    - ansible
+    - elasticsearch
+    - nodejs
+    - oracle-java8-installer
+
+    # tools
+    - copyq
+    - git
+    - httpie
+    - leafpad
+    - p7zip-full
+    - p7zip-rar
+    - shutter
+    - ufw
     - xclip
+
+    # media
+    - guvcview
+    - spotify-client
+    - vlc
+
+    # databases
+    - libsqlite3-dev
+    - mysql-client
+    - mysql-server
+    - postgresql-9.5
+    - postgresql-contrib
+    - sqlite3
+
+    # dependencies
+    - build-essential
+    - cabal-install-1.22
+    - cmake
+    - cpphs
+    - libcurl4-openssl-dev
+    - libffi-dev
+    - libgcrypt11-dev
+    - libmysqlclient-dev
+    - libpq-dev
+    - libqt4-dev
+    - libreadline-dev
+    - libssl-dev
+    - libxml2-dev
+    - libxslt1-dev
+    - libyaml-dev
+    - llvm-3.4
+    - ncurses-doc
+    - python-gpgme
+    - python-software-properties
+    - uvcdynctrl
     - zlib1g-dev
-    - zsh

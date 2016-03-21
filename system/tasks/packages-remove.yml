@@ -42,4 +42,4 @@
     - xterm
 
 - name: Apps | autoremove unneeded dependencies
-  command: apt-get autoremove
+  command: apt-get -y autoremove
