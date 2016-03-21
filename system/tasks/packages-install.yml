@@ -29,6 +29,8 @@
     - gconf-editor
     - gnome-icon-theme-full
     - gnome-tweak-tool
+    - lightdm-gtk-greeter
+    - lightdm-gtk-greeter-settings
     - nemo
     - nemo-dropbox
     - nemo-fileroller

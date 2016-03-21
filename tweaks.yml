@@ -1,0 +1,12 @@
+---
+- name: greeter - config
+  file:
+    src="{{ home_dir}}/.ansible/system/files/lightdm.conf"
+    dest=/etc/lightdm/lightdm.conf
+    state=file
+
+- name: greeter-theme - config
+  file:
+    src="{{ home_dir}}/.ansible/system/files/lightdm-gtk-greeter.conf"
+    dest=/etc/lightdm/lightdm-gtk-greeter.conf
+    state=file

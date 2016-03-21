@@ -5,3 +5,4 @@
 - include: keepassx.yml
 - include: sublime.yml
 - include: slack.yml
+- include: tweaks.yml
