@@ -4,7 +4,7 @@
   register: ngrok
 
 - name: ngrok - download
-  become_user: "{{ user }}"g
+  become_user: "{{ user }}"
   unarchive:
     src=https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
     dest="{{ home_dir }}/.local/bin/"

@@ -28,6 +28,7 @@
     - iagno
     - lightsoff
     - mahjongg
+    - pidgin
     - quadrapassel
     - sound-juicer
     - swell-foop
@@ -39,3 +40,6 @@
     - webbrowser-app
     - xboard
     - xterm
+
+- name: Apps | autoremove unneeded dependencies
+  command: apt-get autoremove

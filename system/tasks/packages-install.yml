@@ -15,6 +15,7 @@
     - cinnamon
     - cinnamon-translations
     - cmake
+    - copyq
     - cpphs
     - dconf-tools
     - dropbox
@@ -25,6 +26,7 @@
     - ghc-prof
     - git
     - gnome-icon-theme-full
+    - gnome-tweak-tool
     - google-chrome-stable
     - guvcview
     - haskell-doc
