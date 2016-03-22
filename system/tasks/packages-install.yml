@@ -73,6 +73,7 @@
 
     # media
     - guvcview
+    - pulseaudio-equalizer
     - spotify-client
     - vlc
 
