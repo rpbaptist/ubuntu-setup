@@ -3,7 +3,7 @@
   apt: update_cache=true
 
 - name: Apps | Install with apt-get
-  apt: pkg={{ item }} state=latest
+  apt: pkg={{ item }} state=present
   with_items:
     # power management
     - acpi
@@ -28,7 +28,6 @@
     - folder-color-nemo
     - gconf-editor
     - gnome-icon-theme-full
-    - gnome-tweak-tool
     - lightdm-gtk-greeter
     - lightdm-gtk-greeter-settings
     - nemo
