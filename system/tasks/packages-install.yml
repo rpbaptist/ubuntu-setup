@@ -57,6 +57,7 @@
     - ansible
     - elasticsearch
     - nodejs
+    - python-pip
     - oracle-java8-installer
 
     # tools
