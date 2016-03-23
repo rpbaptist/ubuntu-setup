@@ -5,6 +5,12 @@
     dest=/etc/lightdm/lightdm.conf
     state=file
 
+- name: greeter - background
+  file:
+    src="{{ home_dir}}/.ansible/system/files/login_background.jpg"
+    dest=/usr/share/backgrounds/login_background.jpg
+    state=file
+
 - name: greeter-theme - config
   file:
     src="{{ home_dir}}/.ansible/system/files/lightdm-gtk-greeter.conf"
