@@ -1,0 +1,14 @@
+---
+- name: Keybase - exists
+  stat: path=/usr/bin/keybase
+  register: keybase
+
+- name: Keybase - download
+  get_url:
+    url=https://dist.keybase.io/linux/deb/keybase-latest-amd64.deb
+    dest="{{ download_path }}/keybase-latest-amd64.deb"
+  when: not keybase.stat.exists
+
+- name: Keybase - install
+  apt: deb="{{ download_path }}/keybase-latest-amd64.deb"
+  when: not keybase.stat.exists
