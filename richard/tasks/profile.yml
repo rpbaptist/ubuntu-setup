@@ -1,3 +1,4 @@
+
 ---
 - name: Dotfiles - Copy dotfiles
   become_user: "{{ user }}"
@@ -24,7 +25,7 @@
 #   command: fc-cache -f -v
 
 - name: Touchegg - configuration
-  file:
+  become_user: "{{ user }}"
+  copy:
     src="{{ home_dir}}/.ansible/richard/files/touchegg.conf"
     dest="{{ home_dir}}/.config/touchegg/touchegg.conf"
-    state=file

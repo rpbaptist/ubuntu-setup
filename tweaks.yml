@@ -1,21 +1,18 @@
 ---
 - name: greeter - config
-  file:
+  copy:
     src="{{ home_dir}}/.ansible/system/files/lightdm.conf"
     dest=/etc/lightdm/lightdm.conf
-    state=file
 
 - name: greeter - background
-  file:
+  copy:
     src="{{ home_dir}}/.ansible/system/files/login_background.jpg"
     dest=/usr/share/backgrounds/login_background.jpg
-    state=file
 
 - name: greeter-theme - config
-  file:
+  copy:
     src="{{ home_dir}}/.ansible/system/files/lightdm-gtk-greeter.conf"
     dest=/etc/lightdm/lightdm-gtk-greeter.conf
-    state=file
 
 - name: Nemo - verify default
   command: "{{ item }}"
