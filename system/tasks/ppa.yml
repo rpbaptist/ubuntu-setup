@@ -35,7 +35,6 @@
     - ppa:git-core/ppa
     - ppa:hvr/ghc
     - ppa:linrunner/tlp
-    - ppa:moorkai/cinnamon
     - ppa:nilarimogard/webupd8
     - ppa:noobslab/icons
     - ppa:noobslab/indicators
@@ -43,4 +42,7 @@
     - ppa:numix/ppa
     - ppa:ravefinity-project/ppa
     - ppa:webupd8team/java
-    - ppa:gwendal-lebihan-dev/cinnamon-nightly
+    # Stable cinnamon - non official
+    - ppa:moorkai/cinnamon
+    # Unstable cinnamon - official
+    # - ppa:gwendal-lebihan-dev/cinnamon-nightly
