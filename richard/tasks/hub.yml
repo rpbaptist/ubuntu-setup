@@ -1,10 +1,14 @@
 ---
 - name: Hub - Create required directories
   become_user: "{{ user }}"
-  file: 'path="{{ item }}" state=directory mode=0775'
+  file:
+    path="{{ item }}"
+    state=directory
+    mode=0775
   with_items:
   - "{{ home_dir }}/.local/bin"
   - "{{ home_dir }}/.zsh/completions"
+  - "{{ home_dir }}/code/apps"
 
 - name: Hub - check existence
   stat: path="{{ home_dir }}/.local/bin/hub"
@@ -14,18 +18,27 @@
   become_user: "{{ user }}"
   unarchive:
     src=https://github.com/github/hub/releases/download/v2.2.3/hub-linux-amd64-2.2.3.tgz
-    dest="{{ home_dir }}/code/apps/hub-linux"
+    dest="{{ home_dir }}/code/apps"
     copy=no
   when: not hub.stat.exists
 
-- name: Hub - copy files
+- name: Hub - rename
   become_user: "{{ user }}"
-  copy: "{{ item }}"
-  with_items:
-    - src="{{ home_dir }}/code/apps/hub-linux/bin/hub"
-      dest="{{ home_dir }}/local/bin/hub"
-      mode=0755
-    - src="{{ home_dir }}/code/apps/hub-linux/etc/hub.zsh_completion"
-      dest="{{ home_dir }}/.zsh/completions/_hub"
-      mode=0775
+  command: mv {{ home_dir }}/code/apps/hub-linux-amd64-2.2.3 {{ home_dir }}/code/apps/hub
+  when: not hub.stat.exists
+
+- name: Hub - copy zsh completions
+  become_user: "{{ user }}"
+  copy:
+    src="{{ home_dir }}/code/apps/hub/etc/hub.zsh_completion"
+    dest="{{ home_dir }}/.zsh/completions/_hub"
+    mode=0775
+  when: not hub.stat.exists
+
+- name: Hub - copy binary
+  become_user: "{{ user }}"
+  copy:
+    src="{{ home_dir }}/code/apps/hub/bin/hub"
+    dest="{{ home_dir }}/.local/bin/hub"
+    mode=0755
   when: not hub.stat.exists

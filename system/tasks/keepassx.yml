@@ -3,18 +3,21 @@
   stat: path=/usr/local/bin/keepassx
   register: keepassx
 
+- name: KeepassX - Clone repo
+  become_user: "{{ user }}"
+  git:
+    repo=https://github.com/keepassx/keepassx.git
+    dest="{{ home_dir }}/code/apps/keepassx"
+    force=yes
+    version=2.0.2
+  when: not keepassx.stat.exists
+
 - name: KeepassX - make directory
+  become_user: "{{ user }}"
   file:
     path="{{ home_dir }}/code/apps/keepassx/build"
     state=directory
     mode=0775
-
-- name: KeepassX - Clone repo
-  git:
-    repo=https://github.com/keepassx/keepassx.git
-    dest="{{ home_dir }}/code/apps/keepassx"
-    version=2.0.2
-  when: not keepassx.stat.exists
 
 - name: KeepassX - build and install
   command: '"{{ item }}" chdir="{{ home_dir }}/code/apps/keepassx/build"'
