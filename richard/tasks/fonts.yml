@@ -5,3 +5,7 @@
     src="{{ ansible_dir }}/richard/files/fonts/"
     dest="{{ home_dir}}/.fonts/"
     dirs=yes
+
+- name: Fonts - update cache
+  become: no
+  command: fc-cache -f -v

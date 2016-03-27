@@ -30,3 +30,9 @@
   copy:
     src="{{ ansible_dir }}/richard/files/config/touchegg.conf"
     dest="{{ home_dir}}/.config/touchegg/touchegg.conf"
+
+- name: Redshift - configuration
+  become: no
+  copy:
+    src="{{ ansible_dir }}/richard/files/config/redshift.conf"
+    dest="{{ home_dir}}/.config/redshift.conf"

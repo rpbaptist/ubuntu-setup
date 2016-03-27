@@ -14,13 +14,14 @@
     src="{{ ansible_dir }}/system/files/lightdm-gtk-greeter.conf"
     dest=/etc/lightdm/lightdm-gtk-greeter.conf
 
-- name: Nemo - verify default
-  command: "{{ item }}"
-  with_items:
-    - xdg-mime query default inode/directory application/x-gnome-saved-search
-    - xdg-mime query default application/x-gnome-saved-search
-  register: nemo_default
+# - name: Nemo - verify default
+#   command: "{{ item }}"
+#   with_items:
+#     - xdg-mime query default inode/directory application/x-gnome-saved-search
+#     - xdg-mime query default application/x-gnome-saved-search
+#   register: nemo_default
 
-- name: Nemo - set default
-  command: xdg-mime default nemo.desktop inode/directory application/x-gnome-saved-search
-  when: not nemo_default
+# - name: Nemo - set default
+#   command: xdg-mime default nemo.desktop inode/directory application/x-gnome-saved-search
+#   when: not nemo_default
+
