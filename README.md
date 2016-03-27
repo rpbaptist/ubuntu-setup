@@ -17,4 +17,4 @@ Steps required:
 
 4. Run ansible:
 
-  `cd ~/.ansible && ansible-playbook main.yml`
+  `ansible-playbook ~/.ansible/main.yml`
