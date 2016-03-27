@@ -19,10 +19,6 @@
     update=no
     accept_hostkey=yes
 
-# Find a better way to install fonts
-# - name: Update font cache
-#   command: fc-cache -f -v
-
 - name: Touchegg - config path
   become_user: "{{ user }}"
   file:
