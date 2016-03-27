@@ -4,7 +4,7 @@
   register: sublime
 
 - name: Sublime - download
-  become_user: "{{ user }}"
+  become: no
   get_url:
     url=https://download.sublimetext.com/sublime-text_build-3103_amd64.deb
     dest="{{ download_dir }}/sublime_text.deb"
@@ -15,7 +15,7 @@
   when: not sublime.stat.exists
 
 - name: Sublime - config path
-  become_user: "{{ user }}"
+  become: no
   file:
     path="{{ home_dir }}/.config/sublime-text-3"
     state=directory
@@ -23,7 +23,7 @@
   when: not sublime.stat.exists
 
 - name: Sublime - symlinks to dropbox
-  become_user: "{{ user }}"
+  become: no
   file:
     src="{{ home_dir }}/Dropbox/Sublime/{{ item }}"
     dest="{{ home_dir }}/.config/sublime-text-3/{{ item }}"

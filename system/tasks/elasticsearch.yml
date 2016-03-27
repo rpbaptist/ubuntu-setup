@@ -16,7 +16,7 @@
     - logs
 
 - name: elasticsearch - local directory
-  become_user: "{{ user }}"
+  become: no
   file:
     path="{{ home_dir }}/.local/share/elasticsearch/{{ item }}"
     state=directory

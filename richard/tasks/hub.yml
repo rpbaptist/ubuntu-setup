@@ -1,6 +1,6 @@
 ---
 - name: Hub - Create required directories
-  become_user: "{{ user }}"
+  become: no
   file:
     path="{{ item }}"
     state=directory
@@ -15,7 +15,7 @@
   register: hub
 
 - name: Hub - unarchive
-  become_user: "{{ user }}"
+  become: no
   unarchive:
     src=https://github.com/github/hub/releases/download/v2.2.3/hub-linux-amd64-2.2.3.tgz
     dest="{{ home_dir }}/code/apps"
@@ -23,12 +23,12 @@
   when: not hub.stat.exists
 
 - name: Hub - rename
-  become_user: "{{ user }}"
+  become: no
   command: mv {{ home_dir }}/code/apps/hub-linux-amd64-2.2.3 {{ home_dir }}/code/apps/hub
   when: not hub.stat.exists
 
 - name: Hub - copy zsh completions
-  become_user: "{{ user }}"
+  become: no
   copy:
     src="{{ home_dir }}/code/apps/hub/etc/hub.zsh_completion"
     dest="{{ home_dir }}/.zsh/completions/_hub"
@@ -36,7 +36,7 @@
   when: not hub.stat.exists
 
 - name: Hub - copy binary
-  become_user: "{{ user }}"
+  become: no
   copy:
     src="{{ home_dir }}/code/apps/hub/bin/hub"
     dest="{{ home_dir }}/.local/bin/hub"

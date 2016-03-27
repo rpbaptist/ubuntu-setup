@@ -4,7 +4,7 @@
   register: leiningen
 
 - name: Leiningen - download
-  become_user: "{{ user }}"
+  become: no
   get_url:
     url=https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein
     dest="{{ home_dir }}/.local/bin"
@@ -12,6 +12,6 @@
   when: not leiningen.stat.exists
 
 - name: Leiningen - install
-  become_user: "{{ user }}"
+  become: no
   command: lein
   when: not leiningen.stat.exists

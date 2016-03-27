@@ -4,7 +4,7 @@
   register: nvm
 
 - name: NVM - download
-  become_user: "{{ user }}"
+  become: no
   get_url:
     url=https://raw.githubusercontent.com/creationix/nvm/v0.31.0/install.sh
     dest={{ download_dir }}/nvm-install.sh
@@ -12,12 +12,12 @@
   when: not nvm.stat.exists
 
 - name: NVM - install
-  become_user: "{{ user }}"
+  become: no
   command: "{{ download_dir }}/nvm-install.sh"
   when: not nvm.stat.exists
 
 - name: Node - install
-  become_user: "{{ user }}"
+  become: no
   command: "{{ item }}"
   with_items:
     - source {{ home_dir}}/.zshrc

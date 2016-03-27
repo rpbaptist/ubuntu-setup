@@ -4,7 +4,7 @@
   register: keepassx
 
 - name: KeepassX - Clone repo
-  become_user: "{{ user }}"
+  become: no
   git:
     repo=https://github.com/keepassx/keepassx.git
     dest="{{ home_dir }}/code/apps/keepassx"
@@ -13,7 +13,7 @@
   when: not keepassx.stat.exists
 
 - name: KeepassX - make directory
-  become_user: "{{ user }}"
+  become: no
   file:
     path="{{ home_dir }}/code/apps/keepassx/build"
     state=directory

@@ -1,6 +1,6 @@
 ---
 - name: Dotfiles - Copy dotfiles
-  become_user: "{{ user }}"
+  become: no
   git:
     repo=git@github.com:rpbaptist/dotfiles.git
     dest="{{ home_dir }}/.dotfiles"
@@ -12,7 +12,7 @@
 #   command: "{{ home_dir }}/.dotfiles/bin/makesymlinks.sh"
 
 - name: Oh My Zsh
-  become_user: "{{ user }}"
+  become: no
   git:
     repo=git@github.com:rpbaptist/oh-my-zsh.git
     dest="{{ home_dir }}/.oh-my-zsh"
@@ -20,13 +20,13 @@
     accept_hostkey=yes
 
 - name: Touchegg - config path
-  become_user: "{{ user }}"
+  become: no
   file:
     path="{{ home_dir}}/.config/touchegg"
     state=directory
 
 - name: Touchegg - configuration
-  become_user: "{{ user }}"
+  become: no
   copy:
     src="{{ ansible_dir }}/richard/files/config/touchegg.conf"
     dest="{{ home_dir}}/.config/touchegg/touchegg.conf"
