@@ -36,3 +36,9 @@
   copy:
     src="{{ ansible_dir }}/richard/files/config/redshift.conf"
     dest="{{ home_dir}}/.config/redshift.conf"
+
+- name: Theme - stylishdark
+  become: no
+  rsync:
+    src="{{ ansible_dir }}/richard/files/themes/stylish-dark"
+    dest="{{ home_dir}}/.themes/stylish-dark"
