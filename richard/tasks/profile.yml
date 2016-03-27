@@ -32,11 +32,5 @@
 - name: Touchegg - configuration
   become_user: "{{ user }}"
   copy:
-    src="{{ home_dir}}/.ansible/richard/files/config/touchegg.conf"
+    src="{{ ansible_dir }}/richard/files/config/touchegg.conf"
     dest="{{ home_dir}}/.config/touchegg/touchegg.conf"
-
-- name: Fonts
-  become_user: "{{ user }}"
-  copy:
-    src="{{ home_dir}}/.ansible/richard/files/config/touchegg.conf"
-    dest="{{ home_dir}}/.fonts/"
