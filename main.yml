@@ -11,4 +11,5 @@
     distro: wily
     user: richard
     home_dir: "/home/{{ user }}"
-    download_path: "{{ home_dir }}/Downloads"
+    ansible_dir: "{{ home_dir}}/.ansible"
+    download_dir: "{{ home_dir }}/Downloads"
