@@ -25,7 +25,6 @@
     - cinnamon
     - cinnamon-translations
     - dconf-tools
-    - folder-color-nemo
     - gconf-editor
     - gnome-icon-theme-full
     - lightdm-gtk-greeter
@@ -37,7 +36,6 @@
     - nemo-share
     - python-nemo
     - vivacious-colors
-    - vivacious-folder-colors-addon
 
     # internet
     - dropbox
@@ -55,6 +53,7 @@
 
     # dev environment
     - ansible
+    - ctags
     - elasticsearch
     - nodejs
     - python-pip
