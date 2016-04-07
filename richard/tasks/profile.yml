@@ -28,7 +28,7 @@
 - name: Touchegg - configuration
   become: no
   copy:
-    src="{{ ansible_dir }}/richard/files/config/touchegg.conf"
+    src="{{ ansible_dir }}/richard/files/config/touchegg.conf"a
     dest="{{ home_dir}}/.config/touchegg/touchegg.conf"
 
 - name: Redshift - configuration

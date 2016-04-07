@@ -1,6 +1,6 @@
 ---
 - name: Apps | Remove packages which are installed by default
-  apt: pkg={{ item }} state=absent purge=yes
+  apt: pkg={{ item }} state=absent
   with_items:
     - ace-of-penguins
     - aisleriot
@@ -42,6 +42,3 @@
     - webbrowser-app
     - xboard
     - xterm
-
-- name: Apps | autoremove unneeded dependencies
-  command: apt-get -y autoremove
