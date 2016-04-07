@@ -22,9 +22,10 @@
     - zsh
 
     # cinnamon / gnome
+    - blueberry
     - cinnamon
     - dconf-tools
-    - gconf-editor
+    - dconf-editor
     - gnome-icon-theme-full
     - lightdm-gtk-greeter
     - lightdm-gtk-greeter-settings
@@ -57,6 +58,7 @@
     - nodejs
     - python-pip
     # - oracle-java8-installer
+    - docker-compose
     - docker-engine
     # tools
     - copyq
