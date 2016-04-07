@@ -11,11 +11,25 @@
   apt_key: keyserver={{ item.keyserver }} id={{ item.id }} state=present
   with_items:
     # Haskell
-    - { keyserver: 'hkp://keyserver.ubuntu.com:80', id: '575159689BEFB442' }
+    - {
+      keyserver: 'hkp://keyserver.ubuntu.com:80',
+      id: '575159689BEFB442'
+    }
     # Spotify
-    - { keyserver: 'hkp://keyserver.ubuntu.com:80', id: 'BBEBDCB318AD50EC6865090613B00F1FD2C19886' }
+    - {
+      keyserver: 'hkp://keyserver.ubuntu.com:80',
+      id: 'BBEBDCB318AD50EC6865090613B00F1FD2C19886'
+    }
     # Google Chrome
-    - { keyserver: 'pgp.mit.edu', id: '5044912E' }
+    - {
+      keyserver: 'pgp.mit.edu',
+      id: '5044912E'
+    }
+    # Docker
+    - {
+      keyserver: 'hkp://p80.pool.sks-keyservers.net:80',
+      id: '58118E89F3A912897C070ADBF76221572C52609D'
+    }
 
 - name: PPA - Additional PPA's
   apt_repository: repo={{ item }} state=present
@@ -30,6 +44,7 @@
     - deb http://repository.spotify.com stable non-free
     - deb http://toolbelt.heroku.com/ubuntu ./
     - deb https://deb.nodesource.com/node_5.x {{ distro }} main
+    - deb https://apt.dockerproject.org/repo ubuntu-{{ distro }} main
     - ppa:ansible/ansible
     - ppa:costales/folder-color
     - ppa:git-core/ppa
