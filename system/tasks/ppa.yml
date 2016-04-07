@@ -58,6 +58,6 @@
     - ppa:ravefinity-project/ppa
     - ppa:webupd8team/java
     # Stable cinnamon - non official
-    - ppa:moorkai/cinnamon
+    # - ppa:moorkai/cinnamon
     # Unstable cinnamon - official
-    # - ppa:gwendal-lebihan-dev/cinnamon-nightly
+    - ppa:gwendal-lebihan-dev/cinnamon-nightly

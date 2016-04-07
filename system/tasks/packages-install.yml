@@ -23,7 +23,6 @@
 
     # cinnamon / gnome
     - cinnamon
-    - cinnamon-translations
     - dconf-tools
     - gconf-editor
     - gnome-icon-theme-full
