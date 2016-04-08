@@ -1,0 +1,12 @@
+---
+- name: Docker - exists
+  stat: path="{{ home_dir }}/.local/bin/docker-compose"
+  register: docker_compose
+
+- name: Docker - download
+  become: no
+  get_url:
+    url=https://github.com/docker/compose/releases/download/1.6.2/docker-compose-Linux-x86_64
+    dest="{{ home_dir }}/.local/bin/docker-compose"
+    mode=0755
+  when: not docker_compose.stat.exists

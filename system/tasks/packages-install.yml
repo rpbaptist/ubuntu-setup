@@ -58,7 +58,6 @@
     - nodejs
     - python-pip
     # - oracle-java8-installer
-    - docker-compose
     - docker-engine
     # tools
     - copyq

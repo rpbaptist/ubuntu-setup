@@ -6,3 +6,4 @@
 - include: node.yml
 - include: lein.yml
 - include: ngrok.yml
+- include: docker.yml
