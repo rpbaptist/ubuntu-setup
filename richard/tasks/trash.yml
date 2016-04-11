@@ -1,0 +1,12 @@
+---
+- name: Trash - exists
+  stat: path="{{ home_dir}}/.local/bin/trash"
+  register: trash_cli
+
+
+- name: Trash - install
+  become: no
+  command: easy_install --user trash-cli
+  when: not trash_cli.stat.exists
+
+

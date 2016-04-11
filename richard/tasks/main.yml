@@ -7,3 +7,4 @@
 - include: lein.yml
 - include: ngrok.yml
 - include: docker.yml
+- include: trash.yml
