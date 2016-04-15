@@ -60,6 +60,8 @@
     - python-pip
     # - oracle-java8-installer
     - docker-engine
+    - zeal
+
     # tools
     - copyq
     - font-manager
