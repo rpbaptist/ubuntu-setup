@@ -58,6 +58,7 @@
     - elasticsearch
     - nodejs
     - python-pip
+    - phantom-js
     # - oracle-java8-installer
     - docker-engine
     - zeal
