@@ -8,7 +8,7 @@
     - richard
 
   vars:
-    distro: wily
+    distro: xenial
     user: richard
     home_dir: "/home/{{ user }}"
     ansible_dir: "{{ home_dir}}/.ansible"
