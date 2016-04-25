@@ -2,7 +2,7 @@
 - name: Fonts - copy
   become: no
   synchronize:
-    src="{{ ansible_dir }}/richard/files/fonts/"
+    src="{{ ansible_dir }}/user/files/fonts/"
     dest="{{ home_dir}}/.fonts/"
     dirs=yes
 

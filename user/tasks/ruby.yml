@@ -3,32 +3,32 @@
   become: no
   git:
     repo=https://github.com/rbenv/rbenv.git
-    dest={{ home_dir }}/.rbenv
+    dest="{{ home_dir }}/.rbenv"
     update=no
 
 - name: ruby-build
   become: no
   git:
     repo=https://github.com/rbenv/ruby-build.git
-    dest={{ home_dir }}/.rbenv/plugins/ruby-build
+    dest="{{ home_dir }}/.rbenv/plugins/ruby-build"
     update=no
 
 - name: rbenv-gem-rehash
   become: no
   git:
     repo=https://github.com/rbenv/rbenv-gem-rehash.git
-    dest={{ home_dir }}/.rbenv/plugins/rbenv-gem-rehash
+    dest="{{ home_dir }}/.rbenv/plugins/rbenv-gem-rehash"
     update=no
 
 - name: rbenv-vars
   become: no
   git:
     repo=https://github.com/rbenv/rbenv-vars.git
-    dest={{ home_dir }}/.rbenv/plugins/rbenv-vars
+    dest="{{ home_dir }}/.rbenv/plugins/rbenv-vars"
     update=no
 
 - name: Ruby - check if installed
-  stat: path=/home/richard/.rbenv/shims/ruby
+  stat: path="{{ home_dir }}/.rbenv/shims/ruby"
   register: ruby
 
 - name: Ruby setup
