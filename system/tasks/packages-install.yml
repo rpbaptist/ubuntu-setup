@@ -63,6 +63,9 @@
     - docker-engine
     - zeal
 
+    # database
+    - libmysqlclient-dev
+
     # tools
     - copyq
     - font-manager
@@ -81,14 +84,6 @@
     - spotify-client
     - vlc
 
-    # databases
-    - libsqlite3-dev
-    - mysql-client
-    - mysql-server
-    - postgresql-9.5
-    - postgresql-contrib
-    - sqlite3
-
     # dependencies
     - build-essential
     - cabal-install-1.22
@@ -97,7 +92,6 @@
     - libcurl4-openssl-dev
     - libffi-dev
     - libgcrypt11-dev
-    - libmysqlclient-dev
     - libpq-dev
     - libqt4-dev
     - libreadline-dev
