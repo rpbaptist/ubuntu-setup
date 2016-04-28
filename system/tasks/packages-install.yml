@@ -98,7 +98,7 @@
     - libxml2-dev
     - libxslt1-dev
     - libyaml-dev
-    - llvm-3.4
+    - llvm
     - ncurses-doc
     - python-gpgme
     - python-software-properties
