@@ -42,6 +42,7 @@
     - google-chrome-stable
     - skype
     - syncthing
+    - syncthing-gtk
 
     # haskell
     - ghc
@@ -53,7 +54,6 @@
     - stack
 
     # dev environment
-    - ansible
     - ctags
     - nodejs
     - python-pip
@@ -70,9 +70,11 @@
     - font-manager
     - git
     - httpie
+    - keepassx
     - leafpad
     - p7zip-full
     - p7zip-rar
+    - python-pip
     - shutter
     - ufw
     - xclip

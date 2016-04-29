@@ -2,10 +2,9 @@
 - name: Dotfiles - Copy dotfiles
   become: no
   git:
-    repo=git@github.com:rpbaptist/dotfiles.git
+    repo=https://github.com/rpbaptist/dotfiles.git
     dest="{{ home_dir }}/.dotfiles"
-    update=yes
-    accept_hostkey=yes
+    update=no
 
 # Replace this script with ansible
 # - name: Dotfiles - makesymlinks
@@ -14,10 +13,9 @@
 - name: Oh My Zsh
   become: no
   git:
-    repo=git@github.com:rpbaptist/oh-my-zsh.git
+    repo=https://github.com/rpbaptist/oh-my-zsh.git
     dest="{{ home_dir }}/.oh-my-zsh"
     update=no
-    accept_hostkey=yes
 
 - name: Touchegg - config path
   become: no

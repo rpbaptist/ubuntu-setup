@@ -36,7 +36,7 @@
   apt_repository: repo={{ item }} state=present
   register: ppastable
   with_items:
-    - deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main
+#    - deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main
     - deb [arch=i386,amd64] http://linux.dropbox.com/ubuntu {{ distro }} main
     # - deb http://apt.postgresql.org/pub/repos/apt/ {{ distro }}-pgdg main 9.5
     - deb http://apt.syncthing.net/ syncthing release
@@ -47,7 +47,6 @@
     - deb http://toolbelt.heroku.com/ubuntu ./
     - deb https://apt.dockerproject.org/repo ubuntu-{{ distro }} main
     - deb https://deb.nodesource.com/node_5.x {{ distro }} main
-    - ppa:ansible/ansible
     - ppa:costales/folder-color
     - ppa:git-core/ppa
     - ppa:hvr/ghc
