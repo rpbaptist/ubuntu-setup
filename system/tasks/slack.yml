@@ -5,7 +5,7 @@
 
 - name: Slack - download
   get_url:
-    url=https://slack-ssb-updates.global.ssl.fastly.net/linux_releases/slack-desktop-2.0.1-amd64.deb
+    url=https://downloads.slack-edge.com/linux_releases/slack-desktop-2.0.5-amd64.deb
     dest="{{ download_dir }}/slack.deb"
   when: not slack.stat.exists
 
