@@ -43,7 +43,7 @@
     - deb http://archive.canonical.com/ {{ distro }} partner
     - deb http://archive.ubuntu.com/ubuntu {{ distro }} universe
     - deb http://download.fpcomplete.com/ubuntu {{ distro }} main
-    - deb http://repository.spotify.com stable non-free
+    - deb http://repository.spotify.com testing non-free
     - deb http://toolbelt.heroku.com/ubuntu ./
     - deb https://apt.dockerproject.org/repo ubuntu-{{ distro }} main
     - deb https://deb.nodesource.com/node_5.x {{ distro }} main
