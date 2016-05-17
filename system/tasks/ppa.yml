@@ -7,6 +7,7 @@
     - https://toolbelt.heroku.com/apt/release.key
     # - https://www.postgresql.org/media/keys/ACCC4CF8.asc
     - https://syncthing.net/release-key.txt
+    - https://d2t3ff60b2tol4.cloudfront.net/services@insynchq.com.gpg.key
 
 - name: PPA keys - add with id
   apt_key: keyserver={{ item.keyserver }} id={{ item.id }} state=present
@@ -39,6 +40,7 @@
 #    - deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main
     - deb [arch=i386,amd64] http://linux.dropbox.com/ubuntu {{ distro }} main
     # - deb http://apt.postgresql.org/pub/repos/apt/ {{ distro }}-pgdg main 9.5
+    - deb http://apt.insynchq.com/ubuntu xenial non-free contrib
     - deb http://apt.syncthing.net/ syncthing release
     - deb http://archive.canonical.com/ {{ distro }} partner
     - deb http://archive.ubuntu.com/ubuntu {{ distro }} universe
@@ -57,7 +59,7 @@
     - ppa:noobslab/themes
     - ppa:numix/ppa
     - ppa:ravefinity-project/ppa
-    - ppa:zeal-developers/ppa
+    # - ppa:zeal-developers/ppa
     # Stable cinnamon 3.0
     - ppa:embrosyn/cinnamon
     # Unstable cinnamon - official

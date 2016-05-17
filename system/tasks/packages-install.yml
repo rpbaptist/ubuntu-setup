@@ -40,6 +40,8 @@
     # internet
     - dropbox
     - google-chrome-stable
+    - insync
+    - insync-nemo
     - skype
     - syncthing
     - syncthing-gtk
@@ -59,7 +61,7 @@
     - python-pip
     - phantomjs
     - docker-engine
-    - zeal
+    # - zeal
 
     # database
     - mysql-client-5.6
