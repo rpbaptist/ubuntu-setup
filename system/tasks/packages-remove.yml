@@ -5,6 +5,8 @@
     - ace-of-penguins
     - aisleriot
     - brasero
+    - checkbox-converged
+    - checkbox-gui
     - cheese
     - empathy
     - five-or-more
@@ -12,6 +14,7 @@
     - gbrainy
     - gdm
     - gedit
+    - gnome-calendar
     - gnome-chess
     - gnome-games-common
     - gnome-klotski
@@ -32,6 +35,7 @@
     - nautilus
     - pidgin
     - quadrapassel
+    - rhythmbox
     - sound-juicer
     - swell-foop
     - tali
