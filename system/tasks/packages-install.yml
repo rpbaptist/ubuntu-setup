@@ -64,7 +64,8 @@
     # - zeal
 
     # database
-    - mysql-client-5.6
+    # Not in repo. Fuck it anyway.
+    # - mysql-client-5.6
     - libmysqlclient-dev
 
     # tools
@@ -76,6 +77,7 @@
     - leafpad
     - p7zip-full
     - p7zip-rar
+    - ppa-purge
     - python-pip
     - shutter
     - ufw
