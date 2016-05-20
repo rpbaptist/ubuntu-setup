@@ -81,6 +81,7 @@
     - python-pip
     - shutter
     - ufw
+    - wkhtmltopdf
     - xclip
 
     # media
