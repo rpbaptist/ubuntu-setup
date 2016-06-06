@@ -17,18 +17,6 @@
     dest="{{ home_dir }}/.oh-my-zsh"
     update=no
 
-- name: Touchegg - config path
-  become: no
-  file:
-    path="{{ home_dir}}/.config/touchegg"
-    state=directory
-
-- name: Touchegg - configuration
-  become: no
-  copy:
-    src="{{ ansible_dir }}/user/files/config/touchegg.conf"
-    dest="{{ home_dir}}/.config/touchegg/touchegg.conf"
-
 - name: Redshift - configuration
   become: no
   copy:
