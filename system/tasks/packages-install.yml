@@ -72,6 +72,7 @@
     - font-manager
     - git
     - httpie
+    - jq
     - keepassx
     - leafpad
     - p7zip-full
