@@ -19,6 +19,6 @@
 
 - name: Redshift - configuration
   become: no
-  copy:
+  template:
     src="{{ ansible_dir }}/user/files/config/redshift.conf"
     dest="{{ home_dir}}/.config/redshift.conf"

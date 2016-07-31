@@ -111,3 +111,9 @@
     - python-software-properties
     - uvcdynctrl
     - zlib1g-dev
+
+    # VPN
+    - network-manager
+    - network-manager-gnome
+    - network-manager-openvpm
+    - network-manager-openvpm-gnome
