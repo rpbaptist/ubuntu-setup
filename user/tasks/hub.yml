@@ -17,14 +17,14 @@
 - name: Hub - unarchive
   become: no
   unarchive:
-    src=https://github.com/github/hub/releases/download/v2.2.3/hub-linux-amd64-2.2.3.tgz
+    src=https://github.com/github/hub/releases/download/v2.2.5/hub-linux-amd64-2.2.5.tgz
     dest="{{ home_dir }}/code/apps"
     copy=no
   when: not hub.stat.exists
 
 - name: Hub - rename
   become: no
-  command: mv {{ home_dir }}/code/apps/hub-linux-amd64-2.2.3 {{ home_dir }}/code/apps/hub
+  command: mv {{ home_dir }}/code/apps/hub-linux-amd64-2.2.5 {{ home_dir }}/code/apps/hub
   when: not hub.stat.exists
 
 - name: Hub - copy zsh completions
