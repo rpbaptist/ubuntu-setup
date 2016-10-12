@@ -32,6 +32,11 @@
       keyserver: 'hkp://p80.pool.sks-keyservers.net:80',
       id: '58118E89F3A912897C070ADBF76221572C52609D'
     }
+    # Yarn
+    - {
+      keyserver: 'pgp.mit.edu:80',
+      id: 'D101F7899D41F3C3'
+    }
 
 - name: PPA - Additional PPA's
   apt_repository: repo={{ item }} state=present
@@ -64,3 +69,4 @@
     - ppa:embrosyn/cinnamon
     # Unstable cinnamon - official
     # - ppa:gwendal-lebihan-dev/cinnamon-nightly
+    - deb http://dl.yarnpkg.com/debian/ stable main

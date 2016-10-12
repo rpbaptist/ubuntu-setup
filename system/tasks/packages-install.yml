@@ -61,6 +61,7 @@
     - phantomjs
     - docker-engine
     # - zeal
+    - yarn
 
     # database
     # Not in repo. Fuck it anyway.
