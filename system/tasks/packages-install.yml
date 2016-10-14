@@ -116,5 +116,5 @@
     # VPN
     - network-manager
     - network-manager-gnome
-    - network-manager-openvpm
-    - network-manager-openvpm-gnome
+    # - network-manager-openvpm
+    # - network-manager-openvpm-gnome

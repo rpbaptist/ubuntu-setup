@@ -5,7 +5,7 @@
     dest=/etc/lightdm/lightdm.conf
 
 - name: greeter - background
-  template:
+  copy:
     src="{{ ansible_dir }}/system/files/login_background.jpg"
     dest=/usr/share/backgrounds/login_background.jpg
 
