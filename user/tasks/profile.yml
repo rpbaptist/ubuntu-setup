@@ -22,3 +22,9 @@
   template:
     src="{{ ansible_dir }}/user/files/config/redshift.conf"
     dest="{{ home_dir}}/.config/redshift.conf"
+
+- name: Terminix - scheme
+  become: no
+  template:
+    src="{{ ansible_dir }}/user/files/terminix.json"
+    dest="{{ home_dir}}/.config/terminix/schemes/richard.json"
