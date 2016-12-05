@@ -7,6 +7,7 @@
     - https://toolbelt.heroku.com/apt/release.key
     - https://syncthing.net/release-key.txt
     - https://d2t3ff60b2tol4.cloudfront.net/services@insynchq.com.gpg.key
+    - https://dl.yarnpkg.com/debian/pubkey.gpg
 
 - name: PPA keys - add with id
   apt_key: keyserver={{ item.keyserver }} id={{ item.id }} state=present
@@ -31,11 +32,6 @@
       keyserver: 'hkp://keyserver.ubuntu.com:80',
       id: '0xF1656F24C74CD1D8'
     }
-    # Yarn
-    # - {
-    #   keyserver: 'pgp.mit.edu',
-    #   id: 'D101F7899D41F3C3'
-    # }
 
 - name: PPA - Additional PPA's
   apt_repository: repo={{ item }} state=present
