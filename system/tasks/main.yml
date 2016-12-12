@@ -6,5 +6,6 @@
 - include: slack.yml
 - include: keybase.yml
 - include: touchpad.yml
+- include: libinput-gestures.yml
 - include: hosts.yml
 - include: tweaks.yml

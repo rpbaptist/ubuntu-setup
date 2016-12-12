@@ -1,0 +1,19 @@
+---
+- name: libinput gestures - download
+  become: no
+  git:
+    repo=http://github.com/bulletmark/libinput-gestures.git
+    dest="{{ home_dir }}/code/apps/libinput-gestures"
+    update=no
+  notify: libinput-gestures - install
+
+- name: libinput-gestures - install
+  command:
+    chdir="{{ home_dir }}/code/apps/libinput-gestures/"
+    make install
+
+- name: Libinput gestures - configuration
+  become: no
+  template:
+    src="{{ ansible_dir }}/user/files/config/libinput-gestures.conf"
+    dest="{{ home_dir}}/.config/libinput-gestures.conf"
