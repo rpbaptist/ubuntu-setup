@@ -15,5 +15,5 @@
 - name: Terminix - scheme
   become: no
   template:
-    src="{{ ansible_dir }}/user/files/terminix.json"
+    src="{{ ansible_dir }}/user/files/themes/terminix.json"
     dest="{{ home_dir}}/.config/terminix/schemes/richard.json"
