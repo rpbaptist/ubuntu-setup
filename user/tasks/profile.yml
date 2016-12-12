@@ -12,6 +12,19 @@
     src="{{ ansible_dir }}/user/files/config/redshift.conf"
     dest="{{ home_dir}}/.config/redshift.conf"
 
+- name: libinput gestures
+  become: no
+  git:
+    repo=http://github.com/bulletmark/libinput-gestures.git
+    dest="{{ home_dir }}/code/apps/libinput-gestures"
+    update=no
+
+- name: Libinput gestures - configuration
+  become: no
+  template:
+    src="{{ ansible_dir }}/user/files/config/libinput-gestures.conf"
+    dest="{{ home_dir}}/.config/libinput-gestures.conf"
+
 - name: Terminix - scheme
   become: no
   template:

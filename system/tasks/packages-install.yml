@@ -71,6 +71,7 @@
     - jq
     - keepassx
     - leafpad
+    - libinput-tools
     - p7zip-full
     - p7zip-rar
     - ppa-purge
@@ -106,6 +107,8 @@
     - python-gpgme
     - python-software-properties
     - uvcdynctrl
+    - wmctrl
+    - xdotool
     - zlib1g-dev
 
     # VPN
