@@ -6,4 +6,5 @@
 - include: slack.yml
 - include: keybase.yml
 - include: touchpad.yml
+- include: hosts.yml
 - include: tweaks.yml
