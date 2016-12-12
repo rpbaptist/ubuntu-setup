@@ -1,0 +1,18 @@
+---
+- name: dotfiles
+  become: no
+  template:
+    src="{{ ansible_dir }}/user/files/dotfiles/{{ item }}"
+    dest="{{ home_dir}}/.{{ item }}"
+  with_items:
+    - dircolors
+    - gemrc
+    - ghci
+    - gitconfig
+    - gitignore
+    - irbrc
+    - railsrc
+    - rspec
+    - sqliterc
+    - zshenv
+    - zshrc

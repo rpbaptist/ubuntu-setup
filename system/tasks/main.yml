@@ -1,6 +1,6 @@
 ---
 - include: ppa.yml
-- include: packages-remove.yml
+# - include: packages-remove.yml
 - include: packages-install.yml
 - include: sublime.yml
 - include: slack.yml

@@ -1,0 +1,5 @@
+.rbenv-vars
+.tags
+.tags-tmp
+.tags_lock/*
+.poms_client.rb
