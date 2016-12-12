@@ -1,0 +1,12 @@
+---
+- name: dotfiles
+  become: no
+  template:
+    src="{{ ansible_dir }}/user/files/autostart/{{ item }}"
+    dest="{{ home_dir}}/.config/autostart/{{ item }}"
+  with_items:
+    - copyq.desktop
+    - libinput-gestures.desktop
+    - redshift-gtk.desktop
+    - shutter.desktop
+    - syncthing-gtk.desktop
