@@ -11,6 +11,11 @@
     - tlp
     - tlp-rdw
 
+    # desktop
+    - lightdm
+    - lightdm-gtk-greeter
+    - lightdm-gtk-greeter-settings
+
     # android
     - android-tools-adb
     - android-tools-fastboot
@@ -26,8 +31,6 @@
     - dconf-tools
     - dconf-editor
     - gnome-icon-theme-full
-    - lightdm-gtk-greeter
-    - lightdm-gtk-greeter-settings
     - nemo
     - nemo-dropbox
     - nemo-fileroller
