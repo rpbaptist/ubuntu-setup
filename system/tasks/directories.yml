@@ -1,0 +1,6 @@
+---
+- name: Create Downloads directory
+  become: no
+  file:
+    path="{{ home_dir }}/Downloads"
+    state=directory
