@@ -10,6 +10,7 @@
     - Dropbox/Sublime/Installed Packages
     - .config/terminix/schemes
     - .config/autostart
+    - .zshrc
 
 - name: Create system directories
   file:
