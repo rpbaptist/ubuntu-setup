@@ -11,5 +11,8 @@
 
 - name: Create system directories
   file:
-    path=/etc/X11/xorg.conf.d
+    path="{{ item }}"
     state=directory
+  with_items:
+    - /etc/X11/xorg.conf.d
+    - /usr/share/backgrounds
