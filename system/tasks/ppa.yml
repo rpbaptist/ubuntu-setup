@@ -65,6 +65,7 @@
     - ppa:noobslab/themes
     - ppa:numix/ppa
     - ppa:ravefinity-project/ppa
+    - ppa:webupd8team/terminix
     # Zeal PPA throws an error for some reason
     # - ppa:zeal-developers/ppa
     # Stable cinnamon 3.0
