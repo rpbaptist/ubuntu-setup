@@ -9,6 +9,7 @@
     - Dropbox/Sublime/Packages
     - Dropbox/Sublime/Installed Packages
     - .config/terminix/schemes
+    - .config/autostart
 
 - name: Create system directories
   file:
