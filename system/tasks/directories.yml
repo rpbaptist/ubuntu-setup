@@ -1,6 +1,10 @@
 ---
-- name: Create Downloads directory
+- name: Create directories in home
   become: no
   file:
-    path="{{ home_dir }}/Downloads"
+    path="{{ home_dir }}/{{ item }}"
     state=directory
+  with_items:
+    - Downloads
+    - Dropbox/Sublime/Packages
+    - Dropbox/Sublime/Installed Packages
