@@ -1,18 +1,22 @@
 ---
+- name: libinput-gestures - exists
+  stat: path=/usr/bin/libinput-gestures
+  register: libinput-gestures
+
 - name: libinput gestures - download
   become: no
   git:
     repo=http://github.com/bulletmark/libinput-gestures.git
     dest="{{ home_dir }}/code/apps/libinput-gestures"
     update=no
-  notify: libinput-gestures - install
 
 - name: libinput-gestures - install
   command:
     chdir="{{ home_dir }}/code/apps/libinput-gestures/"
     make install
+  when: not libinput-gestures.stat.exists
 
-- name: Libinput gestures - configuration
+- name: libinput gestures - configuration
   become: no
   template:
     src="{{ ansible_dir }}/user/files/config/libinput-gestures.conf"

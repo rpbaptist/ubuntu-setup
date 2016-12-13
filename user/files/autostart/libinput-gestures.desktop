@@ -2,6 +2,6 @@
 Type=Application
 Terminal=false
 Name=Libinput Gestures
-Exec=/home/richard/.local/bin/libinput-gestures
+Exec=/usr/bin/libinput-gestures
 Comment=Background application to intercept and action libinput gestures from touchpad.
 Categories=GNOME;GTK;System;
