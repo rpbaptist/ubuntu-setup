@@ -37,7 +37,7 @@
   apt_repository: repo={{ item }} state=present
   register: ppastable
   with_items:
-#    - deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main
+    - deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main
     - deb [arch=i386,amd64] http://linux.dropbox.com/ubuntu {{ distro }} main
     - deb http://apt.insynchq.com/ubuntu xenial non-free contrib
     - deb http://apt.syncthing.net/ syncthing release
