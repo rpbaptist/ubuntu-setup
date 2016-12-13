@@ -1,0 +1,364 @@
+[onboard]
+use-system-defaults=false
+theme='Nightshade'
+system-theme-associations={'LowContrast': 'LowContrast', 'HighContrast': 'HighContrast', 'Default': '', 'HighContrastInverse': 'HighContrastInverse'}
+key-label-overrides=['RWIN::super', 'LWIN::super']
+xembed-onboard=true
+layout='Compact'
+schema-version='2.2'
+key-label-font='Ubuntu'
+
+[onboard/window]
+force-to-top=true
+
+[cinnamon]
+desktop-effects-unmaximize-transition='easeNone'
+desktop-effects-on-dialogs=true
+desktop-effects-maximize-transition='easeNone'
+command-history=['network', 'leafpad', 'rr', 'pomodoneapp', 'PomoDoneApp', 'qownnotes', 'QOwnNotes', 'r']
+desktop-effects-close-effect='scale'
+desktop-effects-style='cinnamon'
+desktop-effects-unmaximize-time=80
+enabled-desklets=@as []
+desktop-effects-map-time=150
+desktop-effects-minimize-effect='traditional'
+workspace-osd-duration=400
+desktop-effects=true
+panels-height=['1:25']
+next-applet-id=26
+panel-launchers=['DEPRECATED']
+desktop-effects-maximize-time=100
+enable-indicators=false
+desktop-effects-unmaximize-effect='scale'
+panels-enabled=['1:0:top']
+desktop-effects-tile-transition='easeInCirc'
+overview-corner=['expo:false:false', 'scale:false:false', 'scale:false:false', 'desktop:false:false']
+panels-resizable=['1:false']
+desktop-effects-maximize-effect='scale'
+desktop-effects-on-menus=true
+enabled-applets=['panel1:left:2:window-list@cinnamon.org:3', 'panel1:left:0:menu@cinnamon.org:25', 'panel1:right:0:notifications@cinnamon.org:4', 'panel1:right:2:removable-drives@cinnamon.org:6', 'panel1:right:3:pomodoro@gregfreeman.org:24', 'panel1:right:4:keyboard@cinnamon.org:7', 'panel1:right:5:inhibit@cinnamon.org:22', 'panel1:right:6:systray@cinnamon.org:12', 'panel1:right:7:sound@cinnamon.org:10', 'panel1:right:8:network@cinnamon.org:9', 'panel1:right:9:power@cinnamon.org:11', 'panel1:right:10:calendar@cinnamon.org:13']
+desktop-effects-minimize-time=200
+desktop-effects-tile-effect='scale'
+panel-edit-mode=false
+workspace-osd-x=50
+workspace-osd-y=50
+desktop-effects-close-time=150
+next-desklet-id=1
+favorite-apps=['cinnamon-settings.desktop', 'nautilus.desktop', 'sublime_text.desktop', 'google-chrome.desktop', 'spotify.desktop', 'slack.desktop']
+desktop-effects-tile-time=80
+panels-autohide=['1:false']
+
+[cinnamon/settings-daemon/plugins/power]
+button-power='suspend'
+sleep-inactive-ac-timeout=3600
+idle-dim-time=90
+sleep-inactive-battery-timeout=900
+lock-on-suspend=true
+lid-close-ac-action='nothing'
+lid-close-battery-action='suspend'
+idle-brightness=30
+sleep-display-ac=900
+sleep-display-battery=300
+
+[cinnamon/settings-daemon/plugins/xsettings]
+antialiasing='rgba'
+buttons-have-icons=false
+menus-have-icons=true
+hinting='slight'
+
+[cinnamon/settings-daemon/peripherals/touchpad]
+natural-scroll=true
+scroll-method='two-finger-scrolling'
+motion-acceleration=5.7065868263473059
+horiz-scroll-enabled=true
+two-finger-click=3
+disable-while-typing=true
+horizontal-two-finger-scrolling=true
+three-finger-click=0
+motion-threshold=1
+
+[cinnamon/settings-daemon/peripherals/keyboard]
+repeat-interval=uint32 24
+delay=uint32 226
+numlock-state='on'
+
+[cinnamon/settings-daemon/peripherals/mouse]
+drag-threshold=8
+motion-threshold=2
+motion-acceleration=5.1676646706586826
+double-click=400
+locate-pointer=false
+
+[cinnamon/muffin]
+snap-modifier='Control'
+
+[cinnamon/desktop/interface]
+cursor-size=28
+font-name='Open Sans 9'
+scaling-factor=uint32 0
+toolkit-accessibility=false
+cursor-theme='DMZ-White'
+cursor-blink-time=1200
+icon-theme='Vivacious-Dark-Blue'
+gtk-theme='StylishDark-fix'
+
+[cinnamon/desktop/keybindings/custom-keybindings/custom0]
+binding=['Print']
+command='shutter -f'
+name='Shutter Screenshot'
+
+[cinnamon/desktop/keybindings]
+looking-glass-keybinding=['<Alt><Super>l']
+custom-list=['custom0']
+
+[cinnamon/desktop/keybindings/media-keys]
+next=['XF86AudioNext', 'Launch9']
+screenshot=@as []
+logout=@as []
+calculator=['Calculator']
+shutdown=['XF86PowerOff']
+www=['XF86WWW', 'Favorites']
+search=['XF86Search', 'Search']
+home=['<Super>e', 'XF86Explorer', 'HomePage']
+previous=['XF86AudioPrev', 'Launch8']
+
+[cinnamon/desktop/keybindings/wm]
+maximize=@as []
+toggle-maximized=['<Super>m']
+unmaximize=@as []
+move-to-workspace-up=['<Shift><Alt><Super>Up']
+move-to-workspace-1=['<Shift><Alt><Super>exclam', '<Shift><Alt><Super>KP_End']
+move-to-workspace-2=['<Shift><Alt><Super>at', '<Shift><Alt><Super>KP_Down']
+move-to-workspace-3=['<Shift><Alt><Super>numbersign', '<Shift><Alt><Super>KP_Next']
+move-to-workspace-4=['<Shift><Alt><Super>dollar', '<Shift><Alt><Super>KP_Left']
+switch-to-workspace-2=['<Alt><Super>2', '<Alt><Super>KP_2']
+move-to-workspace-right=['<Shift><Alt><Super>Right']
+switch-to-workspace-1=['<Alt><Super>1', '<Alt><Super>KP_1']
+switch-to-workspace-down=['<Alt><Super>Down']
+switch-to-workspace-3=['<Alt><Super>3', '<Alt><Super>KP_3']
+switch-to-workspace-4=['<Alt><Super>4', '<Alt><Super>KP_4']
+switch-to-workspace-left=['<Alt><Super>Left']
+switch-to-workspace-right=['<Alt><Super>Right']
+move-to-center=['<Super>c']
+move-to-side-e=['<Shift><Super>Right']
+switch-group=['<Alt>grave']
+move-to-workspace-left=['<Shift><Alt><Super>Left']
+move-to-workspace-down=['<Shift><Alt><Super>Down']
+toggle-on-all-workspaces=['<Alt><Super>w']
+switch-to-workspace-up=['<Alt><Super>Up']
+
+[cinnamon/desktop/media-handling]
+autorun-x-content-start-app=['x-content/unix-software', 'x-content/ebook-reader', 'x-content/bootable-media', 'x-content/image-dcf']
+autorun-never=false
+autorun-x-content-ignore=@as []
+autorun-x-content-open-folder=['x-content/bootable-media', 'x-content/image-dcf']
+
+[cinnamon/desktop/screensaver]
+font-date='Roboto 24'
+use-custom-format=false
+font-message='Roboto Medium 14'
+default-message='Richard Baptist - 06 36 422 825'
+show-info-panel=false
+ask-for-away-message=true
+lock-delay=uint32 0
+show-clock=true
+allow-media-control=false
+date-format=''
+screensaver-name=''
+font-time='Roboto 64'
+show-album-art=false
+
+[cinnamon/desktop/applications/terminal]
+exec='terminix'
+
+[cinnamon/desktop/notifications]
+display-notifications=true
+
+[cinnamon/desktop/session]
+session-manager-uses-logind=true
+settings-daemon-uses-logind=true
+idle-delay=uint32 600
+screensaver-uses-logind=false
+
+[cinnamon/desktop/privacy]
+recent-files-max-age=-1
+remember-recent-files=false
+
+[cinnamon/desktop/wm/preferences]
+workspace-names=['1', '2', '3']
+auto-raise=false
+theme='StylishDark-fix'
+num-workspaces=3
+audible-bell=false
+titlebar-font='Droid Sans 10'
+
+[cinnamon/desktop/a11y/applications]
+screen-keyboard-enabled=false
+screen-magnifier-enabled=false
+screen-reader-enabled=false
+
+[cinnamon/desktop/a11y/keyboard]
+slowkeys-beep-press=true
+mousekeys-accel-time=1200
+bouncekeys-beep-reject=true
+slowkeys-beep-reject=false
+disable-timeout=120
+enable=false
+bouncekeys-enable=false
+stickykeys-enable=false
+feature-state-change-beep=false
+slowkeys-beep-accept=true
+bouncekeys-delay=300
+mousekeys-max-speed=750
+togglekeys-enable-osd=true
+mousekeys-enable=false
+timeout-enable=false
+slowkeys-delay=300
+stickykeys-modifier-beep=false
+stickykeys-two-key-off=true
+mousekeys-init-delay=160
+slowkeys-enable=false
+
+[cinnamon/desktop/a11y/mouse]
+secondary-click-enabled=false
+secondary-click-time=1.2
+dwell-time=1.2
+dwell-threshold=10
+dwell-click-enabled=false
+
+[cinnamon/desktop/sound]
+event-sounds=false
+
+[cinnamon/desktop/background]
+picture-uri='file:///home/richard/Sync/wallpapers/02141_auroraborealis_2560x1440.jpg'
+color-shading-type='vertical'
+primary-color='#023c88'
+picture-options='zoom'
+picture-opacity=0
+secondary-color='#5789ca'
+
+[cinnamon/desktop/background/slideshow]
+image-source='directory:///home/richard/Sync/wallpapers'
+random-order=true
+delay=60
+slideshow-enabled=true
+
+[cinnamon/theme]
+name='Mint-X-Dark'
+
+[cinnamon/background]
+mode='slideshow'
+slideshow-folder='/home/richard/Dropbox/Photos/wallpapers'
+
+[gnome/settings-daemon/plugins/power]
+button-power='suspend'
+lid-close-suspend-with-external-monitor=true
+
+[gnome/settings-daemon/plugins/media-keys]
+terminal='<Control><Alt>t'
+
+[gnome/settings-daemon/peripherals/keyboard]
+numlock-state='on'
+
+[gnome/terminal/legacy/keybindings]
+new-window='<Primary><Shift>n'
+paste='<Primary>v'
+close-tab='<Primary><Shift>w'
+new-tab='<Primary><Shift>t'
+
+[gnome/terminal/legacy/profiles:]
+list=['799b8f4e-aded-4974-b7b9-a9ba82260a68']
+
+[gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
+visible-name='Richard'
+default-size-columns=110
+default-size-rows=33
+cursor-shape='block'
+use-theme-colors=false
+use-theme-transparency=false
+audible-bell=false
+scrollback-lines=30000
+
+[gnome/terminal/legacy/profiles:/:799b8f4e-aded-4974-b7b9-a9ba82260a68]
+foreground-color='#c5c8c6'
+visible-name='Richard'
+palette=['rgb(99,99,99)', 'rgb(204,102,102)', 'rgb(69,212,135)', 'rgb(240,198,116)', 'rgb(123,141,238)', 'rgb(196,148,210)', 'rgb(121,231,184)', 'rgb(197,200,198)', 'rgb(150,152,150)', 'rgb(204,102,102)', 'rgb(69,212,135)', 'rgb(240,198,116)', 'rgb(123,141,238)', 'rgb(196,148,210)', 'rgb(121,231,184)', 'rgb(255,255,255)']
+custom-command='/usr/bin/zsh'
+default-size-columns=110
+default-size-rows=30
+cursor-shape='block'
+use-custom-command=false
+use-theme-colors=false
+use-system-font=false
+use-transparent-background=false
+update-records=true
+font='Source Code Pro Medium 10'
+use-theme-transparency=false
+use-theme-background=false
+bold-color-same-as-fg=true
+bold-color='#c5c8c6'
+background-color='rgb(30,36,38)'
+background-transparency-percent=3
+scrollback-lines=30000
+audible-bell=false
+
+[gnome/terminal/legacy]
+schema-version=uint32 3
+default-show-menubar=false
+
+[gnome/charmap/window-state]
+size=(1440, 795)
+
+[gnome/charmap]
+last-char=uint32 239
+
+[gtk/settings/file-chooser]
+sort-column='name'
+sidebar-width=148
+window-position=(576, 262)
+show-size-column=true
+show-hidden=false
+window-size=(750, 562)
+sort-directories-first=true
+date-format='regular'
+sort-order='ascending'
+location-mode='path-bar'
+
+[gtk/settings/color-chooser]
+selected-color=(true, 0.94117647058823528, 0.77254901960784317, 0.45098039215686275, 1.0)
+custom-colors=[(0.47058823529411764, 0.90588235294117647, 0.72156862745098038, 1.0), (0.47843137254901963, 0.55294117647058827, 0.93333333333333335, 1.0), (0.80000000000000004, 0.40000000000000002, 0.40000000000000002, 1.0), (0.27058823529411763, 0.83137254901960789, 0.52941176470588236, 1.0), (0.94117647058823528, 0.77254901960784317, 0.45098039215686275, 1.0), (0.7686274509803922, 0.58039215686274515, 0.82352941176470584, 1.0), (0.97647058823529409, 0.97254901960784312, 0.96078431372549022, 1.0), (0.97254901960784312, 0.97254901960784312, 0.94901960784313721, 1.0)]
+
+[nemo/preferences]
+show-hidden-files=false
+default-folder-viewer='list-view'
+show-location-entry=false
+show-full-path-titles=false
+
+[nemo/extensions/gtkhash]
+hash-functions=['MD5', 'SHA1', 'SHA256']
+
+[nemo/window-state]
+start-with-sidebar=true
+geometry='913x673+1254+363'
+maximized=false
+sidebar-bookmark-breakpoint=5
+
+[nemo/desktop]
+network-icon-visible=false
+home-icon-visible=false
+background-fade=false
+computer-icon-visible=false
+font='Droid Sans 10'
+
+[nemo/list-view]
+search-visible-columns=['name', 'size', 'type', 'where']
+
+[yorba/california]
+window-height=768
+window-width=1024
+window-maximized=false
+
+[yorba/shotwell/preferences/window]
+direct-maximize=false
+direct-height=768
+direct-width=1024
