@@ -8,6 +8,7 @@
     - Downloads
     - Dropbox/Sublime/Packages
     - Dropbox/Sublime/Installed Packages
+    - .config/terminix/schemes
 
 - name: Create system directories
   file:
