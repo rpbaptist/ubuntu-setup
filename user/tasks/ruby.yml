@@ -33,11 +33,11 @@
 
 - name: Ruby setup
   become: no
-  command: "{{ item }}"
+  command: "{{ home_dir }}/.rbenv/{{ item }}"
   with_items:
-    - rbenv install 2.3.1
-    - rbenv global 2.3.1
-    - gem install bundler
-    - gem install rails
-    - rbenv rehash
+    - "bin/rbenv install 2.3.1"
+    - "bin/rbenv global 2.3.1"
+    - "shims/gem install bundler"
+    - "shims/gem install rails"
+    - "bin/rbenv rehash"
   when: not ruby.stat.exists
