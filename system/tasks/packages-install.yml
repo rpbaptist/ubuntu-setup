@@ -64,7 +64,7 @@
     - python-pip
     - phantomjs
     - docker-engine
-    # - zeal
+    - zeal
     - yarn
 
     # tools

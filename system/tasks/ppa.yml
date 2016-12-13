@@ -63,7 +63,7 @@
     - ppa:noobslab/themes
     - ppa:numix/ppa
     - ppa:ravefinity-project/ppa
-    # - ppa:zeal-developers/ppa
+    - ppa:zeal-developers/ppa
     # Stable cinnamon 3.0
     - ppa:embrosyn/cinnamon
     # Unstable cinnamon - official
