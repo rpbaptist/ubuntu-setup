@@ -47,7 +47,7 @@
     - deb http://apt.insynchq.com/ubuntu xenial non-free contrib
     - deb http://apt.syncthing.net/ syncthing release
     - deb http://archive.canonical.com/ {{ distro }} partner
-    # - deb http://archive.ubuntu.com/ubuntu {{ distro }} universe
+    - deb http://archive.ubuntu.com/ubuntu {{ distro }} main universe restricted multiverse
     - deb http://download.fpcomplete.com/ubuntu {{ distro }} main
     - deb http://repository.spotify.com testing non-free
     - deb http://toolbelt.heroku.com/ubuntu ./
