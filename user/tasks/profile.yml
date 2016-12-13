@@ -6,6 +6,9 @@
     dest="{{ home_dir }}/.oh-my-zsh"
     update=no
 
+- name: Use ZSH
+  shell: chsh -s /usr/bin/zsh
+
 - name: Redshift - configuration
   become: no
   template:
