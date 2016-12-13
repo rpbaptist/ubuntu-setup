@@ -54,6 +54,10 @@
     - hugs
     - stack
 
+    # java
+    - default-jre
+    - default-jdk
+
     # dev environment
     - ctags
     - nodejs
