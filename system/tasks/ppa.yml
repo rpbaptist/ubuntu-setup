@@ -56,6 +56,7 @@
     - deb https://apt.dockerproject.org/repo ubuntu-{{ distro }} main
     - deb https://deb.nodesource.com/node_5.x {{ distro }} main
     - ppa:costales/folder-color
+    - ppa:duplicity-team/ppa
     - ppa:git-core/ppa
     - ppa:hvr/ghc
     - ppa:linrunner/tlp
