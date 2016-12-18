@@ -42,6 +42,7 @@
     # internet
     - dropbox
     - duplicity
+    - duply
     - google-chrome-stable
     - insync
     - insync-nemo
