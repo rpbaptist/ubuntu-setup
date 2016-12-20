@@ -16,7 +16,5 @@
 	default = simple
 [rebase]
 	autosquash = true
-[init]
-	templatedir = ~/.git_template
 [commit]
 	gpgsign = true
