@@ -13,21 +13,3 @@
 - name: Sublime - install
   apt: deb="{{ download_dir }}/sublime_text.deb"
   when: not sublime.stat.exists
-
-- name: Sublime - config path
-  become: no
-  file:
-    path="{{ home_dir }}/.config/sublime-text-3"
-    state=directory
-    mode=0775
-  when: not sublime.stat.exists
-
-- name: Sublime - symlinks to dropbox
-  become: no
-  file:
-    src="{{ home_dir }}/Dropbox/Sublime/{{ item }}"
-    dest="{{ home_dir }}/.config/sublime-text-3/{{ item }}"
-    state=link
-  with_items:
-    - Packages
-    - Installed Packages
