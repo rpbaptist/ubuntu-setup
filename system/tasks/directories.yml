@@ -6,9 +6,11 @@
     state=directory
   with_items:
     - code/apps
+    - Desktop
     - Downloads
-    - Dropbox/Sublime/Packages
-    - Dropbox/Sublime/Installed Packages
+    - Pictures
+    - Sync
+    - Videos
 
 - name: Create system directories
   file:
