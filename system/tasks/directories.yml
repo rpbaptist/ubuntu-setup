@@ -5,6 +5,7 @@
     path="{{ home_dir }}/{{ item }}"
     state=directory
   with_items:
+    - code/apps
     - Downloads
     - Dropbox/Sublime/Packages
     - Dropbox/Sublime/Installed Packages
