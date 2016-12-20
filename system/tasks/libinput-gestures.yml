@@ -15,9 +15,3 @@
     chdir="{{ home_dir }}/code/apps/libinput-gestures/"
     make install
   when: not libinput_gestures.stat.exists
-
-- name: libinput gestures - configuration
-  become: no
-  template:
-    src="{{ ansible_dir }}/user/files/config/libinput-gestures.conf"
-    dest="{{ home_dir}}/.config/libinput-gestures.conf"
