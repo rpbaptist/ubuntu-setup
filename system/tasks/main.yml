@@ -1,6 +1,5 @@
 ---
 - include: ppa.yml
-# - include: packages-remove.yml
 - include: packages-install.yml
 - include: directories.yml
 - include: sublime.yml
