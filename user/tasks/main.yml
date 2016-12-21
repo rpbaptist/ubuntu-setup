@@ -1,5 +1,6 @@
 ---
 - include: profile.yml
+- include: duplicity.yml
 - include: dotfiles.yml
 - include: hub.yml
 - include: ruby.yml

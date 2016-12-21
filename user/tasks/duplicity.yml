@@ -1,0 +1,26 @@
+---
+  # The list is in the backup. If the list doesn't exist the backup has not been
+  # restored
+- name: duplicity - file list exists
+  stat: path="{{ home_dir }}/.duplicity/lists/inclusion-list"
+  register: duplicity_list
+
+- name: duplicity - download
+  become: no
+  git:
+    repo=https://github.com/rpbaptist/duplicity-home-backup.git
+    dest="{{ home_dir }}/.duplicity"
+    update=no
+
+- name: duplicity - credentials
+  become: no
+  template:
+    src="{{ ansible_dir }}/duplicity/credentials"
+    dest="{{ home_dir }}/.duplicity/credentials"
+
+- name: duplicity - restore
+  become: no
+  command:
+    chdir="{{ home_dir }}/.duplicity/"
+    bin/restore-all "{{ home_dir }}/"
+  when: not duplicity_list.stat.exists

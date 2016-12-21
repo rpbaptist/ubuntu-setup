@@ -15,6 +15,10 @@ Steps required:
 
   `git clone https://github.com/rpbaptist/ubuntu-setup.git ~/.ansible`
 
+4. Set the vault password file:
+
+  `vault-pass.txt`
+
 4. Run ansible:
 
-  `ansible-playbook ~/.ansible/main.yml`
+  `ansible-playbook ~/.ansible/main.yml --vault-password-file vault-pass.txt`
