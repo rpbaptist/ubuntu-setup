@@ -14,13 +14,19 @@
 
 - name: duplicity - credentials
   become: no
-  template:
-    src="{{ ansible_dir }}/user/files/duplicity/credentials"
-    dest="{{ home_dir }}/.duplicity/credentials"
+  lineinfile:
+    dest: "{{ home_dir }}/.duplicity/credentials"
+    state: present
+    line: "{{ item }}"
+  with_items:
+    - "export AWS_ACCESS_KEY_ID={{ aws_access_key_id }}"
+    - "export AWS_SECRET_ACCESS_KEY={{ aws_secret_access_key }}"
+    - "export REMOTE={{ remote }}"
+    - "export PASSPHRASE={{ passphrase }}"
 
 - name: duplicity - restore
   become: no
   command:
     chdir="{{ home_dir }}/.duplicity/"
-    bin/restore-all "{{ home_dir }}/"
+    bin/restore-all --force "{{ home_dir }}/"
   when: not duplicity_list.stat.exists

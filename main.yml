@@ -2,19 +2,10 @@
 - hosts: localhost
   user: richard
   connection: local
-
+  vars_files:
+    - vars/credentials.yml
+    - vars/versions.yml
+    - vars/environment.yml
   roles:
     - system
     - user
-
-  vars:
-    distro: xenial
-    user: richard
-    home_dir: "/home/{{ user }}"
-    ansible_dir: "{{ home_dir}}/.ansible"
-    download_dir: "{{ home_dir }}/Downloads"
-    hub_version: 2.3.0-pre8
-    slack_version: "2.3.4"
-    sublime_build: "3126"
-    nvm_version: "0.32.1"
-    ruby_version: "2.3.1"
