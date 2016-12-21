@@ -35,8 +35,8 @@
   become: no
   command: "{{ home_dir }}/.rbenv/{{ item }}"
   with_items:
-    - "bin/rbenv install 2.3.1"
-    - "bin/rbenv global 2.3.1"
+    - "bin/rbenv install {{ ruby_version }}"
+    - "bin/rbenv global {{ ruby_version }}"
     - "shims/gem install bundler"
     - "shims/gem install rails"
     - "bin/rbenv rehash"
