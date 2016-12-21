@@ -4,7 +4,10 @@
   file:
     path="{{ home_dir }}/{{ item }}"
     state=directory
+    mode=0775
   with_items:
+    - .local/bin
+    - .zsh/completions
     - code/apps
     - Desktop
     - Downloads

@@ -1,15 +1,4 @@
 ---
-- name: Hub - Create required directories
-  become: no
-  file:
-    path="{{ item }}"
-    state=directory
-    mode=0775
-  with_items:
-  - "{{ home_dir }}/.local/bin"
-  - "{{ home_dir }}/.zsh/completions"
-  - "{{ home_dir }}/code/apps"
-
 - name: Hub - check existence
   stat: path="{{ home_dir }}/.local/bin/hub"
   register: hub
