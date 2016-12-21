@@ -2,6 +2,7 @@
 - include: profile.yml
 - include: duplicity.yml
 - include: dotfiles.yml
+- include: papirus.yml
 - include: hub.yml
 - include: ruby.yml
 - include: node.yml

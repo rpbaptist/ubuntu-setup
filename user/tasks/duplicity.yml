@@ -15,7 +15,7 @@
 - name: duplicity - credentials
   become: no
   template:
-    src="{{ ansible_dir }}/duplicity/credentials"
+    src="{{ ansible_dir }}/user/files/duplicity/credentials"
     dest="{{ home_dir }}/.duplicity/credentials"
 
 - name: duplicity - restore

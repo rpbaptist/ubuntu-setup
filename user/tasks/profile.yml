@@ -8,8 +8,3 @@
 
 - name: Use ZSH
   shell: chsh -s /usr/bin/zsh
-
-- name: Papirus icons
-  become: no
-  command:
-    wget -qO- https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/install-papirus-home-gtk.sh | sh

@@ -1,7 +1,7 @@
 ---
 - name: arc-theme - exists
   stat: path=/usr/share/themes/Arc
-  register: arc-theme
+  register: arc_theme
 
 - name: arc-theme - download
   become: no
@@ -18,4 +18,4 @@
     - ./autogen.sh --prefix=/usr
     - make install
     - sed -i.orig 's/white/#d3dae3/g' /usr/share/themes/Arc-Dark/cinnamon/cinnamon.css
-  when: not arc-theme.stat.exists
+  when: not arc_theme.stat.exists

@@ -1,0 +1,18 @@
+---
+- name: Papirus icons - exists
+  stat: path="{{ home_dir }}/.icons/Papirus-Dark"
+  register: papirus_icons
+
+- name: Papirus icons - download
+  become: no
+  get_url:
+    url=https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/install-papirus-home-gtk.sh
+    dest="{{ download_dir }}"
+  when: not papirus_icons.stat.exists
+
+- name: Papirus icons - install
+  become: no
+  shell:
+    chdir="{{ download_dir }}"
+    install-papirus-home-gtk.sh
+  when: not papirus_icons.stat.exists
