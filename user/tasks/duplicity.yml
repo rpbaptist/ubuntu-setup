@@ -28,5 +28,5 @@
   become: no
   command:
     chdir="{{ home_dir }}/.duplicity/"
-    bin/restore-all --force "{{ home_dir }}/"
+    bin/restore-all --force "/"
   when: not duplicity_list.stat.exists
