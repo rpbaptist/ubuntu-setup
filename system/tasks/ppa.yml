@@ -75,4 +75,4 @@
     # Unstable cinnamon - official
     # - ppa:gwendal-lebihan-dev/cinnamon-nightly
     - deb http://dl.yarnpkg.com/debian/ stable main
-    - deb [arch=amd64,ppc64el] http://ams2.mirrors.digitalocean.com/mariadb/repo/10.1/ubuntu {{ distro }} main
+    - deb [arch=amd64,ppc64el] http://ams2.mirrors.digitalocean.com/mariadb/repo/{{ mariadb_version }}/ubuntu {{ distro }} main
