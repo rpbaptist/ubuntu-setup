@@ -1,6 +1,6 @@
 ---
 - name: arc-theme - exists
-  stat: path=/usr/share/themes/Arc
+  stat: path=/usr/share/themes/Arc-Dark
   register: arc_theme
 
 - name: arc-theme - download

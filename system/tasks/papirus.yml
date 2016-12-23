@@ -1,0 +1,18 @@
+---
+- name: Papirus icons - exists
+  become: no
+  stat:
+    path: /usr/share/icons/Papirus-Dark
+  register: papirus_icons
+
+- name: Papirus icons - download
+  become: no
+  get_url:
+    url: https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/install-papirus-root.sh
+    dest: "{{ download_dir }}"
+    mode: 0755
+  when: not papirus_icons.stat.exists
+
+- name: Papirus icons - install
+  shell: "{{ download_dir }}/install-papirus-root.sh"
+  when: not papirus_icons.stat.exists
