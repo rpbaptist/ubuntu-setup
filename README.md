@@ -21,5 +21,5 @@ Steps required:
 
 4. Run ansible:
   
-  `cd ~/.ansible`
-  `ansible-playbook main.yml --vault-password-file vault-pass.txt`
+  1. `cd ~/.ansible`
+  2. `ansible-playbook main.yml --vault-password-file vault-pass.txt`
