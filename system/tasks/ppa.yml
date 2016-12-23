@@ -56,17 +56,11 @@
     - deb http://toolbelt.heroku.com/ubuntu ./
     - deb https://apt.dockerproject.org/repo ubuntu-{{ distro }} main
     - deb https://deb.nodesource.com/node_5.x {{ distro }} main
-    - ppa:costales/folder-color
     - ppa:duplicity-team/ppa
     - ppa:git-core/ppa
     - ppa:hvr/ghc
     - ppa:linrunner/tlp
     - ppa:nilarimogard/webupd8
-    - ppa:noobslab/icons
-    - ppa:noobslab/indicators
-    - ppa:noobslab/themes
-    - ppa:numix/ppa
-    - ppa:ravefinity-project/ppa
     - ppa:webupd8team/terminix
     # Zeal PPA throws an error for some reason
     # - ppa:zeal-developers/ppa
