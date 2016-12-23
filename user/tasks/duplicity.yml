@@ -15,7 +15,7 @@
 - name: duplicity - credentials
   become: no
   lineinfile:
-    dest: "{{ home_dir }}/.duplicity/credentials"
+    dest: "{{ home_dir }}/.duplicity/vars/export"
     state: present
     line: "{{ item }}"
   with_items:
