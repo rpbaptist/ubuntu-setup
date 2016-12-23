@@ -47,6 +47,7 @@
     - deb http://apt.insynchq.com/ubuntu xenial non-free contrib
     - deb http://apt.syncthing.net/ syncthing release
     - deb http://archive.canonical.com/ {{ distro }} partner
+    - deb http://archive.ubuntu.com/ubuntu {{ distro }} main
     - deb http://archive.ubuntu.com/ubuntu {{ distro }} universe
     - deb http://archive.ubuntu.com/ubuntu {{ distro }} restricted
     - deb http://archive.ubuntu.com/ubuntu {{ distro }} multiverse
