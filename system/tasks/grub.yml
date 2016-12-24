@@ -1,0 +1,10 @@
+---
+- name: grub - config
+  lineinfile:
+    dest: /etc/default/grub
+    regexp: '^GRUB_CMDLINE_LINUX_DEFAULT=.*$'
+    line: GRUB_CMDLINE_LINUX_DEFAULT="quiet splash pcie_aspm=force"
+    state: present
+
+- name: grub - update
+  command: update-grub
