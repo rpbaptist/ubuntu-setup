@@ -13,15 +13,14 @@
     copy: no
   when: not openvpn_certs.stat.exists
 
-# - name: openvpn - configuration presence
-#   become: no
-#   stat:
-#     path: "{{ ansible_dir }}/files/VPN Private Internet Access"
-#   register: openvpn_config
+- name: openvpn - configuration presence
+  stat:
+    path: /etc/NetworkManager/system-connections/VPN-Private-Internet-Access
+  register: openvpn_config
 
-# - name: openvpn - coonfiguration
-#   copy:
-#     src: "{{ ansible_dir }}/files/VPN Private Internet Access"
-#     dest: /etc/NetworkManager/system-connections
-#     mode: 0600
-#   when: not openvpn_config.stat.exists
+- name: openvpn - coonfiguration
+  copy:
+    src: "{{ ansible_dir }}/system/files/vpn_pia"
+    dest: /etc/NetworkManager/system-connections/VPN-Private-Internet-Access
+    mode: 0600
+  when: not openvpn_config.stat.exists
