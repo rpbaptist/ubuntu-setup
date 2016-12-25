@@ -9,6 +9,7 @@
 - include: touchpad.yml
 - include: libinput-gestures.yml
 - include: hosts.yml
+- include: network.yml
 - include: openvpn.yml
 - include: greeter.yml
 - include: grub.yml
