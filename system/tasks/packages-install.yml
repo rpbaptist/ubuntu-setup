@@ -48,8 +48,6 @@
     - google-chrome-stable
     - insync
     - insync-nemo
-    - syncthing
-    - syncthing-gtk
 
     # haskell
     - ghc
