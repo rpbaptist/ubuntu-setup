@@ -26,7 +26,7 @@
 
 - name: duplicity - restore
   become: no
-  command:
+  shell:
     chdir="{{ home_dir }}/.duplicity/"
-    bin/restore-all --force "/"
+    "bin/restore-all {{ home_dir }}"
   when: not duplicity_list.stat.exists
