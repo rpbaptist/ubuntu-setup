@@ -2,4 +2,4 @@
 - name: hosts - update
   command:
     chdir="{{ home_dir }}/code/apps/hosts/"
-    python3 /updateHostFile.py -a -r --extensions porn
+    python3 /updateHostsFile.py -a -r --extensions porn
