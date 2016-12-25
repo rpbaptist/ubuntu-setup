@@ -49,6 +49,7 @@
     - google-chrome-stable
     - insync
     - insync-nemo
+    - transmission
 
     # haskell
     - ghc
@@ -96,6 +97,7 @@
     - synaptic
 
     # media
+    - clementine
     - guvcview
     - pulseaudio-equalizer
     - spotify-client
