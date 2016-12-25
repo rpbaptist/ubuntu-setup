@@ -13,12 +13,12 @@
 
 - name: NVM - install
   become: no
-  command: "{{ download_dir }}/nvm-install.sh"
+  shell: "{{ download_dir }}/nvm-install.sh"
   when: not nvm.stat.exists
 
 - name: Node - install
   become: no
-  command: "{{ home_dir}}/.nvm/nvm.sh {{ item }}"
+  shell: "{{ home_dir}}/.nvm/nvm.sh {{ item }}"
   with_items:
     - install node
     - use node
