@@ -77,7 +77,6 @@
     - terminix
 
     # tools
-    - copyq
     - font-manager
     - git
     - httpie

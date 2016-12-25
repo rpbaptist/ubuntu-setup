@@ -1,4 +1,5 @@
 ---
+copyq_version: "2.8.1"
 hub_version: 2.3.0-pre8
 mariadb_version: "10.1"
 nvm_version: "0.32.1"
