@@ -37,7 +37,6 @@
     - nemo-seahorse
     - nemo-share
     - python-nemo
-    - vivacious-colors
 
     # internet
     - dropbox
@@ -46,7 +45,6 @@
     - google-chrome-stable
     - insync
     - insync-nemo
-    - skype
     - syncthing
     - syncthing-gtk
 
