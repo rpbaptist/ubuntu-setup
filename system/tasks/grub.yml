@@ -2,9 +2,18 @@
 - name: grub - config
   lineinfile:
     dest: /etc/default/grub
-    regexp: '^GRUB_CMDLINE_LINUX_DEFAULT=.*$'
-    line: GRUB_CMDLINE_LINUX_DEFAULT="quiet splash pcie_aspm=force"
+    regexp: "{{ item.regexp }}"
+    line: "{{ item.line }}"
     state: present
+  with_items:
+    - {
+      regexp: '^GRUB_CMDLINE_LINUX_DEFAULT=.*$',
+      line: GRUB_CMDLINE_LINUX_DEFAULT="pcie_aspm=force"
+    }
+    - {
+      regexp: '^GRUB_TIMEOUT=\d*$',
+      line: GRUB_TIMEOUT=0
+    }
 
 - name: grub - update
   command: update-grub
