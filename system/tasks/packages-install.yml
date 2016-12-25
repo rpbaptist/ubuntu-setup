@@ -38,6 +38,9 @@
     - nemo-share
     - python-nemo
 
+    # theming
+    - arc-theme
+
     # internet
     - dropbox
     - duplicity

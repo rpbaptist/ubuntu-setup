@@ -2,7 +2,6 @@
 - include: ppa.yml
 - include: packages-install.yml
 - include: directories.yml
-- include: arc-theme.yml
 - include: papirus.yml
 - include: sublime.yml
 - include: slack.yml

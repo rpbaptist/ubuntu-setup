@@ -8,6 +8,7 @@
     - https://syncthing.net/release-key.txt
     - https://d2t3ff60b2tol4.cloudfront.net/services@insynchq.com.gpg.key
     - https://dl.yarnpkg.com/debian/pubkey.gpg
+    - http://download.opensuse.org/repositories/home:Horst3180/xUbuntu_16.04/Release.key 
 
 - name: PPA keys - add with id
   apt_key: keyserver={{ item.keyserver }} id={{ item.id }} state=present
@@ -52,6 +53,7 @@
     - deb http://archive.ubuntu.com/ubuntu {{ distro }} restricted
     - deb http://archive.ubuntu.com/ubuntu {{ distro }} multiverse
     - deb http://download.fpcomplete.com/ubuntu {{ distro }} main
+    - deb http://download.opensuse.org/repositories/home:Horst3180/xUbuntu_16.04 / 
     - deb http://repository.spotify.com testing non-free
     - deb http://toolbelt.heroku.com/ubuntu ./
     - deb https://apt.dockerproject.org/repo ubuntu-{{ distro }} main
