@@ -117,6 +117,7 @@
     - libyaml-dev
     - llvm
     - ncurses-doc
+    - python-boto
     - python-gpgme
     - python-software-properties
     - uvcdynctrl
