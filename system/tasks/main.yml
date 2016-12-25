@@ -16,3 +16,4 @@
 - include: mouse.yml
 - include: copyq.yml
 - include: intel-graphics.yml
+- include: power.yml

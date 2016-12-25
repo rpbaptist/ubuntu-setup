@@ -1,0 +1,11 @@
+---
+- name: tlp - start
+  command: tlp start
+
+- name: tlp - configure
+  lineinfile:
+    dest: /etc/default/tlp
+    regexp: 'DEVICES_TO_DISABLE_ON_STARTUP="bluetooth wifi wwan"'
+    line: DEVICES_TO_DISABLE_ON_STARTUP="bluetooth"
+    state: present
+
