@@ -78,6 +78,7 @@
 
     # tools
     - font-manager
+    - gdebi
     - git
     - httpie
     - jq
@@ -92,6 +93,8 @@
     - ufw
     - wkhtmltopdf
     - xclip
+    - software-properties-gtk
+    - synaptic
 
     # media
     - guvcview
