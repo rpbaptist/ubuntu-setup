@@ -9,3 +9,8 @@
     line: DEVICES_TO_DISABLE_ON_STARTUP="bluetooth"
     state: present
 
+- name: ssd - swappiness
+  lineinfile:
+    dest: /proc/sys/vm/swappiness
+    line: vm.swappiness=1
+    state: present
