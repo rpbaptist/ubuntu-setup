@@ -16,3 +16,9 @@
 - name: Papirus icons - install
   shell: "{{ download_dir }}/install-papirus-root.sh"
   when: not papirus_icons.stat.exists
+
+- name: Papirus icons - change color
+  replace:
+    dest: /usr/share/themes/Arc-Dark/cinnamon/cinnamon.css
+    regexp: 'white'
+    replace: '#d3dae3'
