@@ -1,26 +1,14 @@
 ---
-- name: openvpn - certificates presence
-  become: no
-  stat:
-    path: "{{ home_dir }}/.openvpn"
-  register: openvpn_certs
-
 - name: openvpn - certificates
   become: no
   unarchive:
     src: http://www.privateinternetaccess.com/openvpn/openvpn.zip
     dest: "{{ home_dir }}/.openvpn"
     copy: no
-  when: not openvpn_certs.stat.exists
-
-- name: openvpn - configuration presence
-  stat:
-    path: /etc/NetworkManager/system-connections/VPN-Private-Internet-Access
-  register: openvpn_config
+    creates: "{{ home_dir }}/.openvpn"
 
 - name: openvpn - coonfiguration
   copy:
     src: "{{ ansible_dir }}/system/files/vpn_pia"
     dest: /etc/NetworkManager/system-connections/VPN-Private-Internet-Access
     mode: 0600
-  when: not openvpn_config.stat.exists
