@@ -49,5 +49,3 @@ autoload -U compinit && compinit
 
 # Don't try to ssh to hosts file
 zstyle ':completion:*' hosts off
-
-source /etc/profile.d/vte.sh
