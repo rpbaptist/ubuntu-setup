@@ -110,6 +110,7 @@
     - libcurl4-openssl-dev
     - libffi-dev
     - libgcrypt11-dev
+    - libmysqlclient-dev
     - libpq-dev
     - libqt4-dev
     - libreadline-dev
