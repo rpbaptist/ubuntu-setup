@@ -12,17 +12,12 @@
     dest="{{ home_dir }}/.duplicity"
     update=no
 
-- name: duplicity - credentials
+- name: duplicity - variables
   become: no
-  lineinfile:
+  copy:
+    src: "{{ ansible_dir }}/user/files/duplicity"
     dest: "{{ home_dir }}/.duplicity/vars/export"
-    state: present
-    line: "{{ item }}"
-  with_items:
-    - "export AWS_ACCESS_KEY_ID='{{ aws_access_key_id }}'"
-    - "export AWS_SECRET_ACCESS_KEY='{{ aws_secret_access_key }}'"
-    - "export S3_DUPLICITY_DIR='{{ s3_duplicity_dir }}'"
-    - "export PASSPHRASE='{{ passphrase }}'"
+    mode: 0600
 
 - name: duplicity - restore
   become: no

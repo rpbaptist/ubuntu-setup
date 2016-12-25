@@ -3,7 +3,6 @@
   user: richard
   connection: local
   vars_files:
-    - vars/credentials.yml
     - vars/versions.yml
     - vars/environment.yml
   roles:
