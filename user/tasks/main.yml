@@ -1,5 +1,5 @@
 ---
-- include: profile.yml
+- include: zsh.yml
 - include: duplicity.yml
 - include: dotfiles.yml
 - include: hub.yml
