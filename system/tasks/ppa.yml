@@ -9,6 +9,7 @@
     - https://d2t3ff60b2tol4.cloudfront.net/services@insynchq.com.gpg.key
     - https://dl.yarnpkg.com/debian/pubkey.gpg
     - "http://download.opensuse.org/repositories/home:Horst3180/xUbuntu_{{ release }}/Release.key"
+    - https://download.01.org/gfx/RPM-GPG-KEY-ilg-4
 
 - name: PPA keys - add with id
   apt_key: keyserver={{ item.keyserver }} id={{ item.id }} state=present
