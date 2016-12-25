@@ -60,12 +60,16 @@
     - hugs
     - stack
 
+    # office
+    - libreoffice
+
     # java
     - default-jre
     - default-jdk
 
     # dev environment
     - ctags
+    - "mariadb-client-{{ mariadb_version }}"
     - nodejs
     - python-pip
     - phantomjs
@@ -120,6 +124,7 @@
     - libxml2-dev
     - libxslt1-dev
     - libyaml-dev
+    - linux-image-extra-virtual
     - llvm
     - ncurses-doc
     - python-boto
