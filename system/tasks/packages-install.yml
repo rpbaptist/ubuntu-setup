@@ -105,6 +105,7 @@
     - cabal-install-1.22
     - cmake
     - cpphs
+    - dh-autoreconf
     - libcurl4-openssl-dev
     - libffi-dev
     - libgcrypt11-dev
