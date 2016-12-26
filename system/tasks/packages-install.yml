@@ -81,9 +81,14 @@
     - terminix
 
     # tools
+    - baobab
     - font-manager
     - gdebi
     - git
+    - gnome-calculator
+    - gnome-disk-utility
+    - gnome-system-monitor
+    - htop
     - httpie
     - jq
     - keepassx
@@ -94,13 +99,17 @@
     - ppa-purge
     - python-pip
     - shutter
+    - software-properties-gtk
+    - synaptic
+    - tree
     - ufw
     - wkhtmltopdf
     - xclip
-    - software-properties-gtk
-    - synaptic
 
     # media
+    - evince
+    - gimp
+    - viewnior
     - clementine
     - guvcview
     - pulseaudio-equalizer
