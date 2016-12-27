@@ -13,7 +13,6 @@
 - include: openvpn.yml
 - include: greeter.yml
 - include: grub.yml
-- include: mouse.yml
 - include: copyq.yml
 - include: intel-graphics.yml
 - include: power.yml
