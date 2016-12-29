@@ -11,7 +11,7 @@
     - tlp
     - tlp-rdw
 
-    # desktop
+    # greeter
     - lightdm
     - lightdm-gtk-greeter
     - lightdm-gtk-greeter-settings
@@ -20,18 +20,16 @@
     - android-tools-adb
     - android-tools-fastboot
 
-    # input
+    # usability
+    - libinput-tools
     - redshift
     - redshift-gtk
-    - zsh
 
-    # cinnamon / gnome
-    - breeze-cursor-theme
+    # desktop environment
     - blueberry
     - cinnamon
     - dconf-tools
     - dconf-editor
-    - gnome-icon-theme-full
     - nemo
     - nemo-dropbox
     - nemo-fileroller
@@ -41,11 +39,12 @@
 
     # theming
     - arc-theme
+    - gnome-icon-theme-full
+    - breeze-cursor-theme
 
     # internet
     - dropbox
     - duplicity
-    - duply
     - google-chrome-stable
     - insync
     - insync-nemo
@@ -68,7 +67,6 @@
     - default-jdk
 
     # dev environment
-    - ctags
     - "mariadb-client-{{ mariadb_version }}"
     - nodejs
     - python-pip
@@ -77,23 +75,25 @@
     - zeal
     - yarn
 
-    # terminal
+    # terminal / shell
+    - git
+    - httpie
     - terminix
+    - tree
+    - xclip
+    - zsh
 
     # tools
     - baobab
     - font-manager
     - gdebi
-    - git
     - gnome-calculator
     - gnome-disk-utility
     - gnome-system-monitor
     - htop
-    - httpie
     - jq
     - keepassx
     - leafpad
-    - libinput-tools
     - p7zip-full
     - p7zip-rar
     - ppa-purge
@@ -101,10 +101,15 @@
     - shutter
     - software-properties-gtk
     - synaptic
-    - tree
-    - ufw
     - wkhtmltopdf
-    - xclip
+
+    # networking
+    - gufw
+    - ufw
+    - network-manager
+    - network-manager-gnome
+    - network-manager-openvpm
+    - network-manager-openvpm-gnome
 
     # media
     - evince
@@ -112,6 +117,7 @@
     - viewnior
     - clementine
     - guvcview
+    - pavucontrol
     - pulseaudio-equalizer
     - spotify-client
     - vlc
@@ -143,9 +149,3 @@
     - wmctrl
     - xdotool
     - zlib1g-dev
-
-    # VPN
-    - network-manager
-    - network-manager-gnome
-    # - network-manager-openvpm
-    # - network-manager-openvpm-gnome
