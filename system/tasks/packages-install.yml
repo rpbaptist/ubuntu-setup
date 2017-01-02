@@ -39,8 +39,9 @@
 
     # theming
     - arc-theme
-    - gnome-icon-theme-full
     - breeze-cursor-theme
+    - gnome-icon-theme-full
+    - hardcode-tray
 
     # internet
     - dropbox
@@ -145,6 +146,9 @@
     - python-boto
     - python-gpgme
     - python-software-properties
+    - sni-qt
+    - sni-qt:i386
+    - libsqlite3-dev
     - uvcdynctrl
     - wmctrl
     - xdotool
