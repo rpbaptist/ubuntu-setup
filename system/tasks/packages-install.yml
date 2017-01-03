@@ -1,6 +1,7 @@
 ---
 - name: Updates apt cache
   apt: update_cache=true
+  tags: apt
 
 - name: Apps | Install with apt-get
   apt: pkg={{ item }} state=present
@@ -52,11 +53,11 @@
     - transmission
 
     # haskell
+    - cabal-install
     - ghc
     - ghc-doc
     - ghc-prof
     - haskell-doc
-    - heroku-toolbelt
     - hugs
     - stack
 
@@ -68,6 +69,7 @@
     - default-jdk
 
     # dev environment
+    - heroku-toolbelt
     - "mariadb-client-{{ mariadb_version }}"
     - nodejs
     - python-pip
@@ -153,3 +155,5 @@
     - wmctrl
     - xdotool
     - zlib1g-dev
+
+  tags: apt

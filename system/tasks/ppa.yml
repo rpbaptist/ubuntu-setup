@@ -9,6 +9,7 @@
     - https://dl.yarnpkg.com/debian/pubkey.gpg
     - "http://download.opensuse.org/repositories/home:Horst3180/xUbuntu_{{ release }}/Release.key"
     - https://download.01.org/gfx/RPM-GPG-KEY-ilg-4
+  tags: apt
 
 - name: PPA keys - add with id
   apt_key: keyserver={{ item.keyserver }} id={{ item.id }} state=present
@@ -38,6 +39,7 @@
       keyserver: 'hkp://keyserver.ubuntu.com:80',
       id: '0xF1656F24C74CD1D8'
     }
+  tags: apt
 
 - name: PPA - Additional PPA's
   apt_repository: repo={{ item }} state=present
@@ -73,3 +75,5 @@
     # - ppa:gwendal-lebihan-dev/cinnamon-nightly
     - deb http://dl.yarnpkg.com/debian/ stable main
     - deb [arch=amd64,ppc64el] http://ams2.mirrors.digitalocean.com/mariadb/repo/{{ mariadb_version }}/ubuntu {{ distro }} main
+  tags: apt
+

@@ -16,3 +16,4 @@
     - sqliterc
     - zshenv
     - zshrc
+  tags: profile
