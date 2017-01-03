@@ -4,7 +4,9 @@
   tags: apt
 
 - name: Apps | Install with apt-get
-  apt: pkg={{ item }} state=present
+  apt:
+    pkg: "{{ item }}"
+    state: latest
   with_items:
     # power management
     - acpi
@@ -42,7 +44,6 @@
     - arc-theme
     - breeze-cursor-theme
     - gnome-icon-theme-full
-    - hardcode-tray
 
     # internet
     - dropbox
@@ -121,7 +122,6 @@
     - clementine
     - guvcview
     - pavucontrol
-    - pulseaudio-equalizer
     - spotify-client
     - vlc
 

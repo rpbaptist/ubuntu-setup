@@ -2,7 +2,6 @@
 - include: ppa.yml
 - include: packages-install.yml
 - include: directories.yml
-- include: papirus.yml
 - include: sublime.yml
 - include: slack.yml
 - include: keybase.yml
@@ -16,3 +15,4 @@
 - include: copyq.yml
 - include: intel-graphics.yml
 - include: power.yml
+- include: papirus.yml

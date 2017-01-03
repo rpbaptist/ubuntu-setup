@@ -59,13 +59,11 @@
     - deb http://toolbelt.heroku.com/ubuntu ./
     - deb https://apt.dockerproject.org/repo ubuntu-{{ distro }} main
     - deb https://deb.nodesource.com/node_5.x {{ distro }} main
-    # hardcode-tray
-    - ppa:andreas-angerer89/sni-qt-patched
     - ppa:duplicity-team/ppa
     - ppa:git-core/ppa
+    # haskell
     - ppa:hvr/ghc
     - ppa:linrunner/tlp
-    - ppa:nilarimogard/webupd8
     - ppa:webupd8team/terminix
     # Zeal PPA throws an error for some reason
     # - ppa:zeal-developers/ppa
