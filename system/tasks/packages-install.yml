@@ -118,11 +118,14 @@
     # media
     - cadence
     - evince
+    - jackd
+    - jackeq
     - gimp
     - viewnior
     - clementine
     - guvcview
     - pavucontrol
+    - pulseaudio-module-jack
     - spotify-client
     - vlc
 

@@ -1,5 +1,6 @@
 ---
 - name: kxstudio - download
+  become: no
   get_url:
     url: "https://launchpad.net/~kxstudio-debian/+archive/kxstudio/+files/kxstudio-repos_{{ kxstudio_version }}~kxstudio1_all.deb"
     dest: "{{ download_dir }}/kxstudio.deb"
@@ -10,3 +11,12 @@
     deb: "{{ download_dir }}/kxstudio.deb"
     state: present
   tags: apt
+
+- name: jack - pulse config
+  become: no
+  template:
+    src: "{{ ansible_dir }}/user/files/pulse/{{ item }}"
+    dest: "{{ home_dir }}/.pulse/{{ item }}"
+  with_items:
+    - default.pa
+    - daemon.conf

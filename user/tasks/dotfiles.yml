@@ -5,6 +5,7 @@
     src="{{ ansible_dir }}/user/files/dotfiles/{{ item }}"
     dest="{{ home_dir}}/.{{ item }}"
   with_items:
+    - asoundrc
     - dircolors
     - gemrc
     - ghci
