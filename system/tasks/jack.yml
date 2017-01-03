@@ -1,0 +1,12 @@
+---
+- name: kxstudio - download
+  get_url:
+    url: "https://launchpad.net/~kxstudio-debian/+archive/kxstudio/+files/kxstudio-repos_{{ kxstudio_version }}~kxstudio1_all.deb"
+    dest: "{{ download_dir }}/kxstudio.deb"
+  tags: apt
+
+- name: kxstudio - install
+  apt:
+    deb: "{{ download_dir }}/kxstudio.deb"
+    state: present
+  tags: apt

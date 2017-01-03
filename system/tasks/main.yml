@@ -1,18 +1,19 @@
 ---
+- include: intel-graphics.yml
+- include: jack.yml
 - include: ppa.yml
 - include: packages-install.yml
 - include: directories.yml
-- include: sublime.yml
-- include: slack.yml
-- include: keybase.yml
+- include: greeter.yml
+- include: grub.yml
 - include: touchpad.yml
 - include: libinput-gestures.yml
+- include: power.yml
 - include: hosts.yml
 - include: network.yml
 - include: openvpn.yml
-- include: greeter.yml
-- include: grub.yml
+- include: sublime.yml
 - include: copyq.yml
-- include: intel-graphics.yml
-- include: power.yml
+- include: slack.yml
+- include: keybase.yml
 - include: papirus.yml

@@ -1,10 +1,12 @@
 ---
 - name: intel graphics - download
   get_url:
-    url: https://download.01.org/gfx/ubuntu/16.04/main/pool/main/i/intel-graphics-update-tool/intel-graphics-update-tool_2.0.2_amd64.deb
+    url: "https://download.01.org/gfx/ubuntu/16.04/main/pool/main/i/intel-graphics-update-tool/intel-graphics-update-tool_{{ intel_graphics_version }}_amd64.deb"
     dest: "{{ download_dir }}/intel-graphics-update-tool.deb"
+  tags: apt
 
 - name: intel graphics - install
   apt:
     deb: "{{ download_dir }}/intel-graphics-update-tool.deb"
     state: present
+  tags: apt
