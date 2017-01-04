@@ -64,6 +64,7 @@
     # haskell
     - ppa:hvr/ghc
     - ppa:linrunner/tlp
+    - ppa:nilarimogard/webupd8
     - ppa:webupd8team/terminix
     # Zeal PPA throws an error for some reason
     # - ppa:zeal-developers/ppa

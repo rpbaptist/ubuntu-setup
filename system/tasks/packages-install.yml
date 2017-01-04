@@ -116,17 +116,15 @@
     - network-manager-openvpn-gnome
 
     # media
-    - cadence
-    - evince
-    - jackd
-    - jackeq
-    - gimp
-    - viewnior
     - clementine
+    - evince
+    - gimp
     - guvcview
+    - libasound2-plugin-equal
     - pavucontrol
-    - pulseaudio-module-jack
+    - pulseaudio-equalizer
     - spotify-client
+    - viewnior
     - vlc
 
     # dependencies

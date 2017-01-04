@@ -1,6 +1,5 @@
 ---
 - include: intel-graphics.yml
-- include: jack.yml
 - include: ppa.yml
 - include: packages-install.yml
 - include: directories.yml
