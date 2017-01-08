@@ -23,5 +23,15 @@
     regexp: 'white'
     replace: '#d3dae3'
 
+- name: hardcode-tray - download
+  become: no
+  git:
+    repo: git@github.com:bil-elmoussaoui/Hardcode-Tray.git
+    dest: "{{ home_dir }}/code/apps/hardcode-tray"
+    update: yes
+
+- name: hardcode-tray - install
+  shell: "{{ home_dir }}/code/apps/hardcode-tray/install.sh"
+
 - name: Papirus icons - change tray icons
   shell: hardcode-tray --conversion-tool Inkscape --dark-theme Papirus --size 24
