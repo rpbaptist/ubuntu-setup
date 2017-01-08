@@ -11,3 +11,4 @@
 - include: trash.yml
 - include: crontab.yml
 - include: desktop.yml
+- include: pulseaudio.yml

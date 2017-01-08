@@ -1,0 +1,42 @@
+---
+# - name: pulseaudio - remove config
+#   become: no
+#   shell: "rm -rf {{ home_dir }}/.config/pulse || true"
+#   tags: pulse
+
+- name: pulseaudio - remove config
+  become: no
+  file:
+    dest: "{{ home_dir }}/.config/pulse"
+    state: absent
+  tags: pulse
+
+- name: pulseaudio - kill
+  become: no
+  shell: pulseaudio -k
+  tags: pulse
+
+- name: pulseaudio - reload alsa
+  shell: alsa force-reload || true
+  tags: pulse
+
+- name: pulseaudio - create presets directory
+  become: no
+  file:
+    path: "{{ home_dir }}/.config/{{ item }}"
+    state: directory
+  with_items:
+    - pulse
+    - pulse/presets
+  tags: pulse
+
+- name: pulseaudio - preset
+  become: no
+  template:
+    src: "{{ ansible_dir }}/user/files/config/pulse/{{ item }}"
+    dest: "{{ home_dir}}/.config/pulse/{{ item }}"
+  with_items:
+    - equalizerrc
+    - equalizerrc.availablepresets
+    - presets/_headphones.preset
+  tags: pulse
