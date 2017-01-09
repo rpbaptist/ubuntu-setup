@@ -70,7 +70,7 @@
     - default-jdk
 
     # dev environment
-    - heroku-toolbelt
+    - heroku
     - "mariadb-client-{{ mariadb_version }}"
     - nodejs
     - python-pip
