@@ -17,4 +17,4 @@
     - sqliterc
     - zshenv
     - zshrc
-  tags: profile
+  tags: dotfiles
