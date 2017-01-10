@@ -15,6 +15,7 @@
     - railsrc
     - rspec
     - sqliterc
+    - xsessionrc
     - zshenv
     - zshrc
   tags: dotfiles
