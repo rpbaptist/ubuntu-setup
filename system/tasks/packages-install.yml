@@ -8,6 +8,10 @@
     pkg: "{{ item }}"
     state: latest
   with_items:
+    # os tools
+    - update-manager
+    - update-notifier
+
     # power management
     - acpi
     - acpi-support
