@@ -55,6 +55,7 @@
     - google-chrome-stable
     - insync
     - insync-nemo
+    - sshuttle
     - transmission
 
     # haskell
