@@ -12,6 +12,13 @@
     dest="{{ home_dir }}/.duplicity"
     update=yes
 
+- name: duplicity - create vars directory
+  become: no
+  file:
+    path: "{{ home_dir }}/.duplicity/vars"
+    state: directory
+    mode: 0775
+
 - name: duplicity - variables
   become: no
   copy:
