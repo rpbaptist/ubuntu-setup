@@ -7,7 +7,7 @@
     mode=0775
   with_items:
     - .local/bin
-    - .duplicity/vars
+    - .duplicity
     - .openvpn
     - .pulse
     - .zsh/completions

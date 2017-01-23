@@ -10,7 +10,7 @@
   git:
     repo=https://github.com/rpbaptist/duplicity-home-backup.git
     dest="{{ home_dir }}/.duplicity"
-    update=no
+    update=yes
 
 - name: duplicity - variables
   become: no
