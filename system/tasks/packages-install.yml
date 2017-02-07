@@ -31,6 +31,7 @@
     - cups
 
     # usability
+    - gnome-characters
     - libinput-tools
     - redshift
     - redshift-gtk
