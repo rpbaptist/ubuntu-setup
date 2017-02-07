@@ -48,6 +48,10 @@
     - nemo-share
     - python-nemo
 
+    # i3 window manager
+    - i3-lock
+    - rofi
+
     # theming
     - arc-theme
     - breeze-cursor-theme
@@ -137,21 +141,38 @@
     - vlc
 
     # dependencies
+    - autoconf
     - build-essential
     - cabal-install-1.22
     - cmake
     - cpphs
     - dh-autoreconf
     - libcurl4-openssl-dev
+    - libev-dev
     - libffi-dev
     - libgcrypt11-dev
     - libmysqlclient-dev
+    - libpango1.0-dev
     - libpq-dev
     - libqt4-dev
     - libreadline-dev
+    - libsqlite3-dev
     - libssl-dev
+    - libstartup-notification0-dev
+    - libxcb-cursor-dev
+    - libxcb-icccm4-dev
+    - libxcb-keysyms1-dev
+    - libxcb-randr0-dev
+    - libxcb-util0-dev
+    - libxcb-xinerama0-dev
+    - libxcb-xkb-dev
+    - libxcb-xrm-dev
+    - libxcb1-dev
+    - libxkbcommon-dev
+    - libxkbcommon-x11-dev
     - libxml2-dev
     - libxslt1-dev
+    - libyajl-dev
     - libyaml-dev
     - linux-image-extra-virtual
     - llvm
@@ -161,7 +182,6 @@
     - python-software-properties
     - sni-qt
     - sni-qt:i386
-    - libsqlite3-dev
     - uvcdynctrl
     - wmctrl
     - xdotool
