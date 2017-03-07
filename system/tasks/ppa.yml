@@ -65,6 +65,8 @@
     - ppa:hvr/ghc
     - ppa:linrunner/tlp
     - ppa:nilarimogard/webupd8
+    - ppa:papirus/papirus
+    - ppa:andreas-angerer89/sni-qt-patched # hardcode-tray
     - ppa:webupd8team/terminix
     # Zeal PPA throws an error for some reason
     # - ppa:zeal-developers/ppa

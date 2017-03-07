@@ -15,4 +15,4 @@
 - include: copyq.yml
 - include: slack.yml
 - include: keybase.yml
-- include: papirus.yml
+- include: icons.yml

@@ -49,11 +49,13 @@
     - python-nemo
 
     # i3 window manager
-    - i3-lock
-    - rofi
+    # - i3-lock
+    # - rofi
 
     # theming
     - arc-theme
+    - papirus-icon-theme
+    - hardcode-tray
     - breeze-cursor-theme
     - gnome-icon-theme-full
 

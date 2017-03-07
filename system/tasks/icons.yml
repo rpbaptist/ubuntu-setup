@@ -1,0 +1,9 @@
+---
+- name: Papirus icons - change tray color
+  replace:
+    dest: /usr/share/themes/Arc-Dark/cinnamon/cinnamon.css
+    regexp: 'white'
+    replace: '#d3dae3'
+
+- name: Papirus icons - change tray icons
+  shell: hardcode-tray --conversion-tool Inkscape --dark-theme Papirus --size 24
