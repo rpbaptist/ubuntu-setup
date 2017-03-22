@@ -1,33 +1,31 @@
 ---
-- name: Hub - check existence
-  stat: path="{{ home_dir }}/.local/bin/hub"
-  register: hub
-
 - name: Hub - unarchive
   become: no
   unarchive:
-    src=https://github.com/github/hub/releases/download/v{{ hub_version }}/hub-linux-amd64-{{ hub_version }}.tgz
-    dest="{{ home_dir }}/code/apps"
-    copy=no
-  when: not hub.stat.exists
+    src: https://github.com/github/hub/releases/download/v{{ hub_version }}/hub-linux-amd64-{{ hub_version }}.tgz
+    dest: "{{ home_dir }}/code/apps"
+    copy: no
+  tags: hub
 
-- name: Hub - rename
+- name: Hub - rename directory
   become: no
-  command: mv {{ home_dir }}/code/apps/hub-linux-amd64-{{ hub_version }} {{ home_dir }}/code/apps/hub
-  when: not hub.stat.exists
+  command: rsync -a hub-linux-amd64-{{ hub_version }} hub && rm -rf hub-linux-amd64-{{ hub_version }}
+  args:
+    chdir: "{{ home_dir }}/code/apps"
+  tags: hub
 
 - name: Hub - copy zsh completions
   become: no
-  copy:
-    src="{{ home_dir }}/code/apps/hub/etc/hub.zsh_completion"
-    dest="{{ home_dir }}/.zsh/completions/_hub"
-    mode=0775
-  when: not hub.stat.exists
+  template:
+    src: "{{ home_dir }}/code/apps/hub/etc/hub.zsh_completion"
+    dest: "{{ home_dir }}/.zsh/completions/_hub"
+    mode: "0775"
+  tags: hub
 
 - name: Hub - copy binary
   become: no
   copy:
-    src="{{ home_dir }}/code/apps/hub/bin/hub"
-    dest="{{ home_dir }}/.local/bin/hub"
-    mode=0755
-  when: not hub.stat.exists
+    src: "{{ home_dir }}/code/apps/hub/bin/hub"
+    dest: "{{ home_dir }}/.local/bin/hub"
+    mode: "0755"
+  tags: hub
