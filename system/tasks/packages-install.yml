@@ -97,7 +97,7 @@
     # terminal / shell
     - git
     - httpie
-    - terminix
+    - tilix
     - tree
     - xclip
     - zsh
