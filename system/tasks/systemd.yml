@@ -10,15 +10,22 @@
     - duplicity.timer
   tags: systemd
 
-- name: dconf dump
+- name: enable systemd services
   systemd:
     enabled: yes
-    name: dconf
+    name: "{{ item }}"
+  with_items:
+    - dconf.service
+    - duplicity.service
   tags: systemd
 
-- name: duplicity backup
+- name: enable systemd timers
   systemd:
     enabled: yes
-    name: duplicity
+    state: started
+    name: "{{ item }}"
+  with_items:
+    - dconf.timer
+    - duplicity.timer
   tags: systemd
 
