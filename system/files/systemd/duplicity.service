@@ -1,0 +1,11 @@
+[Unit]
+Description=Run duplicity backup script
+
+[Service]
+Type=simple
+Nice=19
+IOSchedulingClass=2
+IOSchedulingPriority=7
+ExecStart=/home/richard/.duplicity/bin/backup
+User=richard
+Group=richard

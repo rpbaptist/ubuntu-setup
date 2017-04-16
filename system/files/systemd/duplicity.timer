@@ -1,0 +1,11 @@
+[Unit]
+Description=Run duplicity backup script
+After=dconf.service
+
+[Timer]
+OnCalendar=daily
+Persistent=true
+Unit=duplicity.service
+
+[Install]
+WantedBy=backup.target

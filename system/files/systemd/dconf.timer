@@ -1,0 +1,10 @@
+[Unit]
+Description=Run dconf backup script
+
+[Timer]
+OnCalendar=daily
+Persistent=true
+Unit=dconf.service
+
+[Install]
+WantedBy=backup.target

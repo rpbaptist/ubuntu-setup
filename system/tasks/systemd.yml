@@ -1,0 +1,24 @@
+---
+- name: systemd templates
+  template:
+    src: "{{ ansible_dir }}/system/files/systemd/{{ item }}"
+    dest: /etc/systemd/system/{{ item }}
+  with_items:
+    - dconf.service
+    - dconf.timer
+    - duplicity.service
+    - duplicity.timer
+  tags: systemd
+
+- name: dconf dump
+  systemd:
+    enabled: yes
+    name: dconf
+  tags: systemd
+
+- name: duplicity backup
+  systemd:
+    enabled: yes
+    name: duplicity
+  tags: systemd
+

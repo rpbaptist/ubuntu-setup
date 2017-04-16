@@ -16,3 +16,4 @@
 - include: slack.yml
 - include: keybase.yml
 - include: icons.yml
+- include: systemd.yml
