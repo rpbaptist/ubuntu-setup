@@ -2,7 +2,7 @@
 Description=Run duplicity backup script
 
 [Service]
-Type=simple
+Type=forking
 Nice=19
 IOSchedulingClass=2
 IOSchedulingPriority=7
