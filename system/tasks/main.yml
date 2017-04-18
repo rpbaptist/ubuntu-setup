@@ -17,3 +17,4 @@
 - include: keybase.yml
 - include: icons.yml
 - include: systemd.yml
+- include: keepassxc.yml
