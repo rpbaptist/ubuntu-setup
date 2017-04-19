@@ -55,7 +55,7 @@
     - deb http://archive.ubuntu.com/ubuntu {{ distro }} multiverse
     - deb http://download.fpcomplete.com/ubuntu {{ distro }} main
     - "deb http://download.opensuse.org/repositories/home:Horst3180/xUbuntu_{{ release}} /"
-    - deb http://repository.spotify.com testing non-free
+    - deb http://repository.spotify.com stable non-free
     - deb https://cli-assets.heroku.com/branches/stable/apt ./
     - deb https://apt.dockerproject.org/repo ubuntu-{{ distro }} main
     - deb https://deb.nodesource.com/node_5.x {{ distro }} main
