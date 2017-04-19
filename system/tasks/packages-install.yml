@@ -119,6 +119,7 @@
     - shutter
     - software-properties-gtk
     - synaptic
+    - vim
     - wkhtmltopdf
 
     # networking
