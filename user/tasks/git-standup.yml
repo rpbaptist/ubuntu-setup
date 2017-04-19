@@ -1,0 +1,14 @@
+---
+- name: git standup - download
+  become: no
+  git:
+    repo: https://github.com/kamranahmedse/git-standup.git
+    dest: "{{ home_dir }}/code/apps/git-standup"
+    update: yes
+  tags: git-standup
+
+- name: git standup - install
+  shell: make install
+  args:
+    chdir: "{{ home_dir }}/code/apps/git-standup"
+  tags: git-standup
