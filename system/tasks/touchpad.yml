@@ -1,8 +1,8 @@
 ---
 - name: touchpad - config
   copy:
-    src="{{ ansible_dir }}/system/files/30-touchpad.conf"
-    dest=/etc/X11/xorg.conf.d/30-touchpad.conf
+    src: "{{ ansible_dir }}/system/files/30-touchpad.conf"
+    dest: /usr/share/X11/xorg.conf.d/30-touchpad.conf
 
 - name: touchpad - permission
   shell: "gpasswd -a {{ user }} input"
