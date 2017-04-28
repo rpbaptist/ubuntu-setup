@@ -4,8 +4,5 @@ After=dconf.service
 
 [Timer]
 OnCalendar=daily
+OnActiveSec=5
 Persistent=true
-Unit=duplicity.service
-
-[Install]
-WantedBy=backup.target

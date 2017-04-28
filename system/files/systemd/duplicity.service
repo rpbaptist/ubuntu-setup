@@ -1,11 +1,14 @@
 [Unit]
 Description=Run duplicity backup script
 
+[Install]
+WantedBy=backups.target
+
 [Service]
-Type=forking
-Nice=19
-IOSchedulingClass=2
-IOSchedulingPriority=7
+Type=oneshot
+#Nice=19
+#IOSchedulingClass=2
+#IOSchedulingPriority=7
 ExecStart=/home/richard/.duplicity/bin/backup
 User=richard
 Group=richard

@@ -3,8 +3,5 @@ Description=Run dconf backup script
 
 [Timer]
 OnCalendar=daily
+OnActiveSec=2
 Persistent=true
-Unit=dconf.service
-
-[Install]
-WantedBy=backup.target
