@@ -8,7 +8,7 @@
   with_items:
     - {
       regexp: '^GRUB_CMDLINE_LINUX_DEFAULT=.*$',
-      line: GRUB_CMDLINE_LINUX_DEFAULT="pcie_aspm=force i915.preliminary_hw_support=0"
+      line: GRUB_CMDLINE_LINUX_DEFAULT="pcie_aspm=force"
     }
     - {
       regexp: '^GRUB_TIMEOUT=\d*$',
