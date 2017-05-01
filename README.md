@@ -4,7 +4,7 @@ Steps required:
 
 1. Set up ssh keys  
 
-2. Install git and ansible:
+2. Install git and ansible (Not from Ubuntu PPA, because especially for ansible I need a modern version):
 
    1. `sudo add-apt-repository ppa:git-core/ppa`
    2. `sudo add-apt-repository ppa:ansible/ansible`
