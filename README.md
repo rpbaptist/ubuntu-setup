@@ -1,4 +1,4 @@
-# Ubuntu set up script
+# Ubuntu post install script
 
 Steps required:
 
@@ -13,13 +13,14 @@ Steps required:
 
 3. Get this ansible playbook:
 
-  `git clone https://github.com/rpbaptist/ubuntu-setup.git ~/.ansible`
+  `git clone https://github.com/rpbaptist/ubuntu-setup.git ~/.ansible && cd ~/.ansible`
 
-4. Set the vault password file:
+4. Set variables in `vars` directory and password in a file: `vault-pass.txt`
 
-  `vault-pass.txt`
-
-4. Run ansible:
+5. Run ansible:
   
-  1. `cd ~/.ansible`
-  2. `ansible-playbook main.yml --vault-password-file vault-pass.txt`
+   `ansible-playbook main.yml --vault-password-file vault-pass.txt`
+
+6. ???
+
+7. Profit!
