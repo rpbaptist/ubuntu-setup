@@ -13,7 +13,7 @@ Steps required:
 
 3. Get this ansible playbook:
 
-  `git clone https://github.com/rpbaptist/ubuntu-setup.git ~/.ansible && cd ~/.ansible`
+   `git clone https://github.com/rpbaptist/ubuntu-setup.git ~/.ansible && cd ~/.ansible`
 
 4. Set variables in `vars` directory and password in a file: `vault-pass.txt`
 
