@@ -60,9 +60,9 @@
     - gnome-icon-theme-full
 
     # internet
+    - chromium-browser
     - dropbox
     - duplicity
-    - google-chrome-stable
     - insync
     - insync-nemo
     - sshuttle

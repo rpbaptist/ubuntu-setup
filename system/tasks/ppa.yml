@@ -3,7 +3,6 @@
   apt_key: url={{ item }} state=present
   with_items:
     - https://deb.nodesource.com/gpgkey/nodesource.gpg.key
-    - https://dl-ssl.google.com/linux/linux_signing_key.pub
     - https://cli-assets.heroku.com/apt/release.key
     - https://d2t3ff60b2tol4.cloudfront.net/services@insynchq.com.gpg.key
     - https://dl.yarnpkg.com/debian/pubkey.gpg
@@ -45,7 +44,6 @@
   apt_repository: repo={{ item }} state=present
   register: ppastable
   with_items:
-    - deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main
     - deb [arch=i386,amd64] http://linux.dropbox.com/ubuntu {{ distro }} main
     - deb http://apt.insynchq.com/ubuntu xenial non-free contrib
     - "deb http://download.opensuse.org/repositories/home:Horst3180/xUbuntu_{{ release}} /"
