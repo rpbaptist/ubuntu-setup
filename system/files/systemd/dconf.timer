@@ -5,3 +5,6 @@ Description=Run dconf backup script
 OnCalendar=daily
 OnActiveSec=2
 Persistent=true
+
+[Install]
+WantedBy=backups.target

@@ -6,3 +6,6 @@ After=dconf.service
 OnCalendar=daily
 OnActiveSec=5
 Persistent=true
+
+[Install]
+WantedBy=backups.target
