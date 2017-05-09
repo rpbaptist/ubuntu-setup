@@ -3,6 +3,8 @@
   copy:
     src: "{{ ansible_dir }}/system/files/30-libinput.conf"
     dest: /etc/X11/xorg.conf.d/30-libinput.conf
+  tags: touchpad
 
 - name: touchpad - permission
   shell: "gpasswd -a {{ user }} input"
+  tags: touchpad
