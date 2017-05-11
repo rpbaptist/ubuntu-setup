@@ -2,8 +2,9 @@
 Description=Run dconf backup script
 
 [Timer]
+OnBootSec=10min
 OnCalendar=daily
-OnActiveSec=2
+OnActiveSec=1d
 Persistent=true
 
 [Install]

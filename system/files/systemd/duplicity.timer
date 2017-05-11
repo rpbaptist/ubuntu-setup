@@ -3,8 +3,9 @@ Description=Run duplicity backup script
 After=dconf.service
 
 [Timer]
+OnBootSec=20min
 OnCalendar=daily
-OnActiveSec=5
+OnActiveSec=1d
 Persistent=true
 
 [Install]
