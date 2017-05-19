@@ -2,10 +2,9 @@
 Description=Run dconf backup script
 
 [Timer]
-OnBootSec=10min
+OnStartupSec=10min
 OnCalendar=daily
-OnActiveSec=1d
 Persistent=true
 
 [Install]
-WantedBy=backups.target
+WantedBy=timers.target
