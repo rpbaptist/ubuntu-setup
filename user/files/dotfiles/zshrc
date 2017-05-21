@@ -50,6 +50,6 @@ autoload -U compinit && compinit
 # Don't try to ssh to hosts file
 zstyle ':completion:*' hosts off
 
-if [[ $TERMINIX_ID ]]; then
+if [[ $TILIX_ID ]]; then
         source /etc/profile.d/vte.sh
 fi
