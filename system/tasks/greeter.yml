@@ -3,13 +3,16 @@
   template:
     src: "{{ ansible_dir }}/system/files/lightdm.conf"
     dest: /etc/lightdm/lightdm.conf
+  tags: greeter
 
 - name: greeter - background
   copy:
     src: "{{ ansible_dir }}/system/files/login_background.jpg"
     dest: /usr/share/backgrounds/login_background.jpg
+  tags: greeter
 
 - name: greeter-theme - config
   template:
     src: "{{ ansible_dir }}/system/files/lightdm-gtk-greeter.conf"
     dest: /etc/lightdm/lightdm-gtk-greeter.conf
+  tags: greeter

@@ -3,8 +3,10 @@
   get_url:
     url: "https://github.com/hluk/CopyQ/releases/download/v{{ copyq_version}}/copyq_{{ copyq_version}}_Ubuntu_{{ release }}_amd64.deb"
     dest: "{{ download_dir }}"
+  tags: copyq
 
 - name: copyq - install
   apt:
     deb: "{{ download_dir }}/copyq_{{ copyq_version}}_Ubuntu_{{ release }}_amd64.deb"
     state: present
+  tags: copyq
