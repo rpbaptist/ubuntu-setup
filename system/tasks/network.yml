@@ -1,7 +1,0 @@
----
-- name: manage network
-  lineinfile:
-    dest: /etc/NetworkManager/NetworkManager.conf
-    regexp: '^managed=false$'
-    line: managed=true
-    state: present

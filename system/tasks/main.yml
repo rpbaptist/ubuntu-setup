@@ -9,7 +9,6 @@
 - include: libinput-gestures.yml
 - include: power.yml
 - include: hosts.yml
-- include: network.yml
 - include: openvpn.yml
 - include: sublime.yml
 - include: copyq.yml
