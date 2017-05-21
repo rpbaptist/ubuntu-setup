@@ -57,7 +57,7 @@
     - papirus-icon-theme
     - hardcode-tray
     - breeze-cursor-theme
-    - gnome-icon-theme-full
+    #- gnome-icon-theme-full
 
     # internet
     - chromium-browser
@@ -75,7 +75,7 @@
     - ghc-prof
     - haskell-doc
     - hugs
-    - stack
+    # - stack
 
     # office
     - libreoffice
@@ -145,7 +145,6 @@
     # dependencies
     - autoconf
     - build-essential
-    - cabal-install-1.22
     - cmake
     - cpphs
     - dh-autoreconf
