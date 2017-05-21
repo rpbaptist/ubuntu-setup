@@ -46,7 +46,6 @@
   with_items:
     - deb [arch=i386,amd64] http://linux.dropbox.com/ubuntu {{ distro }} main
     - deb http://apt.insynchq.com/ubuntu xenial non-free contrib
-    - "deb http://download.opensuse.org/repositories/home:Horst3180/xUbuntu_{{ release}} /"
     - deb http://repository.spotify.com stable non-free
     - deb https://cli-assets.heroku.com/branches/stable/apt ./
     - deb https://apt.dockerproject.org/repo ubuntu-{{ distro }} main
@@ -55,7 +54,6 @@
     - ppa:git-core/ppa
     # haskell
     - ppa:hvr/ghc
-    - ppa:linrunner/tlp
     - ppa:nilarimogard/webupd8
     - ppa:papirus/papirus
     - ppa:andreas-angerer89/sni-qt-patched # hardcode-tray
