@@ -2,6 +2,7 @@
 - include: intel-graphics.yml
 - include: ppa.yml
 - include: packages-install.yml
+- include: packages-remove.yml
 - include: directories.yml
 - include: greeter.yml
 - include: grub.yml
