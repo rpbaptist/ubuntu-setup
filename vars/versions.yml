@@ -1,11 +1,11 @@
 ---
-copyq_version: "2.9.0"
+copyq_version: "3.0.1"
 hub_version: 2.3.0-pre9
 intel_graphics_version: "2.0.2"
 mariadb_version: "10.1"
 nvm_version: "0.32.1"
 openzone_version: "1.2.5"
 ruby_version: "2.4.0"
-slack_version: "2.5.2"
+slack_version: "2.6.0"
 sublime_build: "3126"
 keepassxc_version: "2.1.4-1"
