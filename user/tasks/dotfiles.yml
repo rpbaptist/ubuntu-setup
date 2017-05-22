@@ -12,6 +12,7 @@
     - gitconfig
     - gitignore
     - irbrc
+    - npmrc
     - railsrc
     - rspec
     - sqliterc
