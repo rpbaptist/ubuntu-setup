@@ -1,7 +1,9 @@
 ---
 - name: Updates apt cache
   apt: update_cache=true
-  tags: apt
+  tags:
+    - apt
+    - ppa
 
 - name: Apps | Install with apt-get
   apt:

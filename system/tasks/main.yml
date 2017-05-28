@@ -11,7 +11,6 @@
 - include: power.yml
 - include: hosts.yml
 - include: openvpn.yml
-- include: sublime.yml
 - include: copyq.yml
 - include: slack.yml
 - include: keybase.yml
