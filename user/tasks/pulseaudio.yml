@@ -13,7 +13,7 @@
 
 - name: pulseaudio - kill
   become: no
-  shell: pulseaudio -k
+  shell: pulseaudio -k || true
   tags: pulse
 
 - name: pulseaudio - reload alsa
@@ -28,7 +28,9 @@
   with_items:
     - pulse
     - pulse/presets
-  tags: pulse
+  tags:
+    - pulse
+    - pulse-presets
 
 - name: pulseaudio - preset
   become: no
@@ -39,4 +41,6 @@
     - equalizerrc
     - equalizerrc.availablepresets
     - presets/_headphones.preset
-  tags: pulse
+  tags:
+    - pulse
+    - pulse-presets
