@@ -118,6 +118,7 @@
     - p7zip-rar
     - ppa-purge
     - python-pip
+    - shellcheck
     - shutter
     - software-properties-gtk
     - synaptic
