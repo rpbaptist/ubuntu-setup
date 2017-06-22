@@ -1,5 +1,7 @@
 #!/bin/sh
 
+export SHELLCHECK_OPTS="-e SC1090"
+
 COMMON_PATHS="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
 HOME_LOCAL_PATH="$HOME/.local/bin"
 YARN_PATH="$HOME/.yarn-config/global/node_modules/.bin"
@@ -18,11 +20,13 @@ GAMES_PATH="/usr/games:/usr/local/games"
 export PATH="$RBENV_PATH:$HOME_LOCAL_PATH:$COMMON_PATHS:$GAMES_PATH:$GOPATH:$YARN_PATH:$NPM_PACKAGES"
 
 # Preferred editor for local and remote sessions
-if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='vi'
+if [ -n "$SSH_CONNECTION" ]; then
+  export EDITOR="vi"
 else
-  export EDITOR='subl'
+  export EDITOR="subl"
 fi
+
+export RTV_EDITOR="vi"
 
 #GPG
 GPG_TTY=$(tty)
