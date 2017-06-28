@@ -13,3 +13,4 @@
 - include: crontab.yml
 - include: desktop.yml
 - include: pulseaudio.yml
+- include: pip.yml

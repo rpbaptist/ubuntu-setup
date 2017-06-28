@@ -1,0 +1,11 @@
+---
+- name: pip - install
+  become: no
+  pip:
+    name: "{{ item }}"
+    state: present
+    extra_args: "--user"
+  with_items:
+    - cheat
+    - rtv
+  tags: pip
