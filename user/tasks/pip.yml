@@ -6,6 +6,7 @@
     state: present
     extra_args: "--user"
   with_items:
+    - awscli
     - cheat
     - rtv
   tags: pip
