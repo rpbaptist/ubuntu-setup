@@ -1,5 +1,5 @@
 ---
-- include: intel-graphics.yml
+#- include: intel-graphics.yml
 - include: ppa.yml
 - include: packages-install.yml
 - include: packages-remove.yml

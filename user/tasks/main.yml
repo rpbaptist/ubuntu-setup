@@ -2,11 +2,11 @@
 - include: zsh.yml
 - include: duplicity.yml
 - include: dotfiles.yml
-- include: hub.yml
+#- include: hub.yml
 - include: git-standup.yml
 - include: ruby.yml
-- include: node.yml
-- include: lein.yml
+#- include: node.yml
+#- include: lein.yml
 - include: ngrok.yml
 - include: docker.yml
 - include: trash.yml
