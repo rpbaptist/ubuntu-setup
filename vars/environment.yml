@@ -1,6 +1,6 @@
 ---
 distro: zesty
-release: "17.04"
+release: "16.04"
 user: richard
 home_dir: "/home/{{ user }}"
 ansible_dir: "{{ home_dir}}/.ansible"
