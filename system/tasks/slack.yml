@@ -2,14 +2,16 @@
 - name: slack - exists
   stat: path=/usr/bin/slack
   register: slack
+  tags: slack
 
 - name: Slack - download
   get_url:
     url=https://downloads.slack-edge.com/linux_releases/slack-desktop-{{ slack_version }}-amd64.deb
     dest="{{ download_dir }}/slack.deb"
   when: not slack.stat.exists
+  tags: slack
 
 - name: Slack - install
   apt: deb="{{ download_dir }}/slack.deb"
   when: not slack.stat.exists
-
+  tags: slack
