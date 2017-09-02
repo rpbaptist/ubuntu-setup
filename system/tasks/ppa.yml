@@ -3,7 +3,7 @@
   apt_key: url={{ item }} state=present
   with_items:
     - https://deb.nodesource.com/gpgkey/nodesource.gpg.key
-    - https://cli-assets.heroku.com/apt/release.key
+    # - https://cli-assets.heroku.com/apt/release.key
     - https://d2t3ff60b2tol4.cloudfront.net/services@insynchq.com.gpg.key
     - https://dl.yarnpkg.com/debian/pubkey.gpg
     - https://download.01.org/gfx/RPM-GPG-KEY-ilg-4
@@ -51,7 +51,7 @@
     - deb [arch=i386,amd64] http://linux.dropbox.com/ubuntu {{ distro }} main
     - deb http://apt.insynchq.com/ubuntu xenial non-free contrib
     - deb http://repository.spotify.com stable non-free
-    - deb https://cli-assets.heroku.com/branches/stable/apt ./
+    # - deb https://cli-assets.heroku.com/branches/stable/apt ./
     - deb https://apt.dockerproject.org/repo ubuntu-{{ distro }} main
     - deb https://deb.nodesource.com/node_5.x {{ distro }} main
     - deb https://download.sublimetext.com/ apt/stable/
@@ -70,7 +70,7 @@
     # Unstable cinnamon - official
     # - ppa:gwendal-lebihan-dev/cinnamon-nightly
     - deb http://dl.yarnpkg.com/debian/ stable main
-    - deb [arch=amd64,ppc64el] http://ams2.mirrors.digitalocean.com/mariadb/repo/{{ mariadb_version }}/ubuntu {{ distro }} main
+    # - deb [arch=amd64,ppc64el] http://ams2.mirrors.digitalocean.com/mariadb/repo/{{ mariadb_version }}/ubuntu {{ distro }} main
   tags:
     - apt
     - ppa

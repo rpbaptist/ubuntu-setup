@@ -87,8 +87,8 @@
     - default-jdk
 
     # dev environment
-    - heroku
-    - "mariadb-client-{{ mariadb_version }}"
+    # - heroku
+    # - "mariadb-client-{{ mariadb_version }}"
     - nodejs
     - python-pip
     - phantomjs
