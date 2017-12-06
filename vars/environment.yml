@@ -1,5 +1,5 @@
 ---
-distro: zesty
+distro: xenial 
 release: "16.04"
 user: richard
 home_dir: "/home/{{ user }}"
