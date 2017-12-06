@@ -83,12 +83,13 @@
     - libreoffice
 
     # java
-    - default-jre
-    - default-jdk
+    # - default-jre
+    # - default-jdk
 
     # dev environment
     # - heroku
     # - "mariadb-client-{{ mariadb_version }}"
+    - mysql-client
     - nodejs
     - python-pip
     - phantomjs
@@ -106,6 +107,7 @@
 
     # tools
     - baobab
+    - curl
     - font-manager
     - gdebi
     - gnome-calculator
@@ -171,7 +173,7 @@
     - libxcb-util0-dev
     - libxcb-xinerama0-dev
     - libxcb-xkb-dev
-    - libxcb-xrm-dev
+    # - libxcb-xrm-dev
     - libxcb1-dev
     - libxkbcommon-dev
     - libxkbcommon-x11-dev
@@ -186,7 +188,7 @@
     - python-gpgme
     - python-software-properties
     - sni-qt
-    - sni-qt:i386
+    # - sni-qt:i386
     - uvcdynctrl
     - wmctrl
     - xdotool
