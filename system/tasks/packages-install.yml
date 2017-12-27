@@ -114,6 +114,7 @@
     - gnome-disk-utility
     - gnome-system-monitor
     - htop
+    - inkscape
     - jq
     - keepassxc
     - leafpad
@@ -188,7 +189,7 @@
     - python-gpgme
     - python-software-properties
     - sni-qt
-    # - sni-qt:i386
+    - sni-qt:i386
     - uvcdynctrl
     - wmctrl
     - xdotool
