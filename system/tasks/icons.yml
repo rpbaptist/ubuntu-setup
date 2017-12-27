@@ -6,4 +6,4 @@
     replace: '#d3dae3'
 
 - name: Papirus icons - change tray icons
-  shell: hardcode-tray --conversion-tool Inkscape --dark-theme Papirus --size 24
+  shell: sudo hardcode-tray --conversion-tool Inkscape --dark-theme Papirus --size 24 --apply
