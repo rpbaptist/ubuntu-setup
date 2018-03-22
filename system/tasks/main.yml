@@ -11,8 +11,8 @@
 - include: power.yml
 - include: hosts.yml
 - include: openvpn.yml
-- include: copyq.yml
+#- include: copyq.yml
 - include: slack.yml
 - include: keybase.yml
-# - include: icons.yml
+- include: icons.yml
 - include: systemd.yml

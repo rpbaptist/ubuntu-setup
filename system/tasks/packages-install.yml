@@ -63,6 +63,7 @@
 
     # internet
     - chromium-browser
+    - chromium-chromedriver
     - dropbox
     - duplicity
     - insync
