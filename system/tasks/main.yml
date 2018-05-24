@@ -1,5 +1,4 @@
 ---
-#- import_tasks: intel-graphics.yml
 - import_tasks: ppa.yml
 - import_tasks: packages-install.yml
 - import_tasks: packages-remove.yml
