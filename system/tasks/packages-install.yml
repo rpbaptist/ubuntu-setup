@@ -46,13 +46,11 @@
     - nemo
     - nemo-dropbox
     - nemo-fileroller
-    - nemo-seahorse
     - nemo-share
     - python-nemo
 
-    # i3 window manager
-    # - i3-lock
-    # - rofi
+    # development
+    - sublime-text
 
     # theming
     - arc-theme
@@ -71,30 +69,13 @@
     - sshuttle
     - transmission
 
-    # haskell
-    - cabal-install
-    - ghc
-    - ghc-doc
-    - ghc-prof
-    - haskell-doc
-    - hugs
-    # - stack
-
     # office
     - libreoffice
 
-    # java
-    # - default-jre
-    # - default-jdk
-
     # dev environment
-    # - heroku
-    # - "mariadb-client-{{ mariadb_version }}"
     - mysql-client
-    - nodejs
     - python-pip
-    - phantomjs
-    - docker-engine
+    #- docker-engine
     - zeal
     - yarn
 
@@ -176,7 +157,6 @@
     - libxcb-util0-dev
     - libxcb-xinerama0-dev
     - libxcb-xkb-dev
-    # - libxcb-xrm-dev
     - libxcb1-dev
     - libxkbcommon-dev
     - libxkbcommon-x11-dev
@@ -188,7 +168,7 @@
     - llvm
     - ncurses-doc
     - python-boto
-    - python-gpgme
+    - python-gpgm
     - python-software-properties
     - sni-qt
     - sni-qt:i386
