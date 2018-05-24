@@ -16,11 +16,6 @@
 - name: PPA keys - add with id
   apt_key: keyserver={{ item.keyserver }} id={{ item.id }} state=present
   with_items:
-    # Dropbox
-    - {
-      keyserver: 'pgp.mit.edu',
-      id: '5044912E'
-    }
     # Haskell
     - {
       keyserver: 'hkp://keyserver.ubuntu.com:80',
@@ -31,16 +26,6 @@
       keyserver: 'hkp://keyserver.ubuntu.com:80',
       id: '0DF731E45CE24F27EEEB1450EFDC8610341D9410'
     }
-    # Docker
-    - {
-      keyserver: 'hkp://p80.pool.sks-keyservers.net:80',
-      id: '58118E89F3A912897C070ADBF76221572C52609D'
-    }
-    # MariaDB
-    - {
-      keyserver: 'hkp://keyserver.ubuntu.com:80',
-      id: '0xF1656F24C74CD1D8'
-    }
   tags:
     - apt
     - ppa
@@ -49,22 +34,22 @@
   apt_repository: repo={{ item }} state=present
   register: ppastable
   with_items:
-    - deb [arch=i386,amd64] http://linux.dropbox.com/ubuntu {{ distro }} main
+    #- deb [arch=i386,amd64] http://linux.dropbox.com/ubuntu {{ distro }} main
     - deb http://apt.insynchq.com/ubuntu xenial non-free contrib
     - deb http://repository.spotify.com stable non-free
     # - deb https://cli-assets.heroku.com/branches/stable/apt ./
-    - deb https://apt.dockerproject.org/repo ubuntu-{{ distro }} main
-    - deb https://deb.nodesource.com/node_5.x {{ distro }} main
+    #- deb https://apt.dockerproject.org/repo ubuntu-{{ distro }} main
+    #- deb https://deb.nodesource.com/node_5.x {{ distro }} main
     - deb https://download.sublimetext.com/ apt/stable/
     - ppa:duplicity-team/ppa
     - ppa:git-core/ppa
     - ppa:hluk/copyq
     # haskell
     - ppa:hvr/ghc
-    - ppa:nilarimogard/webupd8
+    #- ppa:nilarimogard/webupd8
     - ppa:papirus/papirus
     - ppa:andreas-angerer89/sni-qt-patched # hardcode-tray
-    - ppa:webupd8team/terminix
+    #- ppa:webupd8team/terminix
     # Zeal PPA throws an error for some reason
     # - ppa:zeal-developers/ppa
     # Stable cinnamon 3.0
