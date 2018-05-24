@@ -58,6 +58,7 @@
     - deb https://download.sublimetext.com/ apt/stable/
     - ppa:duplicity-team/ppa
     - ppa:git-core/ppa
+    - ppa:hluk/copyq
     # haskell
     - ppa:hvr/ghc
     - ppa:nilarimogard/webupd8

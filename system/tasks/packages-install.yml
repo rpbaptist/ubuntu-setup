@@ -109,6 +109,7 @@
     # tools
     - baobab
     - curl
+    - copyq
     - font-manager
     - gdebi
     - gnome-calculator
