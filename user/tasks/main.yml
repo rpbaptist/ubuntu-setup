@@ -5,11 +5,7 @@
 #- import_tasks: hub.yml
 - import_tasks: git-standup.yml
 - import_tasks: ruby.yml
-#- import_tasks: node.yml
-#- import_tasks: lein.yml
 - import_tasks: ngrok.yml
-- import_tasks: docker.yml
-- import_tasks: trash.yml
 - import_tasks: crontab.yml
 - import_tasks: desktop.yml
 - import_tasks: pulseaudio.yml
