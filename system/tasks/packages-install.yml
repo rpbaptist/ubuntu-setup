@@ -50,6 +50,7 @@
     - python-nemo
 
     # development
+    - chromium-chromedriver
     - sublime-text
 
     # theming
