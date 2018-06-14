@@ -128,7 +128,7 @@
     - guvcview
     - libasound2-plugin-equal
     - pavucontrol
-    - pulseaudio-equalizer
+    - pulseeffects
     - spotify-client
     - viewnior
     - vlc
