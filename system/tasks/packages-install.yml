@@ -170,8 +170,8 @@
     - llvm
     - ncurses-doc
     - python-boto
-    - python-gpgm
-    - python-software-properties
+    - python-gpg
+    - python3-software-properties
     - sni-qt
     - sni-qt:i386
     - uvcdynctrl
