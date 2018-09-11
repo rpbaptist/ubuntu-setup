@@ -9,7 +9,7 @@
 - import_tasks: libinput-gestures.yml
 - import_tasks: power.yml
 - import_tasks: hosts.yml
-- import_tasks: openvpn.yml
+# - import_tasks: openvpn.yml
 - import_tasks: slack.yml
 - import_tasks: keybase.yml
 - import_tasks: icons.yml
