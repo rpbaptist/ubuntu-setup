@@ -76,6 +76,7 @@
     # dev environment
     - mysql-client
     - python-pip
+    - nodejs
     #- docker-engine
     - zeal
     - yarn
