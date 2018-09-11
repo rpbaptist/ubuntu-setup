@@ -22,7 +22,7 @@
     # Spotify
     - {
       keyserver: 'hkp://keyserver.ubuntu.com:80',
-      id: '0DF731E45CE24F27EEEB1450EFDC8610341D9410'
+      id: '931FF8E79F0876134EDDBDCCA87FF9DF48BF1C90'
     }
   tags:
     - apt
@@ -35,6 +35,7 @@
     - deb http://apt.insynchq.com/ubuntu {{ distro }} non-free contrib
     - deb http://repository.spotify.com stable non-free
     - deb https://download.sublimetext.com/ apt/stable/
+    - deb https://deb.nodesource.com/{{ node_version }} {{ distro }} main
     - ppa:duplicity-team/ppa
     - ppa:git-core/ppa
     - ppa:hluk/copyq
@@ -46,7 +47,6 @@
     - ppa:phoerious/keepassxc
     - ppa:andreas-angerer89/sni-qt-patched
     - ppa:mikhailnov/pulseeffects
-    - https://deb.nodesource.com/{{ node_version }} ubuntu {{ distro }} main
   tags:
     - apt
     - ppa
