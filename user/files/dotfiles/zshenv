@@ -31,12 +31,5 @@ export RTV_EDITOR="vi"
 #GPG
 GPG_TTY=$(tty)
 export GPG_TTY
-export NVM_DIR="$HOME/.nvm"
-
-# Lazy load nvm
-nvm() {
-  [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
-  nvm "$@"
-}
 
 . ~/.local/env
