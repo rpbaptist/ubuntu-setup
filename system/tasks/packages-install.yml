@@ -37,6 +37,11 @@
     - libinput-tools
     - redshift
     - redshift-gtk
+    - xautomation
+    - xdotool
+    - xbindkeys
+    - solaar
+    - imwheel
 
     # desktop environment
     - blueberry
@@ -50,7 +55,7 @@
     - python-nemo
 
     # development
-    - chromium-chromedriver
+    - chromium-`medriver
     - sublime-text
 
     # theming
@@ -61,6 +66,7 @@
     #- gnome-icon-theme-full
 
     # internet
+    - firefox
     - chromium-browser
     - chromium-chromedriver
     - dropbox
@@ -100,6 +106,7 @@
     - gnome-system-monitor
     - htop
     - inkscape
+    - flameshot
     - jq
     - keepassxc
     - leafpad
@@ -108,7 +115,6 @@
     - ppa-purge
     - python-pip
     - shellcheck
-    - shutter
     - software-properties-gtk
     - synaptic
     - vim
