@@ -44,7 +44,7 @@
     - imwheel
 
     # desktop environment
-    - blueberry
+    # - blueberry
     - cinnamon
     - dconf-tools
     - dconf-editor
@@ -55,20 +55,20 @@
     - python-nemo
 
     # development
-    - chromium-`medriver
+    # - chromium-`medriver
     - sublime-text
 
     # theming
-    - arc-theme
+    # - arc-theme
     - papirus-icon-theme
-    - hardcode-tray
+    # - hardcode-tray
     - breeze-cursor-theme
     #- gnome-icon-theme-full
 
     # internet
     - firefox
     - chromium-browser
-    - chromium-chromedriver
+    # - chromium-chromedriver
     - dropbox
     - duplicity
     - insync
