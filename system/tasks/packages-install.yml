@@ -21,19 +21,19 @@
     - tlp-rdw
 
     # greeter
-    - lightdm
-    - lightdm-gtk-greeter
-    - lightdm-gtk-greeter-settings
+    # - lightdm
+    # - lightdm-gtk-greeter
+    # - lightdm-gtk-greeter-settings
 
     # android
-    - android-tools-adb
-    - android-tools-fastboot
+    # - android-tools-adb
+    # - android-tools-fastboot
 
     # printing
     - cups
 
     # usability
-    - gnome-characters
+    # - gnome-characters
     - libinput-tools
     - redshift
     - redshift-gtk
@@ -45,21 +45,21 @@
 
     # desktop environment
     # - blueberry
-    - cinnamon
+    # - cinnamon
     - dconf-tools
     - dconf-editor
-    - nemo
-    - nemo-dropbox
-    - nemo-fileroller
-    - nemo-share
-    - python-nemo
+    # - nemo
+    # - nemo-dropbox
+    # - nemo-fileroller
+    # - nemo-share
+    # - python-nemo
 
     # development
     # - chromium-`medriver
     - sublime-text
 
     # theming
-    # - arc-theme
+    - arc-theme
     - papirus-icon-theme
     # - hardcode-tray
     - breeze-cursor-theme
@@ -69,18 +69,18 @@
     - firefox
     - chromium-browser
     # - chromium-chromedriver
-    - dropbox
+    # - dropbox
     - duplicity
     - insync
     - insync-nemo
-    - sshuttle
+    # - sshuttle
     - transmission
 
     # office
-    - libreoffice
+    # - libreoffice
 
     # dev environment
-    - mysql-client
+    # - mysql-client
     - python-pip
     - nodejs
     #- docker-engine
@@ -123,19 +123,19 @@
     # networking
     - gufw
     - ufw
-    - network-manager
-    - network-manager-gnome
-    - network-manager-openvpn
-    - network-manager-openvpn-gnome
+    # - network-manager
+    # - network-manager-gnome
+    # - network-manager-openvpn
+    # - network-manager-openvpn-gnome
 
     # media
-    - clementine
+    # - clementine
     - evince
     - gimp
     - guvcview
     - libasound2-plugin-equal
-    - pavucontrol
-    - pulseeffects
+    # - pavucontrol
+    # - pulseeffects
     - spotify-client
     - viewnior
     - vlc
@@ -146,33 +146,33 @@
     - cmake
     - cpphs
     - dh-autoreconf
-    - libcurl4-openssl-dev
-    - libev-dev
-    - libffi-dev
-    - libgcrypt11-dev
-    - libmysqlclient-dev
-    - libpango1.0-dev
-    - libpq-dev
-    - libqt4-dev
-    - libreadline-dev
-    - libsqlite3-dev
-    - libssl-dev
-    - libstartup-notification0-dev
-    - libxcb-cursor-dev
-    - libxcb-icccm4-dev
-    - libxcb-keysyms1-dev
-    - libxcb-randr0-dev
-    - libxcb-util0-dev
-    - libxcb-xinerama0-dev
-    - libxcb-xkb-dev
-    - libxcb1-dev
-    - libxkbcommon-dev
-    - libxkbcommon-x11-dev
-    - libxml2-dev
-    - libxslt1-dev
-    - libyajl-dev
-    - libyaml-dev
-    - linux-image-extra-virtual
+    # - libcurl4-openssl-dev
+    # - libev-dev
+    # - libffi-dev
+    # - libgcrypt11-dev
+    # - libmysqlclient-dev
+    # - libpango1.0-dev
+    # - libpq-dev
+    # - libqt4-dev
+    # - libreadline-dev
+    # - libsqlite3-dev
+    # - libssl-dev
+    # - libstartup-notification0-dev
+    # - libxcb-cursor-dev
+    # - libxcb-icccm4-dev
+    # - libxcb-keysyms1-dev
+    # - libxcb-randr0-dev
+    # - libxcb-util0-dev
+    # - libxcb-xinerama0-dev
+    # - libxcb-xkb-dev
+    # - libxcb1-dev
+    # - libxkbcommon-dev
+    # - libxkbcommon-x11-dev
+    # - libxml2-dev
+    # - libxslt1-dev
+    # - libyajl-dev
+    # - libyaml-dev
+    # - linux-image-extra-virtual
     - llvm
     - ncurses-doc
     - python-boto
@@ -183,6 +183,6 @@
     - uvcdynctrl
     - wmctrl
     - xdotool
-    - zlib1g-dev
+    # - zlib1g-dev
 
   tags: apt
