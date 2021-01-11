@@ -46,7 +46,7 @@
     # desktop environment
     # - blueberry
     # - cinnamon
-    - dconf-tools
+    # - dconf-tools
     - dconf-editor
     # - nemo
     # - nemo-dropbox
