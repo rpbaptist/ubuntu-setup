@@ -4,7 +4,7 @@
     src: "{{ ansible_dir }}/system/files/systemd/{{ item }}"
     dest: /etc/systemd/system/{{ item }}
   with_items:
-    - clock-mod-fix.service
+    # - clock-mod-fix.service
     - dconf.service
     - dconf.timer
     - duplicity.service
@@ -16,7 +16,7 @@
     enabled: yes
     name: "{{ item }}"
   with_items:
-    - clock-mod-fix.service
+    # - clock-mod-fix.service
     - dconf.service
     - duplicity.service
   tags: systemd
@@ -30,4 +30,3 @@
     - dconf.timer
     - duplicity.timer
   tags: systemd
-

@@ -8,5 +8,5 @@
   with_items:
     - awscli
     - cheat
-    - rtv
+    - boto
   tags: pip

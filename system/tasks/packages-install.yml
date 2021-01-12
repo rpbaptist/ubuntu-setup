@@ -141,6 +141,7 @@
     - vlc
 
     # dependencies
+    - apt-transport-https
     - autoconf
     - build-essential
     - cmake
@@ -175,11 +176,7 @@
     # - linux-image-extra-virtual
     - llvm
     - ncurses-doc
-    - python-boto
-    - python-gpg
     - python3-software-properties
-    - sni-qt
-    - sni-qt:i386
     - uvcdynctrl
     - wmctrl
     - xdotool

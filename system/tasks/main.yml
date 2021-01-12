@@ -3,14 +3,10 @@
 - import_tasks: packages-install.yml
 - import_tasks: packages-remove.yml
 - import_tasks: directories.yml
-- import_tasks: greeter.yml
+# - import_tasks: greeter.yml
 - import_tasks: grub.yml
 - import_tasks: touchpad.yml
 - import_tasks: libinput-gestures.yml
 - import_tasks: power.yml
 - import_tasks: hosts.yml
-# - import_tasks: openvpn.yml
-# - import_tasks: slack.yml
-- import_tasks: keybase.yml
-- import_tasks: icons.yml
 - import_tasks: systemd.yml
