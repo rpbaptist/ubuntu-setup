@@ -1,0 +1,15 @@
+---
+- name: asdf - download
+  become: no
+  git:
+    repo: https://github.com/asdf-vm/asdf.git
+    dest: "{{ home_dir }}/.asdf"
+    version: "{{ asdf_version }}"
+    update: yes
+  tags: git-standup
+
+- name: git standup - install
+  shell: make install
+  args:
+    chdir: "{{ home_dir }}/.asdf"
+  tags: git-standup

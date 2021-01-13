@@ -3,7 +3,7 @@
 - import_tasks: duplicity.yml
 #- import_tasks: hub.yml
 - import_tasks: git-standup.yml
-# - import_tasks: ruby.yml
 - import_tasks: dotfiles.yml
+- import_tasks: asdf.yml
 - import_tasks: desktop.yml
 - import_tasks: pip.yml

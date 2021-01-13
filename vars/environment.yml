@@ -1,6 +1,6 @@
 ---
 distro: groovy
-release: "20.04"
+release: "20.10"
 user: richard
 home_dir: "/home/{{ user }}"
 ansible_dir: "{{ home_dir}}/.ansible"
