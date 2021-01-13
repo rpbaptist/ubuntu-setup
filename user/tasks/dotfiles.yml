@@ -1,0 +1,14 @@
+---
+- name: dotfiles - download
+  become: no
+  git:
+    repo: https://github.com/rpbaptist/dotfiles.git
+    dest: "{{ home_dir }}/.dotfiles"
+    update: yes
+  tags: dotfiles
+
+- name: dotfiles - install
+  shell: rcup -v
+  args:
+    chdir: "{{ home_dir }}"
+  tags: dotfiles
