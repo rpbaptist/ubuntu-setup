@@ -11,33 +11,17 @@
     - apt
     - ppa
 
-- name: PPA keys - add with id
-  apt_key: keyserver={{ item.keyserver }} id={{ item.id }} state=present
-  with_items:
-    # # Haskell
-    # - {
-    #   keyserver: 'hkp://keyserver.ubuntu.com:80',
-    #   id: '575159689BEFB442'
-    # }
-    # Spotify
-    - {
-      keyserver: 'hkp://keyserver.ubuntu.com:80',
-      id: '931FF8E79F0876134EDDBDCCA87FF9DF48BF1C90'
-    }
-  tags:
-    - apt
-    - ppa
-
 - name: PPA - Additional PPA's
   apt_repository: repo={{ item }} state=present
   register: ppastable
   with_items:
-    - deb http://repository.spotify.com stable non-free
+    #- deb http://repository.spotify.com stable non-free
     - deb https://download.sublimetext.com/ apt/stable/
-    - ppa:duplicity-team/ppa
+    #- ppa:duplicity-team/ppa
     - ppa:git-core/ppa
     - ppa:hluk/copyq
     - ppa:papirus/papirus
+    - ppa:linrunner/tlp
     - ppa:phoerious/keepassxc
   tags:
     - apt

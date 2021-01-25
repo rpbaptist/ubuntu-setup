@@ -110,11 +110,12 @@
     - flameshot
     - jq
     - keepassxc
-    - leafpad
+    #- leafpad
     - p7zip-full
     - p7zip-rar
     - ppa-purge
     - rcm
+
     - shellcheck
     - software-properties-gtk
     - synaptic
@@ -137,7 +138,7 @@
     - libasound2-plugin-equal
     # - pavucontrol
     # - pulseeffects
-    - spotify-client
+#    - spotify-client
     - viewnior
     - vlc
 
