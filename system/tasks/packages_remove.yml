@@ -1,17 +1,16 @@
 ---
 - name: Apps | Install with apt-get
-  apt:
-    pkg: "{{ item }}"
-    state: absent
-  with_items:
-    - aisleriot
-    - gnome-mines
-    - gnome-mahjongg
-    - gnome-sudoku
-    - nautilus
-    - cheese
-    - rhythmbox
-    - totem
   tags:
     - apt
     - apt-remove
+  apt:
+    state: absent
+    pkg:
+      - aisleriot
+      - gnome-mines
+      - gnome-mahjongg
+      - gnome-sudoku
+      - nautilus
+      - cheese
+      - rhythmbox
+      - totem

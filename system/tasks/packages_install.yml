@@ -6,8 +6,8 @@
     - ppa
 
 - name: Apps | Install with apt-get
+  tags: apt
   apt:
-    # tags: apt
     state: latest
     pkg:
       # power management
@@ -28,6 +28,7 @@
       - xdotool
       - xbindkeys
       - solaar
+      - trash-cli
       - imwheel
 
       # desktop environment

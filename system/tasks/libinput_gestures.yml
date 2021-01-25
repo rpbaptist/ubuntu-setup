@@ -1,17 +1,20 @@
 ---
-- name: libinput-gestures - exists
+- name: libinput_gestures - exists
   stat: path=/usr/bin/libinput-gestures
-  register: libinput-gestures
+  register: libinput_gestures
+  tags: libinput_gestures
 
 - name: libinput gestures - download
   become: no
   git:
-    repo=http://github.com/bulletmark/libinput-gestures.git
-    dest="{{ home_dir }}/code/apps/libinput-gestures"
-    update=no
+    repo: http://github.com/bulletmark/libinput-gestures.git
+    dest: "{{ home_dir }}/code/apps/libinput-gestures"
+    update: no
+  tags: libinput_gestures
 
 - name: libinput-gestures - install
   command:
     chdir="{{ home_dir }}/code/apps/libinput-gestures/"
     make install
-  when: not libinput-gestures.stat.exists
+  when: not libinput_gestures.stat.exists
+  tags: libinput_gestures

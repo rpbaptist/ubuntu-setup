@@ -1,4 +1,9 @@
 ---
+- name: git_standup - exists
+  stat: path=/usr/local/bin/git-standup
+  register: git_standup
+  tags: git-standup
+
 - name: git standup - download
   become: no
   git:
@@ -8,7 +13,9 @@
   tags: git-standup
 
 - name: git standup - install
-  shell: make install
-  args:
-    chdir: "{{ home_dir }}/code/apps/git-standup"
+  become: yes
+  command:
+    chdir="{{ home_dir }}/code/apps/git-standup"
+    make install
   tags: git-standup
+  when: not git_standup.stat.exists

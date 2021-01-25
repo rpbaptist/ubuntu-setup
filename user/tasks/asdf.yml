@@ -6,10 +6,4 @@
     dest: "{{ home_dir }}/.asdf"
     version: "{{ asdf_version }}"
     update: yes
-  tags: git-standup
-
-- name: git standup - install
-  shell: make install
-  args:
-    chdir: "{{ home_dir }}/.asdf"
-  tags: git-standup
+  tags: asdf
