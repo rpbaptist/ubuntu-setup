@@ -7,6 +7,8 @@
     state: absent
     pkg:
       - aisleriot
+      - gnome-2048
+      - gnome-chess
       - gnome-mines
       - gnome-mahjongg
       - gnome-sudoku
