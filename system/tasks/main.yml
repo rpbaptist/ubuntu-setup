@@ -8,3 +8,4 @@
 - import_tasks: libinput_gestures.yml
 - import_tasks: hosts.yml
 - import_tasks: systemd.yml
+- import_tasks: greeter.yml
