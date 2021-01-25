@@ -147,7 +147,10 @@
       # - libqt4-dev
       # - libreadline-dev
       # - libsqlite3-dev
+
+      # for ruby:
       - libssl-dev
+
       # - libstartup-notification0-dev
       # - libxcb-cursor-dev
       # - libxcb-icccm4-dev
