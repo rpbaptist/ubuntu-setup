@@ -1,10 +1,10 @@
 ---
 - import_tasks: ppa.yml
-- import_tasks: packages-install.yml
-- import_tasks: packages-remove.yml
+- import_tasks: packages_install.yml
+- import_tasks: packages_remove.yml
 - import_tasks: directories.yml
 - import_tasks: grub.yml
 - import_tasks: touchpad.yml
-- import_tasks: libinput-gestures.yml
+- import_tasks: libinput_gestures.yml
 - import_tasks: hosts.yml
 - import_tasks: systemd.yml

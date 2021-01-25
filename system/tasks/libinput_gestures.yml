@@ -1,7 +1,7 @@
 ---
 - name: libinput-gestures - exists
   stat: path=/usr/bin/libinput-gestures
-  register: libinput_gestures
+  register: libinput-gestures
 
 - name: libinput gestures - download
   become: no
@@ -14,4 +14,4 @@
   command:
     chdir="{{ home_dir }}/code/apps/libinput-gestures/"
     make install
-  when: not libinput_gestures.stat.exists
+  when: not libinput-gestures.stat.exists

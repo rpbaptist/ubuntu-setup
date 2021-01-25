@@ -1,2 +1,2 @@
-[richard-machine]
+[richard_machine]
 localhost ansible_connection=local

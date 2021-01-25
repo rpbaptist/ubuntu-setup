@@ -2,7 +2,7 @@
 - import_tasks: zsh.yml
 - import_tasks: duplicity.yml
 #- import_tasks: hub.yml
-- import_tasks: git-standup.yml
+- import_tasks: git_standup.yml
 - import_tasks: dotfiles.yml
 - import_tasks: asdf.yml
 - import_tasks: desktop.yml
