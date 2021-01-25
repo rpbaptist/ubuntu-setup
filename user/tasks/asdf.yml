@@ -7,3 +7,25 @@
     version: "{{ asdf_version }}"
     update: yes
   tags: asdf
+
+- name: asdf - plugins
+  become: no
+  shell: "asdf plugin-add {{ item }}"
+  with_items:
+    - ruby
+    - elixir
+    - erlang
+    - direnv
+    - nodejs
+  tags: asdf
+
+- name: asdf - plugins
+  become: no
+  shell: "asdf install {{ item }} latest"
+  with_items:
+    - ruby
+    - elixir
+    - erlang
+    - direnv
+    - nodejs
+  tags: asdf
