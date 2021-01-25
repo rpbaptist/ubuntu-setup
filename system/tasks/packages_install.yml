@@ -47,11 +47,11 @@
       - sublime-text
 
       # theming
-      - arc-theme
+      - kimmo-gtk-theme
+      - qt5-style-platform-gtk2
+      - qt5-style-plugin-gtk2
       - papirus-icon-theme
-      # - hardcode-tray
       - breeze-cursor-theme
-      #- gnome-icon-theme-full
 
       # internet
       - firefox
@@ -170,6 +170,7 @@
       - llvm
       - ncurses-doc
       - python3-software-properties
+      - qt5-default
       - uvcdynctrl
       - wmctrl
       - xdotool
