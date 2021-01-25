@@ -1,12 +1,10 @@
 ---
 - name: pip - install
   become: no
+  tags: pip
   pip:
-    name: "{{ item }}"
     state: present
     extra_args: "--user"
-  with_items:
-    - awscli
-    - cheat
-    - boto
-  tags: pip
+    name:
+      - cheat
+      - boto
