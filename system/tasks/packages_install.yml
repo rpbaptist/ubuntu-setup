@@ -43,7 +43,7 @@
       # - python-nemo
 
       # development
-      # - chromium-`medriver
+      - hub
       - sublime-text
 
       # theming
