@@ -57,22 +57,17 @@
       # internet
       - firefox
       - chromium-browser
-      # - chromium-chromedriver
-      # - dropbox
       - duplicity
       - insync
       - insync-nemo
-      # - sshuttle
       - transmission
 
-      # office
-      # - libreoffice
-
       # dev environment
-      # - mysql-client
       - python3-pip
       - nodejs
-      #- docker-engine
+      - docker-ce
+      - docker-ce-cli
+      - containerd.io
       - zeal
       - yarn
 
@@ -99,7 +94,6 @@
       - flameshot
       - jq
       - keepassxc
-      #- leafpad
       - p7zip-full
       - p7zip-rar
       - ppa-purge
@@ -114,20 +108,12 @@
       # networking
       - gufw
       - ufw
-      # - network-manager
-      # - network-manager-gnome
-      # - network-manager-openvpn
-      # - network-manager-openvpn-gnome
 
       # media
-      # - clementine
       - evince
       - gimp
       - guvcview
       - libasound2-plugin-equal
-      # - pavucontrol
-      # - pulseeffects
-  #    - spotify-client
       - viewnior
       - vlc
 
@@ -163,7 +149,7 @@
       # - libxcb1-dev
       # - libxkbcommon-dev
       # - libxkbcommon-x11-dev
-      # - libxml2-dev
+      - libxml2-dev
       # - libxslt1-dev
       # - libyajl-dev
       # - libyaml-dev
