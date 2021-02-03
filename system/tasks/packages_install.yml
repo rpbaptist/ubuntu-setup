@@ -125,6 +125,14 @@
       - cmake
       - cpphs
       - dh-autoreconf
+
+      # erlang
+      - libxml2-utils
+      - xsltproc
+      - fop
+      - libncurses5-dev
+      - libwxgtk3
+      - unixodbc-dev
       # - libcurl4-openssl-dev
       # - libev-dev
       # - libffi-dev
